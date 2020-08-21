@@ -5,7 +5,7 @@
    justify-content: center;
     z-index: 1;
     width: 100%;
-    min-height: 10vh;
+    min-height: 9.3vh;
     color: #fff;
     background: #30948D;
     font-family: sans-serif;
@@ -127,11 +127,13 @@ overflow: hidden;
     
       opacity: 1;}
       75% {
-        font-size: 45px;
+        font-size: 50px;
+      
       }
     to{width: 200px;
       font-size: 2rem;
       opacity: 1;
+     
       
     }
     }
