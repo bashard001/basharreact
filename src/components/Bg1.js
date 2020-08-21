@@ -1,0 +1,17 @@
+import React from "react"
+import "./stylesheets/bg.css"
+
+
+
+function bg1(props) {
+    return (<div className={props.c1} id={props.c4}>
+            <div className={props.c2}>
+                <span className={props.c3}>{props.text}</span>
+            </div>
+        </div>
+        
+        
+    )
+}
+
+export default bg1

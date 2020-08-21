@@ -1,0 +1,109 @@
+
+.bg1, .bg2, .bg3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  
+  .bg1 {
+    background-image: url("images/bashar4.jpg");
+    min-height: 90vh;
+  }
+  
+  .bg2 {
+    background-image: url("images/basharone.jpg");
+    min-height: 50vh;
+  }
+  
+  .bg3 {
+    background-image: url("images/bashar3.jpg");
+    min-height: 50vh;
+  }
+  
+  .caption {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.box {
+    background-color:transparent;
+    color: #f7f7f7;
+    font-size: 25px;
+    border-radius: 5px;
+    letter-spacing: 10px;
+    
+    box-shadow: 0 13px 27px 0 rgba(12, 7, 7,.2);
+    transition: 1s;
+  }
+  .caption span.lastBox {
+  
+        background-color:black;
+        color: #f7f7f7;
+        font-size: 25px;
+        padding: 18px;
+        border-radius: 5px;
+        letter-spacing: 10px;
+        
+ 
+    box-shadow: 0 13px 27px 0 rgba(12, 7, 7,.2);
+    transition: 1s;
+  }
+  .caption span.lastBox:hover {
+    border-radius: 20px;
+    -webkit-box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
+    box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
+  }
+  .projects{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .firstcaption {
+  
+    position: absolute;
+    top:75%;
+    width:100%;
+    text-align: center;
+  
+  }
+  
+  
+  span.firstbox{
+  
+    padding: 10px 25px;
+    background-color: rgba(48, 148, 141, .65);
+    font-size: 25px;
+    color: #111;
+    transition: 1s;
+    box-shadow: 0 13px 27px 0 rgba(12, 7, 7,.5);
+    
+    
+  }
+  span.firstbox:hover {
+    border-radius: 20px;
+    -webkit-box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
+    box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  
+    
+   
+    img{
+      position: relative;
+      top: 3px;
+  
+    }

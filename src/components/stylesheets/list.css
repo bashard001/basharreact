@@ -1,0 +1,17 @@
+#list {
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:50px 80px;
+}
+
+#list h3{
+
+    text-align:center;
+}
+#list ul{
+    list-style-type: none;
+}
+#list li {
+    padding-bottom: .4em;
+}
