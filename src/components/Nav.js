@@ -1,5 +1,7 @@
 import React from "react"
 
+import "./stylesheets/nav.css"
+
 
 function Nav() {
     return (
@@ -13,22 +15,22 @@ function Nav() {
 
                 <section id="right">
                     <a href="myprojects.html">
-<i className="fas fa-tasks"></i>
-                    <p> My
+                        <i class="fab fa-connectdevelop"> </i><p>My
         projects</p>
+
                     </a>
                     <a href="about.html">
 
-                    <i className="far fa-user-circle"></i> <p> About</p> </a>
+                        <i className="far fa-user-circle"></i><p>About</p> </a>
 
 
-                        <a href="contacts.html">
-                        <i className="fas fa-address-card"></i> <p>Contact</p>
-      </a>
+                    <a href="contacts.html">
+                        <i class="fas fa-id-card-alt"> </i> <p> Contact</p>
+                    </a>
 
-    </section>
-    </div>
-  </nav>
+                </section>
+            </div>
+        </nav>
 
     )
 }
