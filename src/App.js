@@ -8,6 +8,7 @@ import Contact from "./pages/Contact"
 import Nav from "./components/Nav"
 import About from "./pages/About"
 import Projects from "./pages/Projects"
+import Totop from "./pages/Totop"
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
     
  
     </Switch>
+    <Totop />
     <Footer />
     </Router>
   );

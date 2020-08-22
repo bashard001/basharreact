@@ -4,7 +4,7 @@ import "../components/stylesheets/projects.css"
 
 function project (){
     return(
-<div className="maincontainer">
+<div className="maincontainers">
     <div className="containers">
       <div className="pagetitle">
         <h2 >My Projects</h2>

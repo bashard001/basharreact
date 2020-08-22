@@ -4,8 +4,8 @@ import "../components/stylesheets/contact.css"
 
 function contact (){
     return(
-<div className="App">
-<div className="container" id="top">
+<div className="back">
+<div className="containerC" id="top">
         <div style={{textAlign: 'center'}}>
             <h2><b>Contact Me</b></h2>
             <p>Get in contact with me, leave me a message and I will get back to you.</p>

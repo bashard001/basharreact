@@ -1,5 +1,5 @@
 import React from 'react'
-import "./stylesheets/totop.css"
+import "../components/stylesheets/totop.css"
 
 
 function Totop (){

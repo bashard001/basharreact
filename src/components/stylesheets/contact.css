@@ -18,6 +18,7 @@ input[type=text], textarea {
   
     
 }
+
 .column {
  min-height: 200px;
   width: 50%;
@@ -61,7 +62,7 @@ border-radius: 15px;
 h2{
   margin-top: 0px;
 }
-.container {
+.containerC {
     height: 90vh;
   padding-top: 10px;
   background-image: url("images/gridlook.jpg");
