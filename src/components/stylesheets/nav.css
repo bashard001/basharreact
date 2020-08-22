@@ -197,6 +197,7 @@ width: 200px;
   #right {
     margin-left: 10px;
     align-self: baseline;
+    margin-bottom:10px;
   
   }
   #right p {
