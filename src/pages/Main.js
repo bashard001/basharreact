@@ -8,7 +8,7 @@ import Totop from "../components/Totop"
 
 function main (){
     return(
-<div className="App">
+<div>
   
       <Bg1 c1="bg1" c2="firstcaption" c3="firstbox" c4="top" text="Full Stack Developer"/>
       <List />

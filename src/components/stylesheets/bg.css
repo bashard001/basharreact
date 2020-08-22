@@ -43,7 +43,7 @@
     box-shadow: 0 13px 27px 0 rgba(12, 7, 7,.2);
     transition: 1s;
   }
-  .caption span.lastBox {
+  .caption span.box.lastBox {
   
         background-color:black;
         color: #f7f7f7;
@@ -56,7 +56,7 @@
     box-shadow: 0 13px 27px 0 rgba(12, 7, 7,.2);
     transition: 1s;
   }
-  .caption span.lastBox:hover {
+  .caption span.box.lastBox:hover {
     border-radius: 20px;
     -webkit-box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
     box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
