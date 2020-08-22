@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 import "./stylesheets/nav.css"
 
@@ -8,25 +9,25 @@ function Nav() {
         <nav className="header">
             <div className="headerContainer">
                 <section id="left">
-                    <a href="index.html">
+                   <Link to={'/'}>
                         <h1 id="alphaq"><span id="a">Bashar Daseh</span><span id="b">B D</span></h1>
-                    </a>
+                </Link>
                 </section>
 
                 <section id="right">
-                    <a href="myprojects.html">
-                        <i class="fab fa-connectdevelop"> </i><p>My
-        projects</p>
+                 <Link to={'/projects'}> <i class="fab fa-connectdevelop"> </i><p>My
+        projects</p></Link>
+                       
 
-                    </a>
-                    <a href="about.html">
+                  
+                  <Link to={'/about'}><i className="far fa-user-circle"></i><p>About</p></Link>
 
-                        <i className="far fa-user-circle"></i><p>About</p> </a>
+                     
 
 
-                    <a href="contacts.html">
-                        <i class="fas fa-id-card-alt"> </i> <p> Contact</p>
-                    </a>
+                    <Link to={'/contact'}> <i class="fas fa-id-card-alt"> </i> <p> Contact</p>
+                   </Link>
+                       
 
                 </section>
             </div>

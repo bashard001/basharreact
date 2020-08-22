@@ -1,26 +1,33 @@
 import React from 'react';
-import './App.css';
-import Nav from "./components/Nav"
-import Bg1 from "./components/Bg1"
-import List from "./components/List"
-import Area from "./components/Area"
+import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom"
+
 import Footer from "./components/Footer"
-import Totop from "./components/Totop"
+// import Totop from "./components/Totop"
+import Main from "./pages/Main"
+import Contact from "./pages/Contact"
+import Nav from "./components/Nav"
+
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Nav />
-      <Bg1 c1="bg1" c2="firstcaption" c3="firstbox" c4="top" text="Full Stack Developer"/>
-      <List />
-      <Bg1 c1="bg2" c2="caption" c3="box" text="Apply Animations"/>
-      <Area text="Scroll up and down to really get the feeling of Parallax Scrolling Animation" />
-      <Bg1 c1="bg3" c2="caption" c3="box" text="SCROLL UP"/>
-      <Area text="Scroll up and down to really get the feeling of how Parallax Scrolling works." />
-  <Bg1 c1="bg1" c2="caption" c3="box lastBox" text={<a className="projects" href="myprojects.html">Checkout my projects</a>}/>
-  <Totop />
-  <Footer />
-    </div>
+      <Switch>
+        
+         <Route path="/" exact>
+           <Main />
+         </Route>
+        <Route path="/contact"> <Contact />
+        </Route>
+     
+
+
+    
+    
+ 
+    </Switch>
+    <Footer />
+    </Router>
   );
 }
 
