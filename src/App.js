@@ -6,6 +6,8 @@ import Footer from "./components/Footer"
 import Main from "./pages/Main"
 import Contact from "./pages/Contact"
 import Nav from "./components/Nav"
+import About from "./pages/About"
+import Projects from "./pages/Projects"
 
 
 function App() {
@@ -17,11 +19,19 @@ function App() {
          <Route path="/" exact>
            <Main />
          </Route>
+
         <Route path="/contact"> <Contact />
+        </Route>
+
+        <Route path="/about">
+          <About />
         </Route>
      
 
 
+        <Route path="/projects">
+          <Projects />
+        </Route>
     
     
  

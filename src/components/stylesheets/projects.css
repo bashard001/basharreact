@@ -1,0 +1,175 @@
+.maincontainer {
+    width: 100%;
+    background-image: url("images/monument-valley-1593318.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    max-width: 1500px;
+    min-height: 100%;
+    margin: auto;
+    padding-right: auto;
+    padding-top: 25px;
+  }
+  
+  .pagetitle {
+    grid-column: span 4;
+    max-width: 1500px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(48,148,141,.5);
+    border-radius: 10px;
+    color: aliceblue;
+  }
+  
+  .pagetitle p {
+    margin: 0px;
+  }
+  
+  .a1 {
+    background-image: url("images/passwordbg.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 23px auto;
+  }
+  
+  .a2 {
+    background-image: url("images/quizAPP.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 23px auto;
+  }
+  
+  .a3 {
+    background-image: url("images/weatherdash.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 23px auto;
+  }
+  
+  .a4 {
+    background-image: url("images/calendarday.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 23px auto;
+  }
+  
+  .a5 {
+    /* border: solid black 2px; */
+    border-style: ridge;
+    border-color: rgb(0, 0, 0);
+    border-width: 5px;
+    background-image: url("images/sports.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 23px auto;
+  }
+  
+  .a6 {
+    /* background-image: url("images/gabrielle-henderson-HJckKnwCXxQ-unsplash.jpg"); */
+    background-position: center;
+    background-size: cover;
+    margin: 23px auto;
+  }
+  
+  .a7 {
+    background-image: url("images/snakegame.PNG");
+    background-size: cover;
+    margin: 23px auto;
+  }
+  .boxA {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 225px;
+    min-height: 180px;
+    max-height: 250px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  
+  .caption {
+    opacity: 1;
+    text-align: center;
+    padding-top: 50%;
+    border-radius: 20px;
+  }
+  
+  .caption:hover {
+    animation: tips 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes tips {
+    from {opacity: 1;
+      text-align: center;
+      padding-top: 50%;
+      border-radius: 20px;}
+      to {
+        opacity: .7;
+    text-align: center;
+    background-color: #777;
+    color: black;
+      }
+  }
+  
+  .caption:hover .box {
+    animation: boxtext 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes boxtext {
+    from {color: white;}
+    to {color: black;}
+  }
+  
+  .caption span.box {
+    opacity: 1;
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+  
+  .lastrow {
+    display: block;
+  }
+  
+  button :hover {
+    background-color: aqua;
+  }
+  
+  @media (max-width: 950px) {
+    .container {
+      max-width: 75%;
+      grid-template-columns: repeat(auto-fit, 250px);
+      margin: auto;
+      padding-left: 9%;
+    }
+    .pagetitle {
+      grid-column: span 2;
+      max-width: 1500px;
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: rgba(48,148,141,.5);
+      border-radius: 10px;
+      color: aliceblue;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .pagetitle {
+      grid-column: span 1;
+    }
+  }
