@@ -14,9 +14,7 @@ input[type=text], textarea {
     display: flex;
    flex-wrap: wrap;
    justify-content: center;
-  margin-top: 45px ;
-  
-    
+  margin-top: 45px ;  
 }
 
 .column {
@@ -43,9 +41,6 @@ background-image: url("images/bashar3.jpg");
 background-position: center;
 background-size: cover;
 border-radius: 15px;
-
-    
-   
 
 }
 .column input{
@@ -83,30 +78,6 @@ h2{
   }
   @media screen and (max-width:666px){
 
-    #left {
-      position: relative;
-      top:25px;
-      max-width: 150px;
-      font-size: 8px;
-
-    }
-    #right a{
-      position: relative;
-      top: 15px;
-      padding: 0px 5px;
-    }
-    .column {
-      float: left;
-      width: 100%;
-      margin-top: 6px;
-      padding: 20px;
-    }
-    .column1{
-      float: left;
-      width: 100%;
-    margin-top: 0px;
-    padding: 20px;
-    }
     div.column1 div {
       width: 100%;
     }
