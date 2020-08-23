@@ -15,8 +15,8 @@ function about () {
 
         <div className="cardcontent">
 
-          <div className="imgdiv"><img class="imgab" src="stylesheets/images/bashar3.jpg" alt="my pic"/></div>
-          <h3 style={{display: "inline", fontfFamily: 'Charmonman',fontSize: "20px", color: "red"}}>Full Stack Web Developer
+          <div className="imgab"></div>
+          <h3 style={{fontfFamily: 'Charmonman',fontSize: "20px", color: "red"}}>Full Stack Web Developer
           </h3><br/>
           <strong>Bashar Daseh</strong>
           <br/>

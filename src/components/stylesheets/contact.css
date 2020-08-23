@@ -20,11 +20,12 @@ input[type=text], textarea {
 .column {
  min-height: 200px;
   width: 50%;
-  margin-top: 6px;
+  
   padding: 20px;
   flex: 1 1 230px; /*  Stretching: */
-    flex: 1 1 230px; /*  No stretching: */
+  
     margin: 15px;
+    border-radius: 15px;
   -webkit-box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
   box-shadow: 0 13px 27px 0 rgba(31, 4, 6, 0.25);
   -webkit-transition: .9s;
@@ -33,7 +34,7 @@ input[type=text], textarea {
 .column.pic{
 
   width: 50%;
-margin-top: 0px;
+
 padding: 20px;
 align-items: center; 
 justify-content: center;
