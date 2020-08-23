@@ -3,7 +3,7 @@ import "./stylesheets/bg.css"
 
 
 
-function bg1(props) {
+function Bg1(props) {
     return (<div className={props.c1} id={props.c4}>
             <div className={props.c2}>
                 <span className={props.c3}>{props.text}</span>
@@ -14,4 +14,4 @@ function bg1(props) {
     )
 }
 
-export default bg1
+export default Bg1

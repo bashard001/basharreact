@@ -2,7 +2,7 @@ import React from "react"
 import "../components/stylesheets/projects.css"
 
 
-function project (){
+function Project (){
     return(
 <div className="maincontainers">
     <div className="containers">
@@ -64,4 +64,4 @@ function project (){
     )
 }
 
-export default project
+export default Project

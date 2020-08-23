@@ -3,7 +3,7 @@ import "./stylesheets/bg.css"
 
 
 
-function area(props) {
+function Area(props) {
     return (
         <div style={{position:'relative'}}>
         <div style={{color:'#ddd', backgroundColor:'#282E34', textAlign:'center', padding:"50px 80px", textAlign: 'justify'}}>
@@ -13,4 +13,4 @@ function area(props) {
     )
 }
 
-export default area
+export default Area

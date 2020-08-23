@@ -4,7 +4,7 @@ import "../components/stylesheets/about.css"
 
 
 
-function about () {
+function About () {
   return(
     <div className="maincontainer" id="top">
 
@@ -97,4 +97,4 @@ function about () {
 
 }
 
-export default about
+export default About
