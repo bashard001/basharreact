@@ -22,7 +22,7 @@
   
   .pagetitle {
     grid-column: span 4;
-    max-width: 1500px;
+max-height: 140px;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -75,7 +75,7 @@
   }
   
   .a6 {
-    /* background-image: url("images/gabrielle-henderson-HJckKnwCXxQ-unsplash.jpg"); */
+    background-image: url("images/gabrielle-henders.jpg");
     background-position: center;
     background-size: cover;
     margin: 23px auto;
@@ -91,7 +91,7 @@
     grid-template-columns: 1fr;
     max-width: 225px;
     min-height: 180px;
-    max-height: 250px;
+    max-height: 220px;
     border-radius: 20px;
     color: white;
     text-decoration: none;
