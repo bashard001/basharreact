@@ -16,8 +16,9 @@ function Project (){
         title="This application is built using 95% JavaScript <br/> highest score is save to localstorage">
         <div className="captions">
           <span className="box">Sample Quiz</span>
-        </div>
-      </a>
+     
+        </div><p className="tooltips">hello</p>
+      </a> 
       <a href="https://bashard001.github.io/weather-dashboard" target="_blank" class="boxA a3" data-toggle="tooltip"
         data-html="true" data-placement="bottom" data-animation="true"
         title="For this app I used JQuery, bootstrap, Weather api<br/>and localstorage to save search history">

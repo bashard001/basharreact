@@ -100,10 +100,12 @@ max-height: 140px;
   
   
   .captions {
+    z-index: 2;
     opacity: 1;
     text-align: center;
     padding-top: 50%;
     border-radius: 20px;
+  
   }
   
   .captions:hover {
@@ -118,10 +120,34 @@ max-height: 140px;
       border-radius: 20px;}
       to {
         opacity: .7;
-    text-align: center;
     background-color: #777;
     color: black;
       }
+  }
+
+  .tooltips {
+    display: block;
+    font-size: 16px;
+  z-index: -3;
+  }
+
+
+  .boxA:hover .tooltips {
+    display: block;
+    
+    animation: toolTIPS 1s;
+    animation-fill-mode: forwards;
+   
+  }
+  @keyframes toolTIPS {
+    from {
+      height: 0px;
+    }
+    to {
+       /* transform: translateY(20px);    */
+      ; height: 200px;
+       background-color: red;
+    }
   }
   
   .captions:hover .box {
