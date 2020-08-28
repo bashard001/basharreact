@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react"
 import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom"
 
 import Footer from "./components/Footer"
@@ -12,6 +12,7 @@ import Totop from "./pages/Totop"
 
 
 function App() {
+  
   return (
     <Router>
       <Nav />
@@ -32,6 +33,9 @@ function App() {
           <Projects />
         </Route>
     
+
+    
+ 
     </Switch>
     <Totop />
     <Footer />

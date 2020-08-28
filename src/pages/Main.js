@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 
 
 
-function main (){
+function Main (){
     return(
 <div>
   
@@ -24,4 +24,4 @@ function main (){
     )
 }
 
-export default main
+export default Main
