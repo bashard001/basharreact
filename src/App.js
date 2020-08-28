@@ -34,7 +34,9 @@ function App() {
         <Route path="/projects">
           <Projects />
         </Route>
-    
+        <Route path="/send">
+          <Projects />
+        </Route>
     
  
     </Switch>

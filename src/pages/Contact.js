@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import "../components/stylesheets/contact.css"
+import "./contactform.php"
 
 
 function Contact(props) {
@@ -9,6 +10,25 @@ function Contact(props) {
     let [message, setMessage] = useState("")
 
  let handleSubmit = (event) => {
+     event.preventDefault()
+     console.log(name)
+     fetch('contactform.php',{
+        method: "POST",
+        body: name,
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+      }).then(
+    	(response) => (response.json())
+       ).then((response)=>{
+      if (response.status === 'success'){
+        alert("Message Sent."); 
+        this.resetForm()
+      }else if(response.status === 'fail'){
+        alert("Message failed to send.")
+      }
+    })
 
 }
   
@@ -16,10 +36,10 @@ let nameChange = (event) => {
     setName(event.target.value)
 }
 let emailChange = (event) => {
-    setName(event.target.value)
+    setFromEmail(event.target.value)
 }
 let messageChange = (event) => {
-    setName(event.target.value)
+    setMessage(event.target.value)
 }
     return (
         <div className="back">
