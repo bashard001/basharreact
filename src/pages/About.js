@@ -32,25 +32,25 @@ function about () {
             github.com/bashard001</a>
           <h3>Development Tools, Languages and Frameworks:</h3>
           <ul class="skillList 1">
-            <li>Java</li><li>Wordpress</li>
-            <li>Javascript</li>
-            <li>HTML, CSS and SCSS </li>
-            <li>JSON, jQuery and AJAX.</li>
-            <li>React, React Native</li>
-            <li>GIT version control</li>
-            <li>springMVC</li>
-            <li>MySQL and MongoDB </li>
-            <li>Scrach</li>
-            <li>MERN Stack <br/>(MongoDB, Express.js, React.js, Node.js).</li>
+            <li className="aboutlist">Java</li><li className="aboutlist">Wordpress</li>
+            <li className="aboutlist">Javascript</li>
+            <li className="aboutlist">HTML, CSS and SCSS </li>
+            <li className="aboutlist">JSON, jQuery and AJAX.</li>
+            <li className="aboutlist">React, React Native</li>
+            <li className="aboutlist">GIT version control</li>
+            <li className="aboutlist">springMVC</li>
+            <li className="aboutlist">MySQL and MongoDB </li>
+            <li className="aboutlist">Scrach</li>
+            <li className="aboutlist">MERN Stack <br/>(MongoDB, Express.js, React.js, Node.js).</li>
 
           </ul>
           <h3>Education:</h3>
           <ul >
-            <li>University of San Diego California (UCSD). 2018-2020</li>
+            <li className="aboutlist">University of San Diego California (UCSD). 2018-2020</li>
             <p> BS in Computer Science</p>
-            <li> San diego Mesa College. 2017-2018</li>
+            <li className="aboutlist"> San diego Mesa College. 2017-2018</li>
             <p>Computer Science Education</p>
-            <li>San diego Mesa College. 2012-2016</li>
+            <li className="aboutlist">San diego Mesa College. 2012-2016</li>
             <p> Associate of Science in Biology & Allied health</p>
           </ul>
         </div>

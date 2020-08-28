@@ -27,15 +27,11 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-     
-
 
         <Route path="/projects">
           <Projects />
         </Route>
     
-    
- 
     </Switch>
     <Totop />
     <Footer />

@@ -34,8 +34,17 @@
     
   }
   
-   li:hover{
-    font-size: 16px;
+   .aboutlist:hover{
+    cursor: default;
+    animation: listanimation .5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes listanimation {
+    to {
+    font-size: 18px;
+    
+    }
   }
   p.text {
     text-indent: 5%;
@@ -88,6 +97,7 @@
   
   .box2 {
     align-self: center;
+
   }
   
   .lastrow {
