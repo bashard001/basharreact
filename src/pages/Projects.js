@@ -10,15 +10,15 @@ function Project (){
         <h2 >My Projects</h2>
         <p>(Web applications)</p>
       </div>
-
-      <a href="https://bashard001.github.io/AstronomyQuiz" target="_blank" class="boxA a2" data-toggle="tooltip"
+<div className="boxA ">
+      <a href="https://bashard001.github.io/AstronomyQuiz" target="_blank" className="a2" data-toggle="tooltip"
         data-html="true" data-placement="bottom" data-animation="true"
         title="This application is built using 95% JavaScript <br/> highest score is save to localstorage">
         <div className="captions">
           <span className="box">Sample Quiz</span>
      
-        </div><p className="tooltips">hello</p>
-      </a> 
+        </div>
+      </a> </div>
       <a href="https://bashard001.github.io/weather-dashboard" target="_blank" class="boxA a3" data-toggle="tooltip"
         data-html="true" data-placement="bottom" data-animation="true"
         title="For this app I used JQuery, bootstrap, Weather api<br/>and localstorage to save search history">
