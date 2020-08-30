@@ -10,7 +10,7 @@
   
   .containers {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(1fr, auto);
     grid-auto-rows: auto;
     grid-gap: 1em;
     max-width: 1500px;
@@ -48,8 +48,8 @@ max-height: 140px;
     background-image: url("images/quizAPP.jpg");
     background-position: center;
     background-size: cover;
-
-   
+     border-radius: 20px;
+text-decoration: none;
   }
   
   .a3 {
@@ -90,8 +90,8 @@ max-height: 140px;
     margin: 23px auto;
   }
   .boxA {
-    display: grid;
-    grid-template-columns: 1fr;
+    position: relative;
+  display: flex;
     margin: 23px auto;
     max-width: 225px;
     min-height: 180px;
@@ -112,9 +112,10 @@ max-height: 140px;
     padding-top: 50%;
     border-radius: 20px;
     z-index: 2;
+    height: 100%;
   
   }
-  
+ 
   .captions:hover {
     animation: tips 2s;
     animation-fill-mode: forwards;
@@ -136,17 +137,30 @@ max-height: 140px;
    
     
     position: absolute;
-    z-index:-1;
+    overflow: hidden;
+     z-index:-1; 
     font-size: 16px;
+  height: 0px;
+    width: 100%;
+    top: 90%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+background-color: red;
 
+  }
+  .tool-text { 
+position: relative;
+    color: white;
+    top: 20%;
+    text-align: center;
   }
 
 
-  .boxA:hover .tooltips {
-    display: block;
+  /* .boxA:hover .tooltips {
     
     animation: toolTIPS 1s;
     animation-fill-mode: forwards;
+    
    
   }
   @keyframes toolTIPS {
@@ -154,11 +168,11 @@ max-height: 140px;
       height: 0px;
     }
     to {
-       /* transform: translateY(20px);    */
- height: 300px;
-       background-color: red;
+      
+ height: 200px;
+       
     }
-  }
+  } */
   
   .captions:hover .box {
     animation: boxtext 1s;
