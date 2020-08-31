@@ -5,45 +5,55 @@ import "../components/stylesheets/projects.css"
 function Project (){
 
   let [toolHeight, setToolHeight] = useState(0)
-  let [mouseIsOver, setMouseIsOver] = useState(false)
+  let [mouseIsOver, setMouseIsOver] = useState(true)
+  
 
-  const cardAni = function(){
+
+
+  let cardAni = function(){
     const toolTip = document.querySelector(".tooltips")
-    let anima = setInterval(frame, 1)
+     function frame() {
+     
 
-    setMouseIsOver(false)
-    function frame() {
-      if (toolHeight == 0) {
-        setToolHeight(0)
+      if (toolHeight == 0 ) {
+        
+        setMouseIsOver(true)
         clearInterval(anima);
+        
       } else {
         
+        console.log(mouseIsOver)
         toolHeight--; 
-        toolTip.style.height = toolHeight + 'px'; 
-      }
-    }
-  }
-
-  const CardON = function(){
-    const toolTip = document.querySelector(".tooltips")
-    const boxff = document.querySelector(".boxA")
-    
-setMouseIsOver(true)
-   
-      let anima = setInterval(frame, 2)
-    function frame() {
-      if (toolHeight == 200) {
-       
-        clearInterval(anima);
-      } else {
-        toolHeight++; 
         toolTip.style.height = toolHeight + 'px'; 
       } 
     }
+    
+      let anima = setInterval(frame, 2)
+  }
 
+  const CardON =  function(){
+    const toolTip = document.querySelector(".tooltips")
+    const boxff = document.querySelector(".boxA")
+    console.log(mouseIsOver)
+var boxH = 200
+    var boxM = 23
+     function frame() {
 
-    useEffect(frame, [mouseIsOver])
+      if (toolHeight == 200 || mouseIsOver == false) {
+       
+        clearInterval(animaON);
+      } else {
+        toolHeight++; 
+        boxH++
+        boxM++
+        toolTip.style.height = toolHeight + 'px'; 
+         boxff.style.height = boxH +'px';
+         boxff.style.margin = "23px" + " auto " + boxM + "px";
+      } 
+    }
+    
 
+ let animaON = setInterval(frame, 2)
   }
 
     return(
