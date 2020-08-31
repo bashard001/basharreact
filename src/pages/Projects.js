@@ -12,8 +12,9 @@ function Project (){
 
   let cardAni = function(){
     const toolTip = document.querySelector(".tooltips")
+    const boxff = document.querySelector(".boxA")
      function frame() {
-     
+      var boxHe = 402
 
       if (toolHeight == 0 ) {
         
@@ -24,7 +25,9 @@ function Project (){
         
         console.log(mouseIsOver)
         toolHeight--; 
+        boxHe -= 2
         toolTip.style.height = toolHeight + 'px'; 
+        boxff.style.height = boxHe +'px';
       } 
     }
     
@@ -44,11 +47,11 @@ var boxH = 200
         clearInterval(animaON);
       } else {
         toolHeight++; 
-        boxH++
+        boxH+= 2
         boxM++
         toolTip.style.height = toolHeight + 'px'; 
          boxff.style.height = boxH +'px';
-         boxff.style.margin = "23px" + " auto " + boxM + "px";
+         
       } 
     }
     
