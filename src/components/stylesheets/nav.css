@@ -3,12 +3,13 @@
     display: flex;
     top: 0px;
    justify-content: center;
-    z-index: 1;
+  
     width: 100%;
     min-height: 5vh;
     color: #fff;
     background: #30948D;
     font-family: sans-serif;
+    z-index: 100;
     
 }
 
@@ -101,7 +102,7 @@ padding: 15px;
     animation-fill-mode: forwards;
   }
   
-  #alphaq:hover span#a {
+  #left:hover span#a {
     display: none;
   }
   
@@ -111,7 +112,7 @@ padding: 15px;
   white-space: nowrap;
   }
   
-  #alphaq:hover span#b {
+  #left:hover span#b {
 display: block;
 overflow: hidden;
 
