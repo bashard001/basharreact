@@ -1,25 +1,27 @@
 .maincontainers {
-
+position: relative;
     width: 100%;
     background-image: url("images/monument-valley-1593318.jpg");
     background-position: center;
     background-size: cover;
     min-height: 100%;
     height: 90vh;
-    /* z-index: -3; */
+    padding-top: 20px;
+   
+    
   }
   
   .containers {
     position: relative;
     display: grid;
-    width: 95%;
-    grid-template-columns: repeat(auto-fit, 200px);
+    width: 85%;
+    grid-template-columns: repeat(auto-fit, 250px);
     grid-auto-rows: auto;
     grid-gap: 1em;
   margin: 0 auto;
     padding-top: 25px;
  
-    /* z-index: -2; */
+
     
   }
   
@@ -29,88 +31,96 @@ max-height: 140px;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    width: 90%;
+    margin: auto;
     background-color: rgba(48,148,141,.5);
     border-radius: 10px;
     color: aliceblue;
   }
   
-  .pagetitle p {
-    margin: 0px;
-  }
+
   
   .a1 {
+    position: relative;
     background-image: url("images/passwordbg.jpg");
     background-position: center;
     background-size: cover;
+border-radius: 20px;
 
   }
   
   .a2 {
-    
+   
+    position: relative;
     background-image: url("images/quizAPP.jpg");
     background-position: center;
     background-size: cover;
      border-radius: 20px;
 
 
+
   }
   
   .a3 {
+    position: relative;
     background-image: url("images/weatherdash.jpg");
     background-position: center;
     background-size: cover;
-    margin: 23px auto;
-    position: relative;
-  
-max-height: 250px;
-top: 0;
+    border-radius: 20px;
+
   }
   
   .a4 {
+    position: relative;
     background-image: url("images/calendarday.jpg");
     background-position: center;
     background-size: cover;
-    margin: 23px auto;
+    border-radius: 20px;
   }
   
   .a5 {
-    /* border: solid black 2px; */
-    border-style: ridge;
-    border-color: rgb(0, 0, 0);
-    border-width: 5px;
+    position: relative;
     background-image: url("images/sports.jpg");
     background-position: center;
     background-size: cover;
-    margin: 23px auto;
+   border-radius: 20px;
   }
   
   .a6 {
+    position: relative;
     background-image: url("images/gabrielle-henders.jpg");
     background-position: center;
     background-size: cover;
-    margin: 23px auto;
+   border-radius: 20px;
   }
   
   .a7 {
+    position: relative;
     background-image: url("images/snakegame.PNG");
+    background-position: center;
     background-size: cover;
-    margin: 23px auto;
+   border-radius: 20px;
   }
-  .boxP {
-position: relative;
 
+
+  .box {
+position: relative;
 margin: 0px;
-min-width: 200px;
-min-height: 200px;
+width: 200px;
+height: 200px;
+
+z-index: 100;
+transition: height 1s;
     
   }
   
   
   .ap {
     position: relative;
-    display: grid;
+    display: flex;
     height: 100%;
     width: 100%;
+    
     text-decoration: none;
     place-items: center;
     color: white;
@@ -120,10 +130,12 @@ min-height: 200px;
     text-align: center;
  
   }
+
   .ap:hover {
 animation: spanT 1s ;
 animation-fill-mode: forwards;
   }
+
 @keyframes spanT {
   to{
     color: black;
@@ -133,6 +145,8 @@ animation-fill-mode: forwards;
   .captions {
     display: flex;
     height: 200px;
+ 
+  
 
   }
  
@@ -153,48 +167,59 @@ animation-fill-mode: forwards;
     color: black;
       }
   } 
-/* 
+
   .tooltips {
    
-    
     position: absolute;
     overflow: hidden;
-     z-index:-1; 
+
     font-size: 16px;
-  height: 0px;
+  height: 10px;
     width: 100%;
-    top:90%;
+    top:40%;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 background-color: red;
-
+transition: height 1s;
+z-index: -1;
   }
+
   .tool-text { 
 position: relative;
     color: white;
-    top: 20%;
+    top: 35%;
     text-align: center;
+    padding: 5px;
   }
- */
+ 
 
-  /* .boxA:hover .tooltips {
+   .box:hover .tooltips  {
     
-    animation: toolTIPS 1s;
-    animation-fill-mode: forwards;
+   height: 200px;
     
-   
   }
+
+
+  .box:hover {
+   height: 350px;
+  }
+
+ 
+ 
+
+
+/*   
   @keyframes toolTIPS {
     from {
       height: 0px;
     }
     to {
-      
+      background-color: red;
  height: 200px;
        
     }
-  } */
-  
+  } 
+   */
   /* .captions:hover .box {
     animation: boxtext 1s;
     animation-fill-mode: forwards;
