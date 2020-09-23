@@ -17,6 +17,7 @@ position: relative;
     width: 85%;
     grid-template-columns: repeat(auto-fit, 250px);
     grid-auto-rows: auto;
+  
     grid-gap: 1em;
   margin: 0 auto;
     padding-top: 25px;
@@ -106,10 +107,12 @@ border-radius: 20px;
 
   .box {
 position: relative;
+
 margin: 0px;
 width: 200px;
 height: 200px;
-
+justify-content: center;
+margin: auto;
 z-index: 50;
 transition: height 1s;
     
