@@ -206,7 +206,15 @@ position: relative;
   }
 
  
- 
+ @media (min-width: 1200px){
+   .containers {
+     grid-template-columns: repeat(auto-fit, 300px);
+     width: 82%;
+   }
+   .pagetitle {
+     width: 85%;
+   }
+ }
 
 
 /*   

@@ -5,7 +5,7 @@
    justify-content: center;
   
     width: 100%;
-    min-height: 5vh;
+    min-height: 6vh;
     color: #fff;
     background: #30948D;
     font-family: sans-serif;
@@ -150,7 +150,7 @@ width: 200px;
 
   @media (min-width: 1250px){
     .header{
-      min-height: 9vh;
+      min-height: 11vh;
     }
   }
 
