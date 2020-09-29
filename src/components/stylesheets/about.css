@@ -124,10 +124,9 @@ order: 3;
   }
 
   .cardcontent {
-    display: flex;
-
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
   }
   
  
