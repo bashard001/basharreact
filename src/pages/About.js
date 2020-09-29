@@ -11,7 +11,7 @@ function About() {
 
 
       <div className="mainbox card">
-        <h2 className="pagetitle">About Me</h2>
+        <h2 className="pagetitleA">About Me</h2>
 
         <div className="cardcontent">
           <div className="aitem">
