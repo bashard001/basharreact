@@ -85,8 +85,6 @@
   .mainbox {
     display: flex;
 flex-wrap: wrap;
-
-    grid-gap: 1em;
     width: 85%;
     padding: 25px;
     border-radius: 20px;
@@ -95,29 +93,27 @@ flex-wrap: wrap;
     margin-bottom: 20px;
   
   }
+
   .aitem {
     order: 1;
-    display: inline;
   }
-  .aitem4 {
-    order: 2;
-    align-self: center;
-    display: inline;
 
-  }
-  .aitem2 {
-order: 3;
-  }
-  .aitem3 {
-    order: 4;
-  }
-  .aitem5 {
-    order: 5;
-  }
-  
-  .lastrow {
-    display: block;
-  }
+.aitem3 {
+  order: 4;
+}
+
+.aitem4 {
+  order: 3;
+  grid-column: span 2;
+}
+.aitem2 {
+  order: 2;
+}
+
+.aitem5 {
+
+  order: 5;
+}
   
   button :hover {
     background-color: aqua;
@@ -127,6 +123,35 @@ order: 3;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
   }
   
+  @media (max-width:650px){
+    .cardcontent {
+     display: inline;
+   
+
+    }
+    .aitem {
+      order: 1;
+    }
+  
+  .aitem3 {
+    order: 4;
+  }
+  
+  .aitem4 {
+    order: 3;
+    grid-column: span 2;
+  }
+  .aitem2 {
+    order: 2;
+  }
+  
+  .aitem5 {
+  
+    order: 5;
+  }
+    
+  }
  
