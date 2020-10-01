@@ -74,11 +74,14 @@
   }
   
   .imgab {
+  
     display: flex;
     background-image: url("images/bashar3.jpg");
     background-position: center;
     background-size: cover;
+    margin: auto;
    min-width: 250px;
+   max-width: 400px;
    min-height: 250px;
    border-radius: 15px;
   }
@@ -96,7 +99,9 @@ flex-wrap: wrap;
   }
 
   .aitem {
+   position: relative;
     order: 1;
+    justify-content: center;
   }
 
 .aitem3 {
