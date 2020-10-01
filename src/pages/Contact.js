@@ -5,42 +5,35 @@ import "./contactform.php"
 
 function Contact(props) {
 
-    let [name, setName] = useState("")
-    let [fromEmail, setFromEmail] = useState("")
-    let [message, setMessage] = useState("")
-
- let handleSubmit = (event) => {
-     event.preventDefault()
-     console.log(name)
-     fetch('contactform.php',{
-        method: "POST",
-        body: name,
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-      }).then(
-    	(response) => (response.json())
-       ).then((response)=>{
-      if (response.status === 'success'){
-        alert("Message Sent."); 
-        this.resetForm()
-      }else if(response.status === 'fail'){
-        alert("Message failed to send.")
-      }
+    let [contact, setContact] = useState({
+        name: "",
+        email: "",
+        message: ""
     })
+    
 
-}
+
+
+  const  handleSubmit = event => {
+    event.preventDefault();
+    console.log(contact);
+    }
+
+    const onNameChange = event => {
+       setContact({...contact, name: event.target.value})
+      
+      }
+    
+     const onEmailChange = (event) => {
+      setContact({...contact, email: event.target.value})
+      }
+    
+      const onMessageChange = (event) => {
+       setContact({...contact, message: event.target.value})
+      }
   
-let nameChange = (event) => {
-    setName(event.target.value)
-}
-let emailChange = (event) => {
-    setFromEmail(event.target.value)
-}
-let messageChange = (event) => {
-    setMessage(event.target.value)
-}
+
+
     return (
         <div className="back">
             <div className="containerC" id="top">
@@ -53,17 +46,17 @@ let messageChange = (event) => {
 
                     </div>
                     <div className="column">
-                        <form onSubmit={handleSubmit}  method="POST">
+                        <form id="contact-form" onSubmit={handleSubmit.bind(this)} method="POST">
                             <label for="fname" >First Name</label>
-                            <input onChange={nameChange}  type="text" id="fname" name="firstname" placeholder="Your name..." required />
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="your last name..." />
+                            <input className="form-control" value={contact.name}  onChange={onNameChange.bind(this)} type="text" id="fname" name="firstname" placeholder="Your name..." required />
+                            {/* <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="your last name..." className="form-control" /> */}
                             <label for="email-address" >Email address</label>
-                            <input onChange={emailChange} type="text" id="email-address" name="emailaddress" placeholder=" enter your email" required />
+                            <input className="form-control" value={contact.email} onChange={onEmailChange.bind(this)} type="email" id="email-address" name="emailaddress" placeholder=" enter your email" required />
                             <label for="message" >message</label>
-                            <textarea onChange={messageChange} id="message" name="message" placeholder="leave a message"
+                            <textarea className="form-control" value={contact.message} onChange={onMessageChange.bind(this)} id="message" name="message" placeholder="leave a message"
                                 style={{ height: '160px' }} required></textarea>
-                            <input type="submit" name=" submit" value="submit" />
+                            <input type="submit" name="submit" value="submit" />
                         </form>
                     </div>
                 </div>
