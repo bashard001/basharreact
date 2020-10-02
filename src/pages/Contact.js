@@ -78,7 +78,8 @@ const resetForm = () => {
                             <label for="message" >message</label>
                             <textarea className="form-control" value={contact.message} onChange={onMessageChange.bind(this)} id="message" name="message" placeholder="leave a message"
                                 style={{ height: '160px' }} required></textarea>
-                            <input type="submit" name="submit" value="submit" />
+                            <div id="formSub">
+                            <input type="submit" name="submit" value="submit" /></div>
                         </form>
                     </div>
                 </div>

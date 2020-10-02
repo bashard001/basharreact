@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
-input[type=text], textarea {
+input, textarea {
 
   width: 100%;
   padding: 10px;
@@ -9,21 +9,20 @@ input[type=text], textarea {
   margin-top: 5px;
   margin-bottom: 12px;
   resize: vertical;
+
 }
 .row {
     display: flex;
    flex-wrap: wrap;
    justify-content: center;
-  margin-top: 45px ;  
+  margin: 45px 40px ;  
 }
 
 .column {
  min-height: 200px;
   width: 50%;
-  
   padding: 20px;
-  flex: 1 1 275px; /*  Stretching: */
-  
+  flex: 1 1 300px; /*  Stretching: */
     margin: 15px;
     border-radius: 15px;
   -webkit-box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
@@ -32,9 +31,7 @@ input[type=text], textarea {
   transition: .9s;
 }
 .column.pic{
-
   width: 50%;
-
 padding: 20px;
 align-items: center; 
 justify-content: center;
@@ -66,22 +63,35 @@ h2{
 }
 
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-  
-
   button :hover{
 
     background-color: aqua;
   }
-  @media screen and (max-width:666px){
+#contact-form {
+  position: relative;
+}
 
-    div.column1 div {
-      width: 100%;
+#formSub{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  transition: width 1s;
+}
+input[type=submit]:hover{
+  cursor: pointer;
+}
+
+  #formSub:hover{
+ cursor: pointer;
+    width: 150px;
+
+  }
+  @media screen and (max-width:600px){
+    .row{
+      margin: 18px;
     }
+   
     p {
       margin: 15px;
     }

@@ -25,6 +25,7 @@
     max-width: 250px;
   justify-content: center;
   vertical-align: middle;
+  cursor: pointer;
 
   }
 
@@ -119,6 +120,7 @@ overflow: hidden;
   animation: aniBD  .9s ;
   
   animation-fill-mode: forwards;
+  cursor: pointer;
   
   }
 
@@ -126,7 +128,10 @@ overflow: hidden;
     from{width: 0px;
     
       opacity: 1;}
+
+   
       75% {
+       padding: 30px 0px;
         font-size: 50px;
       
       }
