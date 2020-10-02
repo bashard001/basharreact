@@ -12,10 +12,11 @@ input, textarea {
 
 }
 .row {
+  position: relative;
     display: flex;
    flex-wrap: wrap;
    justify-content: center;
-  margin: 45px 40px ;  
+  margin: 40px 45px 0px ;  
 }
 
 .column {
@@ -56,7 +57,8 @@ h2{
   margin-top: 0px;
 }
 .containerC {
-    height: 90vh;
+  position: relative;
+    min-height: 90vh;
   padding-top: 10px;
   background-image: url("images/gridlook.jpg");
   background-size: cover;
@@ -89,7 +91,7 @@ input[type=submit]:hover{
   }
   @media screen and (max-width:600px){
     .row{
-      margin: 18px;
+      margin: 18px 18px 0px;
     }
    
     p {
