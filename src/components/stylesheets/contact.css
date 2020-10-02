@@ -22,7 +22,7 @@ input[type=text], textarea {
   width: 50%;
   
   padding: 20px;
-  flex: 1 1 230px; /*  Stretching: */
+  flex: 1 1 275px; /*  Stretching: */
   
     margin: 15px;
     border-radius: 15px;
