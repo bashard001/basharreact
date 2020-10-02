@@ -16,7 +16,23 @@ function Contact(props) {
 
   const  handleSubmit = event => {
     event.preventDefault();
-    console.log(contact);
+    fetch('http://localhost:3001/contactform.php', {
+      method: "POST",
+      body: JSON.stringify(this.state),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+    }).then(
+    (response) => (response.json())
+      ).then((response)=> {
+    if (response.status === 'success') {
+      alert("Message Sent."); 
+      this.resetForm()
+    } else if(response.status === 'fail') {
+      alert("Message failed to send.")
+    }
+  })
     }
 
     const onNameChange = event => {
