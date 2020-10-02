@@ -14,10 +14,16 @@
     border-style: solid;
     border-color: black;
     border-width: 2px;
-    transition: opacity .8s;
+    transition: opacity .8s, transform .5s ;
     opacity: 0;
 
   }
+
+  #goup:hover {
+   transform: rotate(360deg);
+
+  }
+
   .totop{
 color:white;
 
