@@ -16,6 +16,7 @@ position: relative;
     grid-template-columns: repeat(auto-fit, 250px);
     grid-auto-rows: auto;
     grid-gap: 1em;
+    grid-row-gap: 2em;
   margin: 0 auto;
     padding-top: 25px;
     justify-content: center;
@@ -100,7 +101,9 @@ height: 200px;
 justify-content: center;
 margin: auto;
 z-index: 50;
-transition: height 1s;
+transition: height .7s, box-shadow .6s,  border-radius .8s;
+transition-timing-function: ease-in;
+
   }
   
   
@@ -137,6 +140,7 @@ animation-fill-mode: forwards;
   .captions:hover {
     animation: tips 1s;
     animation-fill-mode: forwards;
+    
   }
   
   @keyframes tips {
@@ -162,7 +166,7 @@ animation-fill-mode: forwards;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 background-color: red;
-transition: height 1s;
+transition: height 1s, box-shadow .7s;
 z-index: -1;
   }
 
@@ -178,12 +182,15 @@ position: relative;
    .box:hover .tooltips  {
     
    height: 200px;
+   box-shadow:  0px 0px 10px 3px #ffffff;
     
   }
 
 
   .box:hover {
-   height: 350px;
+   height: 330px;
+   box-shadow:  0px 0px 8px 3px #ffffff;
+   border-radius: 25px;
   }
 
  
