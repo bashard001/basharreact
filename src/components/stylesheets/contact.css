@@ -45,14 +45,6 @@ border-radius: 15px;
 .column input{
   border-radius: 10px;
 }
-.column input[type=submit]{
-  border-radius: 10px;
-  color: aliceblue;
-  padding: 5px 10px;
-  background: #30948D;
-  -webkit-box-shadow: 0 13px 27px 0 rgba(7, 7, 7, 0.5);
-  box-shadow: 0 13px 27px 0 rgba(0, 0, 0, 0.5);
-}
 h2{
   margin-top: 0px;
 }
@@ -83,10 +75,18 @@ h2{
 input[type=submit]:hover{
   cursor: pointer;
 }
-
-  #formSub:hover{
+#contactSub {
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 5px 10px;
+  background: #30948D;
+  -webkit-box-shadow: 0 13px 27px 0 rgba(7, 7, 7, 0.5);
+  box-shadow: 0 13px 27px 0 rgba(0, 0, 0, 0.5);
+  transition: width 1s;
+}
+  #formSub:hover #contactSub{
  cursor: pointer;
-    width: 150px;
+   width: 150px;
 
   }
   @media screen and (max-width:600px){
