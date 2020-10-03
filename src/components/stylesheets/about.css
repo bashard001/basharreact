@@ -9,7 +9,7 @@
     background-size: cover;
   padding: auto;
   min-height: 90vh;
-  padding-top: 1.5em;
+  padding-top: 3.5vh;
   padding-bottom: 5vh;
   }
   
@@ -32,11 +32,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 10px;
+    grid-column-gap: 1.2em;
     
   }
   .aboutlist {
-    font-size: 16px;
+    font-size: 15px;
     text-shadow: none;
     transition: font-size .5s, text-shadow .5s;
   }
@@ -44,7 +44,7 @@
    .aboutlist:hover{
     cursor: default;
     font-size: 17px;
-    text-shadow: 2px 2px 2px #000000;
+    text-shadow: 2px 2px 2px #464444;
   }
 
 
@@ -83,13 +83,13 @@
   }
   
   .mainbox {
-    display: flex;
-flex-wrap: wrap;
+    position: relative;
+
     width: 85%;
     padding: 35px;
     border-radius: 15px;
     color: white;
-   margin: 25px auto ;
+   margin: auto ;
    transition: border-radius .4s;
   }
 

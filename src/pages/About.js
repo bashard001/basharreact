@@ -32,72 +32,72 @@ function About() {
               github.com/bashard001</a>
           </div>
 
-<div className="aitem2"> <h3>Development Tools, Languages and Frameworks:</h3>
-          <ul class="skillList 1">
-            <li className="aboutlist">Java</li><li className="aboutlist">Wordpress</li>
-            <li className="aboutlist">Javascript</li>
-            <li className="aboutlist">HTML, CSS and SCSS </li>
-            <li className="aboutlist">JSON, jQuery and AJAX.</li>
-            <li className="aboutlist">React, React Native</li>
-            <li className="aboutlist">GIT version control</li>
-            <li className="aboutlist">springMVC</li>
-            <li className="aboutlist">MySQL and MongoDB </li>
-            <li className="aboutlist">Scrach</li>
-            <li className="aboutlist">MERN Stack <br />(MongoDB, Express.js, React.js, Node.js).</li>
+          <div className="aitem2"> <h3>Development Tools, Languages and Frameworks:</h3>
+            <ul class="skillList 1">
+              <li className="aboutlist">Java</li><li className="aboutlist">Wordpress</li>
+              <li className="aboutlist">Javascript</li>
+              <li className="aboutlist">HTML, CSS and SCSS </li>
+              <li className="aboutlist">JSON, jQuery and AJAX.</li>
+              <li className="aboutlist">React, React Native</li>
+              <li className="aboutlist">GIT version control</li>
+              <li className="aboutlist">springMVC</li>
+              <li className="aboutlist">MySQL and MongoDB </li>
+              <li className="aboutlist">Scrach</li>
+              <li className="aboutlist">MERN Stack <br />(MongoDB, Express.js, React.js, Node.js).</li>
 
-          </ul></div>
+            </ul></div>
 
           <div className="aitem3"><h3>Education:</h3>
-          <ul >
-            <li className="aboutlist">University of San Diego California (UCSD). 2018-2020</li>
-            <p> BS in Computer Science</p>
-            <li className="aboutlist"> San diego Mesa College. 2017-2018</li>
-            <p>Computer Science Education</p>
-            <li className="aboutlist">San diego Mesa College. 2012-2016</li>
-            <p> Associate of Science in Biology & Allied health</p>
-          </ul></div>
-         
-
-
-          
-       
+            <ul >
+              <li className="aboutlist">University of San Diego California (UCSD). 2018-2020</li>
+              <p> BS in Computer Science</p>
+              <li className="aboutlist"> San diego Mesa College. 2017-2018</li>
+              <p>Computer Science Education</p>
+              <li className="aboutlist">San diego Mesa College. 2012-2016</li>
+              <p> Associate of Science in Biology & Allied health</p>
+            </ul></div>
 
 
 
 
 
-        <div class="aitem4">
-          <h3>About: </h3>
 
-          <p class="text">
-            I am a self-motivated and goal-oriented Full Stack Web Developer with experience working on multiple
-            web-based applications, backend development and data engineering that meet the highest standards for user
-            experience, web design, usability, and speed. proven experience developing consumer-focused web applications
+
+
+
+
+          <div class="aitem4">
+            <h3>About: </h3>
+
+            <p class="text">
+              I am a self-motivated and goal-oriented Full Stack Web Developer with experience working on multiple
+              web-based applications, backend development and data engineering that meet the highest standards for user
+              experience, web design, usability, and speed. proven experience developing consumer-focused web applications
             for desktop and mobile using MERN, HTML, CSS, JQuery, SQL, JavaScript and node.js.</p>
-          <p class="text">
-            Proven experience developing consumer-focused web applications using HTML, CSS, JQuery, PHP , JavaScript,
-            Node.js, MySQL and more... Building applications for desktop, and mobile devices that meet the highest
+            <p class="text">
+              Proven experience developing consumer-focused web applications using HTML, CSS, JQuery, PHP , JavaScript,
+              Node.js, MySQL and more... Building applications for desktop, and mobile devices that meet the highest
             standards for user experience, web design, usability, and speed.</p>
 
 
-          <p class="text">Solution-driven professional excelling in highly collaborative work environment, finding
-          solutions to challenges and focused on customer satisfaction. Solution-driven professional excelling in
-          highly collaborative work environment, finding solutions to challenges and focused on customer satisfaction.
-          development (including creating servers, processing data,
-          source control, issue tracking, functional feedback, etc...). I have advanced skills in Javascript and Java
+            <p class="text">Solution-driven professional excelling in highly collaborative work environment, finding
+            solutions to challenges and focused on customer satisfaction. Solution-driven professional excelling in
+            highly collaborative work environment, finding solutions to challenges and focused on customer satisfaction.
+            development (including creating servers, processing data,
+            source control, issue tracking, functional feedback, etc...). I have advanced skills in Javascript and Java
             for programing various applications (mobile apps, desktop apps, games, and more) </p>
-</div>
-<div className="aitem5"><h4 >Business & Finance: </h4>
-          <p >
-            Working in the financial markets as a technical analyst and web Developer for about four years, generating
-            HTML, PDF files using node js and MySQL to Analyze, draft create edit and prepare financial plans and data
-            files, worked on developing chart indicators, creating databases and managing multiple portfolios with close
-            attention and continual analysis of economic trends to determine appropriate asset allocation according to
-            strict standards.
+          </div>
+          <div className="aitem5"><h4 >Business & Finance: </h4>
+            <p >
+              Working in the financial markets as a technical analyst and web Developer for about four years, generating
+              HTML, PDF files using node js and MySQL to Analyze, draft create edit and prepare financial plans and data
+              files, worked on developing chart indicators, creating databases and managing multiple portfolios with close
+              attention and continual analysis of economic trends to determine appropriate asset allocation according to
+              strict standards.
 
           </p></div>
-          
-        
+
+
 
         </div>
       </div>
