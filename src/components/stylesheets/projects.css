@@ -7,8 +7,6 @@ position: relative;
     min-height: 100%;
     min-height: 90vh;
     padding-top: 20px;
-   
-    
   }
   
   .containers {
@@ -17,23 +15,17 @@ position: relative;
     width: 85%;
     grid-template-columns: repeat(auto-fit, 250px);
     grid-auto-rows: auto;
-  
     grid-gap: 1em;
   margin: 0 auto;
     padding-top: 25px;
     justify-content: center;
- 
-
-    
   }
   
   .pagetitle {
-  
-max-height: 140px;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 90%;
+    width: 85%;
     margin: auto;
     background-color: rgba(48,148,141,.5);
     border-radius: 10px;
@@ -48,7 +40,6 @@ max-height: 140px;
     background-position: center;
     background-size: cover;
 border-radius: 20px;
-
   }
   
   .a2 {
@@ -58,9 +49,6 @@ border-radius: 20px;
     background-position: center;
     background-size: cover;
      border-radius: 20px;
-
-
-
   }
   
   .a3 {
@@ -69,7 +57,6 @@ border-radius: 20px;
     background-position: center;
     background-size: cover;
     border-radius: 20px;
-
   }
   
   .a4 {
@@ -107,7 +94,6 @@ border-radius: 20px;
 
   .box {
 position: relative;
-
 margin: 0px;
 width: 200px;
 height: 200px;
@@ -115,7 +101,6 @@ justify-content: center;
 margin: auto;
 z-index: 50;
 transition: height 1s;
-    
   }
   
   
@@ -124,7 +109,6 @@ transition: height 1s;
     display: flex;
     height: 100%;
     width: 100%;
-    
     text-decoration: none;
     place-items: center;
     color: white;
@@ -132,7 +116,6 @@ transition: height 1s;
     font-weight: bold;
     letter-spacing: 10px;
     text-align: center;
- 
   }
 
   .ap:hover {
@@ -149,9 +132,6 @@ animation-fill-mode: forwards;
   .captions {
     display: flex;
     height: 200px;
- 
-  
-
   }
  
   .captions:hover {
@@ -173,10 +153,8 @@ animation-fill-mode: forwards;
   } 
 
   .tooltips {
-   
     position: absolute;
     overflow: hidden;
-
     font-size: 16px;
   height: 10px;
     width: 100%;
@@ -218,69 +196,11 @@ position: relative;
      width: 85%;
    }
  }
+ #projectH2 {
+   margin: 0px;
+ }
+ #projectP {
+   margin: 5px 0px 5px;
+ }
 
 
-/*   
-  @keyframes toolTIPS {
-    from {
-      height: 0px;
-    }
-    to {
-      background-color: red;
- height: 200px;
-       
-    }
-  } 
-   */
-  /* .captions:hover .box {
-    animation: boxtext 1s;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes boxtext {
-    from {color: white;}
-    to {color: black;}
-  }
-  
-  .captions span.box {
-    position: relative;
-    opacity: 1;
-    color: whitesmoke;
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 10px;
-    text-align: center;
-  }
-  
-  .lastrow {
-    display: block;
-  }
-  
-  button :hover {
-    background-color: aqua;
-  }
-  
-  @media (max-width: 950px) {
-    .containers {
-      max-width: 75%;
-      grid-template-columns: repeat(auto-fit, 250px);
-      margin: auto;
-      padding-left: 9%;
-    }
-    .pagetitle {
-      grid-column: span 2;
-      max-width: 1500px;
-      text-align: center;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      background-color: rgba(48,148,141,.5);
-      border-radius: 10px;
-      color: aliceblue;
-    }
-  }
-  
-  @media (max-width: 700px) {
-    .pagetitle {
-      grid-column: span 1;
-    }
-  } */

@@ -8,8 +8,8 @@ function Project() {
   return (
     <div className="maincontainers">
       <div className="pagetitle">
-        <h2 >My Projects</h2>
-        <p>(Web applications)</p>
+        <h2 id="projectH2">My Projects</h2>
+        <p id="projectP">(Web applications)</p>
       </div>
       <div className="containers">
         <div className="box ">

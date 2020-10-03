@@ -16,7 +16,7 @@ function About() {
         <div className="cardcontent">
           <div className="aitem">
             <div className="imgab"></div>
-            <h3 style={{ fontfFamily: 'Charmonman', fontSize: "20px", color: "red" }}>Full Stack Web Developer
+            <h3 style={{ fontfFamily: 'Charmonman', fontSize: "18px", color: "red" }}>Full Stack Web Developer
           </h3><br />
             <strong>Bashar Daseh</strong>
             <br />

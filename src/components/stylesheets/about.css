@@ -4,19 +4,16 @@
   
   .maincontainer {
     position: relative;
-    display: flex;
-   flex-wrap: wrap;
     width: 100%;
     background-image: url("images/gridlook.jpg");
     background-size: cover;
-    justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-   
+  padding: auto;
+  min-height: 90vh;
+  padding-top: 1.5em;
+  padding-bottom: 5vh;
   }
   
 
-  
   .pagetitleA {
     width: 90%;
     text-align: center;
@@ -25,27 +22,32 @@
     background-color: rgba(48, 148, 141, .5);
     border-radius: 10px;
     margin: 25px auto;
+    transition: width .7s;
+  }
+  .mainbox:hover .pagetitleA {
+    width: 65%;
   }
   
   .skillList {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
     
+  }
+  .aboutlist {
+    font-size: 16px;
+    text-shadow: none;
+    transition: font-size .5s, text-shadow .5s;
   }
   
    .aboutlist:hover{
     cursor: default;
-    animation: listanimation .5s;
-    animation-fill-mode: forwards;
+    font-size: 17px;
+    text-shadow: 2px 2px 2px #000000;
   }
 
-  @keyframes listanimation {
-    to {
-    font-size: 18px;
-    text-shadow: 2px 2px 2px #000000;
-    
-    }
-  }
+
   p.text {
     text-indent: 5%;
   }
@@ -59,43 +61,44 @@
     text-decoration: none;
     margin: 0px 5px;
     color: blanchedalmond;
+    transition: font-size .5s, color .5s;
   }
   
   .contactLink:hover {
-    animation: linkanimation .5s;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes linkanimation {
-    to {
     font-size: 18px;
-      color:#30948D;
-    }
+    color:#30948D;
   }
-  
+
   .imgab {
-  
     display: flex;
     background-image: url("images/bashar3.jpg");
     background-position: center;
     background-size: cover;
-    margin: auto;
+    margin-left: 1vw;
    min-width: 250px;
    max-width: 400px;
    min-height: 250px;
    border-radius: 15px;
+   transition: margin-left .4s;
   }
   
   .mainbox {
     display: flex;
 flex-wrap: wrap;
     width: 85%;
-    padding: 25px;
-    border-radius: 20px;
+    padding: 35px;
+    border-radius: 15px;
     color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  
+   margin: 25px auto ;
+   transition: border-radius .4s;
+  }
+
+  .mainbox:hover {
+    border-radius: 20px;
+  }
+ 
+  .mainbox:hover .imgab {
+    margin-left: 2vw;
   }
 
   .aitem {
@@ -142,6 +145,9 @@ flex-wrap: wrap;
      display: inline;
    
 
+    }
+    .mainbox {
+      padding: 20px;
     }
     .aitem {
       order: 1;
