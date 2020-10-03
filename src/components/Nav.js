@@ -5,6 +5,11 @@ import "./stylesheets/nav.css"
 
 
 function Nav() {
+
+    function toFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     return (
         <nav className="header">
             <div className="headerContainer">
@@ -15,17 +20,17 @@ function Nav() {
                 </section>
 
                 <section id="right">
-                 <Link to={'/projects'}> <i class="fab fa-connectdevelop"> </i><p>My
+                 <Link to={'/projects'} onClick={toFunction}> <i class="fab fa-connectdevelop"> </i><p>My
         projects</p></Link>
                        
 
                   
-                  <Link to={'/about'}><i className="far fa-user-circle"></i><p>About</p></Link>
+                  <Link to={'/about'} onClick={toFunction}><i className="far fa-user-circle"></i><p>About</p></Link>
 
                      
 
 
-                    <Link to={'/contact'}> <i class="fas fa-id-card-alt"> </i> <p> Contact</p>
+                    <Link to={'/contact'} onClick={toFunction}> <i class="fas fa-id-card-alt"> </i> <p> Contact</p>
                    </Link>
                        
 

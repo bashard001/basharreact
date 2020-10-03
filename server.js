@@ -11,12 +11,10 @@ app.use(express.json());
 //     app.use(express.static("./"));
 //   }
 app.use(express.static("./build"))
-app.get("/", function (req, res){
-  res.send("hello")
-})
 
-app.post("/contactform.php", function(req, res){
-res.send("ok")
+
+app.post("/api/form", function(req, res){
+console.log(req.body)
 })
 // Start the API server
 app.listen(PORT, function() {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import "../components/stylesheets/contact.css"
-require("../pages/contactform.php")
+import axios from "axios"
 
 function Contact(props) {
 
@@ -19,26 +19,10 @@ const resetForm = () => {
     })
 }
 
-  const  handleSubmit = event => {
+  const  handleSubmit = async (event) => {
     event.preventDefault();
+const form = await axios.post("/api/form", {contact})
 
- fetch('http://localhost:3000/send', {
-      method: "POST",
-      body: JSON.stringify(contact),
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-    }).then(
-    (response) => (response.json())
-      ).then((response)=> {
-    if (response.status === 'success') {
-      alert("Message Sent."); 
-      resetForm()
-    } else if(response.status === 'fail') {
-      alert("Message failed to send.")
-    }
-  })
     }
 
     const onNameChange = event => {
