@@ -33,8 +33,7 @@ function App() {
           <Projects />
         </Route>
     
-
-    
+   
  
     </Switch>
     <Totop />

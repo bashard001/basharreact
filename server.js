@@ -17,6 +17,7 @@ app.get("/", function(req, res){
   res.send("")
   })
 app.post("/api/form", async function(req, res){
+  console.log(req.body.contact.message)
   async function main() {
     // Generate test SMTP service account from ethereal.email
     // Only needed if you don't have a real mail account for testing
@@ -24,21 +25,21 @@ app.post("/api/form", async function(req, res){
   
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-      host: 'smtp.ethereal.email',
-    port: 587,
-    auth: {
-        user: 'natasha.hirthe@ethereal.email',
-        pass: 'CPC3rURCjVFCyR7Sae'
-    }
+      host: 'smtp.office365.com',
+      port: 587,
+      auth: {
+          user: 'constance.lueilwitz@ethereal.email',
+          pass: 'gP1BwHDwSEX5aKRytj'
+      }
     });
   
     // send mail with defined transport object
     let info = await transporter.sendMail({
-      from: '"Fred Foo 👻" <foo@example.com>', // sender address
+      from: `${req.body.contact.name} <${req.body.contact.email}>`, // sender address
       to: "bar@example.com, baz@example.com", // list of receivers
-      subject: "Hello ✔", // Subject line
-      text: "Hello world?", // plain text body
-      html: "<b>Hello world?</b>", // html body
+      subject: "From my website ✔", // Subject line
+      text: `${req.body.contact.message}`, // plain text body
+      html: `<b>${req.body.contact.message}</b>`, // html body
     });
   
     console.log("Message sent: %s", info.messageId);
