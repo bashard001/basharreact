@@ -13,7 +13,7 @@ app.use(express.json());
   app.use(express.static("./build"));
 
 
-app.use(routes)
+ app.use(routes)
 
 app.post("/api/form", async function (req, res) {
   console.log(req.body.contact.message)
