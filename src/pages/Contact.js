@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import "../components/stylesheets/contact.css"
 import axios from "axios"
 
+
 function Contact(props) {
 
     let [contact, setContact] = useState({
@@ -9,35 +10,45 @@ function Contact(props) {
         email: "",
         message: ""
     })
-    
 
-const resetForm = () => {
-    setContact({
-        name: "",
-        email: "",
-        message: ""
-    })
-}
 
-  const  handleSubmit = async (event) => {
-    event.preventDefault();
-const form = await axios.post("/api/form", {contact})
+    const resetForm = () => {
+        setContact({
+            name: "",
+            email: "",
+            message: ""
+        })
+    }
 
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        const form = await axios.post("/api/form", { contact })
+        .then((res)=>{ 
+
+            console.log(res.status)
+            if (res.status == 200) {
+                alert("Message Sent."); 
+               resetForm()
+              } else {
+                alert("Message failed to send.")
+              }
+        }
+        )
     }
 
     const onNameChange = event => {
-       setContact({...contact, name: event.target.value})
-      
-      }
-    
-     const onEmailChange = (event) => {
-      setContact({...contact, email: event.target.value})
-      }
-    
-      const onMessageChange = (event) => {
-       setContact({...contact, message: event.target.value})
-      }
-  
+        setContact({ ...contact, name: event.target.value })
+
+    }
+
+    const onEmailChange = (event) => {
+        setContact({ ...contact, email: event.target.value })
+    }
+
+    const onMessageChange = (event) => {
+        setContact({ ...contact, message: event.target.value })
+    }
+
 
 
     return (
@@ -49,21 +60,20 @@ const form = await axios.post("/api/form", {contact})
                 </div>
                 <div className="row">
                     <div className="column pic">
-
                     </div>
                     <div className="column">
                         <form id="contact-form" onSubmit={handleSubmit.bind(this)} method="POST">
                             <label for="fname" >First Name</label>
-                            <input className="form-control" value={contact.name}  onChange={onNameChange.bind(this)} type="text" id="fname" name="firstname" placeholder="Your name..." required />
-                             <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="your last name..." className="form-control" /> 
+                            <input className="form-control" value={contact.name} onChange={onNameChange.bind(this)} type="text" id="fname" name="firstname" placeholder="Your name..." required />
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="your last name..." className="form-control" />
                             <label for="email-address" >Email address</label>
                             <input className="form-control" value={contact.email} onChange={onEmailChange.bind(this)} type="email" id="email-address" name="emailaddress" placeholder=" enter your email" required />
                             <label for="message" >message</label>
                             <textarea className="form-control" value={contact.message} onChange={onMessageChange.bind(this)} id="message" name="message" placeholder="leave a message"
                                 style={{ height: '160px' }} required></textarea>
                             <div id="formSub">
-                            <input id="contactSub" type="submit" name="submit" value="submit" /></div>
+                                <input id="contactSub" type="submit" name="submit" value="submit" /></div>
                         </form>
                     </div>
                 </div>

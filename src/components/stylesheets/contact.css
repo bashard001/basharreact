@@ -86,7 +86,7 @@ input[type=submit]:hover{
 }
   #formSub:hover #contactSub{
  cursor: pointer;
-   width: 150px;
+   width: 45%;
 
   }
   @media screen and (max-width:600px){
