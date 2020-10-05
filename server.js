@@ -9,11 +9,10 @@ var PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// if (process.env.NODE_ENV === "production") {
-//     app.use(express.static("./"));
-//   }
 
-app.use(express.static("./build"))
+  app.use(express.static("./build"));
+
+
 app.use(routes)
 
 app.post("/api/form", async function (req, res) {
