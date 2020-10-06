@@ -7,6 +7,7 @@ function Contact(props) {
 
     let [contact, setContact] = useState({
         name: "",
+        lName:"",
         email: "",
         message: ""
     })
@@ -15,6 +16,7 @@ function Contact(props) {
     const resetForm = () => {
         setContact({
             name: "",
+            lName:"",
             email: "",
             message: ""
         })
@@ -38,6 +40,10 @@ function Contact(props) {
 
     const onNameChange = event => {
         setContact({ ...contact, name: event.target.value })
+
+    }
+    const onlNameChange = event => {
+        setContact({ ...contact, lName: event.target.value })
 
     }
 
@@ -66,7 +72,7 @@ function Contact(props) {
                             <label for="fname" >First Name</label>
                             <input className="form-control" value={contact.name} onChange={onNameChange.bind(this)} type="text" id="fname" name="firstname" placeholder="Your name..." required />
                             <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="your last name..." className="form-control" />
+                            <input type="text" id="lname" value={contact.lName} onChange={onlNameChange.bind(this)} name="lastname" placeholder="your last name..." className="form-control" />
                             <label for="email-address" >Email address</label>
                             <input className="form-control" value={contact.email} onChange={onEmailChange.bind(this)} type="email" id="email-address" name="emailaddress" placeholder=" enter your email" required />
                             <label for="message" >message</label>
