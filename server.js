@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express();
-const nodemailer = require("nodemailer");
+
 const routes = require("./routes")
 
 
