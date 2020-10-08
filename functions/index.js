@@ -17,7 +17,6 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
 let transporter = nodemailer.createTransport({
     host: 'smtp-mail.outlook.com',
     port: 587,
-    security: true,
     auth: {
       user: 'basharbodaseh@hotmail.com',
       pass: 'Madison.08'
