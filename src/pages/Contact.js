@@ -24,7 +24,7 @@ function Contact(props) {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const form = await axios.post("/api/form", { contact })
+        const form = await axios.post("https://us-central1-bashard.cloudfunctions.net/emailSender", { contact })
         .then((res)=>{ 
 
             console.log(res.status)
