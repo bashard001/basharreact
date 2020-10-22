@@ -24,7 +24,15 @@ function Contact(props) {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const form = await axios.post("https://us-central1-bashard.cloudfunctions.net/emailSender", { contact })
+        const form = await fetch("https://us-central1-bashard.cloudfunctions.net/emailSender", {
+            method: "POST",
+            body: contact,
+            headers: {
+                'Accept': 'application/json',
+        'Content-Type': 'application/json'
+            }
+        
+         })
         .then((res)=>{ 
 
             console.log(res.status)
@@ -32,6 +40,7 @@ function Contact(props) {
                 alert("Message Sent."); 
                resetForm()
               } else {
+                  console.log(res)
                 alert("Message failed to send.")
               }
         }

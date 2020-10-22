@@ -9,10 +9,13 @@
     background-size: cover;
   padding: auto;
   min-height: 90vh;
-  padding-top: 3.5vh;
+  
   padding-bottom: 5vh;
   }
   
+  #top {
+    padding-top: 3.5vh;
+  }
 
   .pagetitleA {
     width: 90%;
