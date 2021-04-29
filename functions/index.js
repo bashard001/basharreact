@@ -23,18 +23,18 @@ let transporter = nodemailer.createTransport({
     }
   });
 
-  exports.emailSender = functions.https.onRequest( async (req, res) => {   
+  exports.emailSender = functions.https.onCall((data, context) => {   
       
-
+console.log(data)
 
 //Returning result
-let info = await transporter.sendMail({
+let info = transporter.sendMail({
     from: `<basharbodaseh@hotmail.com>`, // sender address
     to: "basharbodaseh@hotmail.com", // list of receivers
     subject: `My website ✔ FROM`, // Subject line
-    text: ``, // plain text body
+    text: `cloud fun`, // plain text body
     html: `<b></b>`, // html body
   });
-    return res.send('Email sent succesfully');
+    return info
 });
 

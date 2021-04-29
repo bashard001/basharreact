@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import "../components/stylesheets/projects.css"
 
 
@@ -15,7 +15,7 @@ function Project() {
         <div className="box ">
           <div className="a2">
           <div className="captions ">
-            <a href="https://bashard001.github.io/AstronomyQuiz" target="_blank" className="ap">
+            <a href="https://bashard001.github.io/AstronomyQuiz" rel="noopener noreferrer" target="_blank" className="ap">
 
               <span>Sample Quiz</span>
             </a>
@@ -28,7 +28,7 @@ function Project() {
         <div className="box " >
           <div className="a3">
           <div className="captions">
-            <a href="https://bashard001.github.io/weather-dashboard" target="_blank" className="ap">
+            <a href="https://bashard001.github.io/weather-dashboard" rel="noopener noreferrer" target="_blank" className="ap">
 
               <span>Check the Weather</span>
             </a>
@@ -41,7 +41,7 @@ function Project() {
         <div className="box ">
           <div className="a4">
           <div className="captions ">
-            <a href="https://bashard001.github.io/Day-Planner" target="_blank" className="ap">
+            <a href="https://bashard001.github.io/Day-Planner" rel="noopener noreferrer" target="_blank" className="ap">
 
               <span>Day Calender</span>
             </a>
@@ -53,7 +53,7 @@ function Project() {
         <div className="box ">
           <div className="a5">
           <div className="captions ">
-            <a href="https://jilienecircelli.github.io/sports-scene" target="_blank" className="ap">
+            <a href="https://jilienecircelli.github.io/sports-scene" rel="noopener noreferrer" target="_blank" className="ap">
 
               <span>Sports Events</span>
             </a>
@@ -65,7 +65,7 @@ function Project() {
         <div className="box ">
           <div className="a1">
           <div className="captions ">
-            <a href="https://bashard001.github.io/Password-Generator" target="_blank" className="ap">
+            <a href="https://bashard001.github.io/Password-Generator" rel="noopener noreferrer" target="_blank" className="ap">
 
               <span>Password Generator</span>
             </a>
@@ -77,7 +77,7 @@ function Project() {
         <div className="box ">
           <div className="a6">
           <div className="captions ">
-            <a href="https://employeedirectory360.herokuapp.com/" target="_blank" className="ap">
+            <a href="https://employeedirectory360.herokuapp.com/" rel="noopener noreferrer" target="_blank" className="ap">
 
               <span>Employee Directory</span>
             </a>
@@ -88,7 +88,7 @@ function Project() {
         <div className="box ">
           <div className="">
           <div className="captions ">
-            <a href="https://employeedirectory360.herokuapp.com/" target="_blank" className="ap">
+            <a href="https://employeedirectory360.herokuapp.com/" rel="noopener noreferrer" target="_blank" className="ap">
 
               <span>Snake Game</span>
             </a>

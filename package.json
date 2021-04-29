@@ -1,5 +1,5 @@
 {
-  "name": "basharreact",
+  "name": "boot7",
   "version": "0.1.0",
   "author": "bashardaseh",
   "private": true,
@@ -12,6 +12,7 @@
     "body-parser": "^1.19.0",
     "concurrently": "^5.3.0",
     "express": "^4.17.1",
+    "firebase": "^8.2.1",
     "nodemailer": "^6.4.13",
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
@@ -39,5 +40,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bashard001/basharreact.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bashard001/basharreact/issues"
+  },
+  "homepage": "https://github.com/bashard001/basharreact"
 }

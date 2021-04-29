@@ -28,7 +28,7 @@ function About() {
             <a className="contactLink"
               href="mailto:bdaseh@gmail">bdaseh@gmail.com</a><br />
             <i style={{ display: "inline", textDecoration: "none" }} className="fa fa-github"> &#32; </i><a
-              class="contactLink" href="https://github.com/bashard001" target="_blank">
+              class="contactLink" href="https://github.com/bashard001" rel="noopener noreferrer" target="_blank">
               github.com/bashard001</a>
           </div>
 

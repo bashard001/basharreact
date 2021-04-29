@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import "../components/stylesheets/contact.css"
-import axios from "axios"
+
+const firebase = require("firebase");
+// Required for side-effects
+require("firebase/functions");
 
 
 function Contact(props) {
 
     let [contact, setContact] = useState({
         name: "",
-        lName:"",
+        lName: "",
         email: "",
         message: ""
     })
@@ -16,36 +19,58 @@ function Contact(props) {
     const resetForm = () => {
         setContact({
             name: "",
-            lName:"",
+            lName: "",
             email: "",
             message: ""
         })
     }
 
-    const handleSubmit = async (event) => {
+    // const handleSubmit = async (event) => {
+    //     event.preventDefault();
+    //     const form = await fetch("https://us-central1-bashard.cloudfunctions.net/emailSender", {
+    //         method: "POST",
+    //         body: contact,
+    //         headers: {
+    //             'Accept': 'application/json',
+    //             'Content-Type': 'application/json'
+    //         }
+
+    //     })
+    //         .then((res) => {
+
+    //             console.log(res.status)
+    //             if (res.status == 200) {
+    //                 alert("Message Sent.");
+    //                 resetForm()
+    //             } else {
+    //                 console.log(res)
+    //                 alert("Message failed to send.")
+    //             }
+    //         }
+    //         )
+    // }
+
+    const handleSubmit = (event) => {
         event.preventDefault();
-        const form = await fetch("https://us-central1-bashard.cloudfunctions.net/emailSender", {
-            method: "POST",
-            body: contact,
-            headers: {
-                'Accept': 'application/json',
-        'Content-Type': 'application/json'
-            }
-        
-         })
-        .then((res)=>{ 
+        const callFun = firebase.functions().httpsCallable('emailSender');
+        callFun({
+        body: contact}
+      ).then((res) => {
 
             console.log(res.status)
-            if (res.status == 200) {
-                alert("Message Sent."); 
-               resetForm()
-              } else {
-                  console.log(res)
+            if (res.status === 200) {
+                alert("Message Sent.");
+                resetForm()
+            } else {
+                console.log(res)
                 alert("Message failed to send.")
-              }
+            }
         }
-        )
-    }
+        ) }
+
+
+            
+   
 
     const onNameChange = event => {
         setContact({ ...contact, name: event.target.value })

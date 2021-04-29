@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom"
+import React from "react"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 import Footer from "./components/Footer"
 // import Totop from "./components/Totop"

@@ -32,9 +32,9 @@ const scrollFunction = () => {
 
     return(
         <div id="goup" onClick={toTopFunction}> 
-        <a class="totop"  >
+        <span class="totop"  >
        <i class="far fa-arrow-alt-circle-up"></i>
-      </a></div>
+      </span></div>
     )
 }
 
