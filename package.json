@@ -1,5 +1,5 @@
 {
-  "name": "boot7",
+  "name": "basharreact",
   "version": "0.1.0",
   "author": "bashardaseh",
   "private": true,
@@ -50,6 +50,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bashard001/basharreact/issues"
-  },
-  "homepage": "https://github.com/bashard001/basharreact"
+  }
 }
