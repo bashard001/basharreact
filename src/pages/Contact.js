@@ -52,21 +52,16 @@ function Contact(props) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const callFun = firebase.functions().httpsCallable('emailSender');
-        callFun({
-        body: contact}
-      ).then((res) => {
+        console.log(contact)
+        const callFun = firebase.functions().httpsCallable('helloWorld');
+        
+        callFun().then((res) => {
 
-            console.log(res.status)
-            if (res.status === 200) {
-                alert("Message Sent.");
-                resetForm()
-            } else {
-                console.log(res)
-                alert("Message failed to send.")
-            }
+            console.log(res.data)
+          
         }
-        ) }
+        ) 
+    }
 
 
             
