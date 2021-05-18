@@ -20,7 +20,7 @@ function Nav() {
                 </section>
 
                 <section id="right">
-                 <Link to={'/projects'} onClick={toFunction}> <i class="fab fa-connectdevelop"> </i><p>My
+                 <Link to={'/projects'} onClick={toFunction}> <i className="fab fa-connectdevelop"> </i><p>My
         projects</p></Link>
                        
 
@@ -30,7 +30,7 @@ function Nav() {
                      
 
 
-                    <Link to={'/contact'} onClick={toFunction}> <i class="fas fa-id-card-alt"> </i> <p> Contact</p>
+                    <Link to={'/contact'} onClick={toFunction}> <i className="fas fa-id-card-alt"> </i> <p> Contact</p>
                    </Link>
                        
 

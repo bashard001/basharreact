@@ -16,14 +16,14 @@ function Contact(props) {
     })
 
 
-    const resetForm = () => {
-        setContact({
-            name: "",
-            lName: "",
-            email: "",
-            message: ""
-        })
-    }
+    // const resetForm = () => {
+    //     setContact({
+    //         name: "",
+    //         lName: "",
+    //         email: "",
+    //         message: ""
+    //     })
+    // }
 
     // const handleSubmit = async (event) => {
     //     event.preventDefault();
@@ -97,23 +97,24 @@ function Contact(props) {
                     <div className="column pic">
                     </div>
                     <div className="column">
-                        <form id="contact-form" onSubmit={handleSubmit.bind(this)} method="POST">
-                            <label for="fname" >First Name</label>
+                        <form id="contact-form"  method="POST">
+                            <label htmlFor="fname" >First Name</label>
                             <input className="form-control" value={contact.name} onChange={onNameChange.bind(this)} type="text" id="fname" name="firstname" placeholder="Your name..." required />
-                            <label for="lname">Last Name</label>
+                            <label htmlFor="lname">Last Name</label>
                             <input type="text" id="lname" value={contact.lName} onChange={onlNameChange.bind(this)} name="lastname" placeholder="your last name..." className="form-control" />
-                            <label for="email-address" >Email address</label>
+                            <label htmlFor="email-address" >Email address</label>
                             <input className="form-control" value={contact.email} onChange={onEmailChange.bind(this)} type="email" id="email-address" name="emailaddress" placeholder=" enter your email" required />
-                            <label for="message" >message</label>
+                            <label htmlFor="message" >message</label>
                             <textarea className="form-control" value={contact.message} onChange={onMessageChange.bind(this)} id="message" name="message" placeholder="leave a message"
                                 style={{ height: '160px' }} required></textarea>
                             <div id="formSub">
-                                <input id="contactSub" type="submit" name="submit" value="submit" /></div>
+                                <input id="contactSub" onSubmit={handleSubmit.bind(this)} type="submit" name="submit" value="submit" /></div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+      
     )
 }
 
