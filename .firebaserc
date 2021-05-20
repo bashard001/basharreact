@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "bashard",
-    "q": "bashard"
+    "default": "bashard"
   }
 }

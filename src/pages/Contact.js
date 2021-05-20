@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "../components/stylesheets/contact.css"
 
-const firebase = require("firebase");
+const firebase = require("firebase/app");
 // Required for side-effects
 require("firebase/functions");
 
