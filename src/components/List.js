@@ -7,7 +7,7 @@ function List (){
         <h3>Web Applications</h3>
     
         <ul >
-          <li>Apply  accepted and best “social coding” practices. (including source control, issue tracking,
+          <li>Apply best accepted “social coding” practices. (Including Test-driven development, source control, bug tracking,
             functional feedback, etc.).</li>
           <li>Build full stack website or App from scratch. And Deploy static and dynamic websites and apps to the cloud.</li>
           <li>Implement complex logical conditions to meet an objective</li>
