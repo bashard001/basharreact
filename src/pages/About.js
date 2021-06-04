@@ -43,9 +43,9 @@ function About() {
               <li className="aboutlist">springMVC</li>
               <li className="aboutlist">MySQL and MongoDB </li>
               <li className="aboutlist">Scrach</li>
-              
+
               <li className="aboutlist">MERN Stack <br />(MongoDB, Express.js, React.js, Node.js).</li>
-<li className="aboutlist">Wordpress</li>
+              <li className="aboutlist">Wordpress</li>
             </ul></div>
 
           <div className="aitem3"><h3>Education:</h3>
@@ -56,14 +56,8 @@ function About() {
               <p>Computer Science Education</p>
               <li className="aboutlist">San diego Mesa College. 2012-2016</li>
               <p> Associate of Science in Biology & Allied health</p>
-            </ul></div>
-
-
-
-
-
-
-
+            </ul>
+          </div>
 
 
 

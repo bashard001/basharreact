@@ -18,3 +18,11 @@ exports.helloWorld = functions.https.onRequest((req, res)=>{
     res.send('Hello World from function!');
   }
 })
+
+exports.testingF = functions.https.onCall((data, context) =>{
+
+
+  console.log(data)
+console.log("inside the fun")
+  return "hello world"
+})

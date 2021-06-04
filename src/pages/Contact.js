@@ -50,18 +50,18 @@ function Contact(props) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(contact)
-        // const callFun = firebase.functions().httpsCallable('helloWorld');
+        const callFun = firebase.functions().httpsCallable('testingF');
         
-        // callFun().then((res) => {
+        callFun().then((res) => {
 
-        //     console.log(res.data)
+            console.log(res.data)
           
-        // }
-        // ) 
+        }
+        ) 
 
-        await fetch("https://us-central1-bashard.cloudfunctions.net/helloWorld").then((res)=>{
-            console.log(res)
-        })
+        // await fetch("https://us-central1-bashard.cloudfunctions.net/helloWorld").then((res)=>{
+        //     console.log(res)
+        // })
     }
 
 
