@@ -52,7 +52,8 @@
 
 
   p.text {
-    text-indent: 5%;
+    text-indent: 4%;
+    padding: 0px 15px 0px 40px;
   }
   
   .card {
@@ -117,6 +118,7 @@
 .aitem4 {
   order: 3;
   grid-column: span 2;
+ 
 }
 .aitem2 {
   
@@ -130,6 +132,7 @@
 .aitem5 {
 
   order: 5;
+  padding-right: 12px;
 }
   
   button :hover {
@@ -171,6 +174,7 @@
   .aitem5 {
   
     order: 5;
+    padding-left: 5px;
   }
     
   }

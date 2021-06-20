@@ -72,9 +72,9 @@ function About() {
               experience, web design, usability, and speed. proven experience developing consumer-focused web applications
             for desktop and mobile using MERN, HTML, CSS, JQuery, SQL, JavaScript and node.js.</p>
             <p class="text">
-              Proven experience developing consumer-focused web applications using HTML, CSS, JQuery, PHP , JavaScript,
-              Node.js, MySQL and more... Building applications for desktop, and mobile devices that meet the highest
-            standards for user experience, web design, usability, and speed.</p>
+              Proven experience developing scalable consumer-focused web applications from startup to enterprise; utilizing cloud services like AWS and Firebase
+              to build databases, deploy and manage websites and Apps on a secure reliable network. Building a strong website/Apps
+               infrastructure applications for desktop, and mobile devices that runs more efficient and secure.</p>
 
 
             <p class="text">Solution-driven professional excelling in highly collaborative work environment, finding
