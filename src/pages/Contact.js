@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "../components/stylesheets/contact.css"
-import firebase from "../firebase"
+
 
 // const firebase = require("firebase");
 // Required for side-effects
@@ -49,19 +49,19 @@ function Contact(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(contact)
-        const callFun = firebase.functions().httpsCallable('testingF');
+        // console.log(contact)
+        // const callFun = firebase.functions().httpsCallable('testingF');
         
-        callFun().then((res) => {
+        // callFun().then((res) => {
 
-            console.log(res.data)
+        //     console.log(res.data)
           
-        }
-        ) 
+        // }
+        // ) 
 
-        // await fetch("https://us-central1-bashard.cloudfunctions.net/helloWorld").then((res)=>{
-        //     console.log(res)
-        // })
+        await fetch("https://us-central1-bashard.cloudfunctions.net/helloWorld").then((res)=>{
+            console.log(res.json())
+        })
     }
 
 

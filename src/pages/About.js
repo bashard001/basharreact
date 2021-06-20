@@ -46,6 +46,8 @@ function About() {
 
               <li className="aboutlist">MERN Stack <br />(MongoDB, Express.js, React.js, Node.js).</li>
               <li className="aboutlist">Wordpress</li>
+              <li className="aboutlist">Bootstrap and Material-ui</li>
+              <li className="aboutlist">Babel, Webpack, NPM</li>
             </ul></div>
 
           <div className="aitem3"><h3>Education:</h3>

@@ -39,7 +39,7 @@
   "emulators": {
     "firestore": {
       
-      "port": "7080"
+      "port": "7030"
     }
   },
   "cleanUrls": true,
