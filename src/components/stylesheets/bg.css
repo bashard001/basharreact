@@ -1,5 +1,5 @@
 
-.bg1, .bg2, .bg3 {
+.bg1, .bg2, .bg3, .bg4 {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
@@ -16,13 +16,18 @@
   }
   
   .bg2 {
-    background-image: url("images/basharone.jpg");
-    min-height: 50vh;
+    background-image: url("images/desk1.jpg");
+    min-height: 55vh;
   }
   
   .bg3 {
     background-image: url("images/bashar3.jpg");
-    min-height: 50vh;
+    min-height: 55vh;
+  }
+  .bg4{
+    background-image: url("images/graduation2.jpg");
+    min-height: 75vh;
+  
   }
   
   .caption {
