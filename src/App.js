@@ -34,9 +34,7 @@ function App() {
         <Route path="/projects">
           <Projects />
         </Route>
-    
-   
- 
+
     </Switch>
     <Totop />
     <Footer />
