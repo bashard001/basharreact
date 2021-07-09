@@ -6,25 +6,30 @@ function Project() {
 
   const projects = [{
     pUrl: "https://bashard001.github.io/AstronomyQuiz",
-    pImage: "images/quizAPP.jpg"
+    pImage: "images/quizAPP.jpg",
+    pName: "Sample Quiz"
   },
   {
 
   }, {
     pUrl: "https://bashard001.github.io/weather-dashboard",
-    pImage: "images/weatherdash.jpg"
+    pImage: "images/weatherdash.jpg",
+    pName: "Check the weather"
   },
   {
     pUrl: "https://bashard001.github.io/Day-Planner",
-    pImage: "images/calendarday.jpg"
+    pImage: "images/calendarday.jpg",
+    pName: "Day Calender"
   },
   {
     pUrl: "https://jilienecircelli.github.io/sports-scene",
-    pImage: "images/sports.jpg"
+    pImage: "images/sports.jpg",
+    pName: "Sports Events"
   },
   {
     pUrl: "https://bashard001.github.io/Password-Generator",
-    pImage: "images/passwordbg.jpg"
+    pImage: "../components/images/passwordbg.jpg",
+    pName: "Password Generator"
   }]
 
 
@@ -35,6 +40,33 @@ function Project() {
         <p id="projectP">(Web applications)</p>
       </div>
       <div className="containers">
+        {/* {
+          projects.map(project => (
+            <div className="box ">
+          <div className="a2"  style={{ backgroundImage:`${project.pImage}`}}>
+            <div className="captions ">
+              <a href={project.pUrl} rel="noopener noreferrer" target="_blank" className="ap">
+
+                <span>Sample Quiz</span>
+              </a>
+            </div>
+          </div>
+          <div className="tooltips"><p className="tool-text"> This application is built using 95% JavaScript <br /> highest score is save to localstorage</p></div>
+        </div>
+          ))
+        } */}
+          <div className="box ">
+          <div className="a7">
+            <div className="captions ">
+              <a href="https://clothing-ecommerce-843a2.web.app/" rel="noopener noreferrer" target="_blank" className="ap">
+
+                <span>Shop For Clothes</span>
+              </a>
+            </div>
+          </div>
+          <div className="tooltips"><p className="tool-text">React E-commerce site, utilizes google Auth and Strip for a payment system</p></div>
+        </div>
+
         <div className="box ">
           <div className="a2">
             <div className="captions ">
@@ -108,17 +140,7 @@ function Project() {
           </div>
           <div className="tooltips"><p className="tool-text"> React application</p></div>
         </div>
-        <div className="box ">
-          <div className="">
-            <div className="captions ">
-              <a href="https://employeedirectory360.herokuapp.com/" rel="noopener noreferrer" target="_blank" className="ap">
-
-                <span>Snake Game</span>
-              </a>
-            </div>
-          </div>
-          <div className="tooltips"><p className="tool-text">Snack Game Coming <br /> Soon</p></div>
-        </div>
+      
 
       </div>
 
