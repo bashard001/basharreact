@@ -1,4 +1,4 @@
-const projects = [ {
+const projectsData = [ {
     pUrl: "https://clothing-ecommerce-843a2.web.app/",
     pImage: "clothing",
     pName: "Shop For Clothes", 
@@ -38,4 +38,4 @@ const projects = [ {
     pDisc: "writing complex algorithm <br /> to generate a Password"
   }]
 
-  export default projects
+  export default projectsData

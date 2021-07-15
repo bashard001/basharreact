@@ -1,12 +1,12 @@
 import React from "react"
-import "./projects.css"
-import projects from "./project.data"
+import "./project.css"
+import projectsData from "./project.data"
 import { Images } from "../../assets/img";
 
 
 function Project() {
 
-  var projectD = projects
+  var projectD = projectsData
 
   return (
     <div className="maincontainers">
@@ -16,35 +16,33 @@ function Project() {
       </div>
       <div className="containers">
         {
+          
           projectD.map(project => {
-            var image
+            
+              var image = Images
             switch (project.pImage) {
-              case "clothing": image = Images.clothing
+              case "clothing": console.log(Images.clothing)
+                
                 break;
-              case "quiz": image = Images.quiz
-                break
-              case "weather": image = Images.weather
-                break
-              case "sports": image = Images.sports
-                break
-              case "calendar": image = Images.calender
-                break
+                case "password": image = Images.password
+            
               default:
                 break;
             }
 
             return (
+              
 
               <div className="box ">
                 <div className="a2" style={{ backgroundImage: `url(${image})` }}>
                   <div className="captions ">
                     <a href={project.pUrl} rel="noopener noreferrer" target="_blank" className="ap">
 
-                      <span>Sample Quiz</span>
+                      <span>{project.pName}</span>
                     </a>
                   </div>
                 </div>
-                <div className="tooltips"><p className="tool-text"> This application is built using 95% JavaScript <br /> highest score is save to localstorage</p></div>
+                <div className="tooltips"><p className="tool-text">{project.pDisc}</p></div>
               </div>
             )
           })
