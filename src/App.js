@@ -7,7 +7,7 @@ import Main from "./pages/Main"
 import Contact from "./pages/Contact"
 import Nav from "./components/Nav"
 import About from "./pages/About"
-import Projects from "./pages/Projects"
+import Projects from "./pages/projectsPage/Projects"
 import Totop from "./pages/Totop"
 
 

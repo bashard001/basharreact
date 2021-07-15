@@ -1,7 +1,7 @@
 .maincontainers {
 position: relative;
     width: 100%;
-    background-image: url("images/monument-valley-1593318.jpg");
+    background-image: url("../../components/stylesheets/images/monument-valley-1593318.jpg");
     background-position: center;
     background-size: cover;
     min-height: 100%;
@@ -37,7 +37,7 @@ position: relative;
   
   .a1 {
     position: relative;
-    background-image: url("images/passwordbg.jpg");
+  
     background-position: center;
     background-size: cover;
 border-radius: 20px;
@@ -46,7 +46,7 @@ border-radius: 20px;
   .a2 {
    
     position: relative;
-    background-image: url("images/quizAPP.jpg");
+    
     background-position: center;
     background-size: cover;
      border-radius: 20px;
@@ -54,7 +54,7 @@ border-radius: 20px;
   
   .a3 {
     position: relative;
-    background-image: url("images/weatherdash.jpg");
+    
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -62,7 +62,7 @@ border-radius: 20px;
   
   .a4 {
     position: relative;
-    background-image: url("images/calendarday.jpg");
+  
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -70,15 +70,14 @@ border-radius: 20px;
   
   .a5 {
     position: relative;
-    background-image: url("images/sports.jpg");
-    background-position: center;
+        background-position: center;
     background-size: cover;
    border-radius: 20px;
   }
   
   .a6 {
     position: relative;
-    background-image: url("images/gabrielle-henders.jpg");
+    
     background-position: center;
     background-size: cover;
    border-radius: 20px;
@@ -86,7 +85,7 @@ border-radius: 20px;
   
   .a7 {
     position: relative;
-    background-image: url("images/clothes-4198009_1920.jpg");
+    
     background-position: center;
     background-size: cover;
    border-radius: 20px;

@@ -1,37 +1,11 @@
 import React from "react"
-import "../components/stylesheets/projects.css"
+import "./projects.css"
+import projects from "./project.data"
 
 
 function Project() {
 
-  const projects = [{
-    pUrl: "https://bashard001.github.io/AstronomyQuiz",
-    pImage: "images/quizAPP.jpg",
-    pName: "Sample Quiz"
-  },
-  {
-
-  }, {
-    pUrl: "https://bashard001.github.io/weather-dashboard",
-    pImage: "images/weatherdash.jpg",
-    pName: "Check the weather"
-  },
-  {
-    pUrl: "https://bashard001.github.io/Day-Planner",
-    pImage: "images/calendarday.jpg",
-    pName: "Day Calender"
-  },
-  {
-    pUrl: "https://jilienecircelli.github.io/sports-scene",
-    pImage: "images/sports.jpg",
-    pName: "Sports Events"
-  },
-  {
-    pUrl: "https://bashard001.github.io/Password-Generator",
-    pImage: "../components/images/passwordbg.jpg",
-    pName: "Password Generator"
-  }]
-
+  var projectD = projects
 
   return (
     <div className="maincontainers">
@@ -41,7 +15,7 @@ function Project() {
       </div>
       <div className="containers">
         {/* {
-          projects.map(project => (
+          project.map(project => (
             <div className="box ">
           <div className="a2"  style={{ backgroundImage:`${project.pImage}`}}>
             <div className="captions ">
