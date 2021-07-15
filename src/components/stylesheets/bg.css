@@ -11,21 +11,21 @@
   
   
   .bg1 {
-    background-image: url("images/bashar4.jpg");
+    background-image: url("../../assets/bashar4.jpg");
     min-height: 90vh;
   }
   
   .bg2 {
-    background-image: url("images/desk1.jpg");
+    background-image: url("../../assets/desk1.jpg");
     min-height: 55vh;
   }
   
   .bg3 {
-    background-image: url("images/bashar3.jpg");
+    background-image: url("../../assets/bashar3.jpg");
     min-height: 55vh;
   }
   .bg4{
-    background-image: url("images/graduation2.jpg");
+    background-image: url("../../assets/graduation2.jpg");
     min-height: 75vh;
   
   }

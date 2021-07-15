@@ -36,7 +36,7 @@ input, textarea {
 padding: 20px;
 align-items: center; 
 justify-content: center;
-background-image: url("images/smileoffice_2_70.jpg");
+background-image: url("../../assets/smileoffice_2_70.jpg");
 background-position: center;
 background-size: cover;
 border-radius: 15px;
@@ -52,7 +52,7 @@ h2{
   position: relative;
     min-height: 90vh;
   padding-top: 10px;
-  background-image: url("images/gridlook.jpg");
+  background-image: url("../../assets/gridlook.jpg");
   background-size: cover;
 }
 

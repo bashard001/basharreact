@@ -5,7 +5,7 @@
   .maincontainer {
     position: relative;
     width: 100%;
-    background-image: url("images/gridlook.jpg");
+    background-image: url("../../assets/gridlook.jpg");
     background-size: cover;
   padding: auto;
   min-height: 90vh;
@@ -75,7 +75,7 @@
 
   .imgab {
     display: flex;
-    background-image: url("images/graduation.jpg");
+    background-image: url("../../assets/graduation.jpg");
     background-position: center;
     background-size: cover;
     margin-left: 1vw;
