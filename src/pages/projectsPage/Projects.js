@@ -1,6 +1,7 @@
 import React from "react"
 import "./projects.css"
 import projects from "./project.data"
+import { Images } from "../../assets/img";
 
 
 function Project() {
