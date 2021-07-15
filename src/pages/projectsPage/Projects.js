@@ -15,22 +15,41 @@ function Project() {
         <p id="projectP">(Web applications)</p>
       </div>
       <div className="containers">
-        {/* {
-          project.map(project => (
-            <div className="box ">
-          <div className="a2"  style={{ backgroundImage:`${project.pImage}`}}>
-            <div className="captions ">
-              <a href={project.pUrl} rel="noopener noreferrer" target="_blank" className="ap">
+        {
+          projectD.map(project => {
+            var image
+            switch (project.pImage) {
+              case "clothing": image = Images.clothing
+                break;
+              case "quiz": image = Images.quiz
+                break
+              case "weather": image = Images.weather
+                break
+              case "sports": image = Images.sports
+                break
+              case "calendar": image = Images.calender
+                break
+              default:
+                break;
+            }
 
-                <span>Sample Quiz</span>
-              </a>
-            </div>
-          </div>
-          <div className="tooltips"><p className="tool-text"> This application is built using 95% JavaScript <br /> highest score is save to localstorage</p></div>
-        </div>
-          ))
-        } */}
-          <div className="box ">
+            return (
+
+              <div className="box ">
+                <div className="a2" style={{ backgroundImage: `url(${image})` }}>
+                  <div className="captions ">
+                    <a href={project.pUrl} rel="noopener noreferrer" target="_blank" className="ap">
+
+                      <span>Sample Quiz</span>
+                    </a>
+                  </div>
+                </div>
+                <div className="tooltips"><p className="tool-text"> This application is built using 95% JavaScript <br /> highest score is save to localstorage</p></div>
+              </div>
+            )
+          })
+        }
+        <div className="box ">
           <div className="a7">
             <div className="captions ">
               <a href="https://clothing-ecommerce-843a2.web.app/" rel="noopener noreferrer" target="_blank" className="ap">
@@ -115,7 +134,7 @@ function Project() {
           </div>
           <div className="tooltips"><p className="tool-text"> React application</p></div>
         </div>
-      
+
 
       </div>
 
