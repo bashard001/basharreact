@@ -2,11 +2,12 @@ import React from "react"
 import "./project.css"
 import projectsData from "./project.data"
 import { Images } from "../../assets/img";
+import Card from "../../components/cards";
 
 
 function Project() {
 
-  var projectD = projectsData
+
 
   return (
     <div className="maincontainers">
@@ -17,33 +18,34 @@ function Project() {
       <div className="containers">
         {
           
-          projectD.map(project => {
+          projectsData.map(project => {
             
-              var image = Images
-            switch (project.pImage) {
-              case "clothing": console.log(Images.clothing)
+              var image = Images.clothing
+            // switch (project.pImage) {
+            //   case "clothing": console.log(Images.clothing)
                 
-                break;
-                case "password": image = Images.password
+            //     break;
+            //     case "password": image = Images.password
             
-              default:
-                break;
-            }
+            //   default:
+            //     break;
+            // }
+            console.log(Images)
 
             return (
               
+<Card />
+              // <div className="box ">
+              //   <div className="a2" style={{ backgroundImage: `url(${image})` }}>
+              //     <div className="captions ">
+              //       <a href={project.pUrl} rel="noopener noreferrer" target="_blank" className="ap">
 
-              <div className="box ">
-                <div className="a2" style={{ backgroundImage: `url(${image})` }}>
-                  <div className="captions ">
-                    <a href={project.pUrl} rel="noopener noreferrer" target="_blank" className="ap">
-
-                      <span>{project.pName}</span>
-                    </a>
-                  </div>
-                </div>
-                <div className="tooltips"><p className="tool-text">{project.pDisc}</p></div>
-              </div>
+              //         <span>{project.pName}</span>
+              //       </a>
+              //     </div>
+              //   </div>
+              //   <div className="tooltips"><p className="tool-text">{project.pDisc}</p></div>
+              // </div>
             )
           })
         }
