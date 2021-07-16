@@ -3,17 +3,13 @@ import { Images } from "../assets/img";
 
 class Card extends React.Component {
 
-  constructor(props) {
-    super(props)
-
-    this.state = props
-  }
+ 
 
 
   render() {
 
     var image
-    const { project } = this.state
+    const { project } = this.props
     console.log(project)
     switch (project.pImage) {
       case "clothing": image = Images.clothing
