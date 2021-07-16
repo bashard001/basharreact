@@ -33,9 +33,8 @@ position: relative;
     color: aliceblue;
   }
   
-
   
-  .a1 {
+  .a {
     position: relative;
   
     background-position: center;
@@ -43,54 +42,6 @@ position: relative;
 border-radius: 20px;
   }
   
-  .a2 {
-   
-    position: relative;
-    
-    background-position: center;
-    background-size: cover;
-     border-radius: 20px;
-  }
-  
-  .a3 {
-    position: relative;
-    
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
-  }
-  
-  .a4 {
-    position: relative;
-  
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
-  }
-  
-  .a5 {
-    position: relative;
-        background-position: center;
-    background-size: cover;
-   border-radius: 20px;
-  }
-  
-  .a6 {
-    position: relative;
-    
-    background-position: center;
-    background-size: cover;
-   border-radius: 20px;
-  }
-  
-  .a7 {
-    position: relative;
-    
-    background-position: center;
-    background-size: cover;
-   border-radius: 20px;
-  }
-
 
   .box {
 position: relative;
@@ -102,7 +53,6 @@ margin: auto;
 z-index: 50;
 transition: height .7s, box-shadow .6s,  border-radius .8s;
 transition-timing-function: ease-in;
-
   }
   
   
