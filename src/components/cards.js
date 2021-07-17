@@ -1,10 +1,11 @@
 import React from "react"
 import { Images } from "../assets/img";
 
+
+
+
+
 class Card extends React.Component {
-
- 
-
 
   render() {
 

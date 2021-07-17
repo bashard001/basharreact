@@ -6,8 +6,6 @@ import Card from "../../components/cards";
 
 function Project() {
 
-
-
   return (
     <div className="maincontainers">
       <div className="pagetitle">
@@ -16,27 +14,11 @@ function Project() {
       </div>
       <div className="containers">
         {
-          
-          projectsData.map(project => {
-
-            return (
-              
-                <Card key={project.id} project={project}/>
-              // <div className="box ">
-              //   <div className="a2" style={{ backgroundImage: `url(${image})` }}>
-              //     <div className="captions ">
-              //       <a href={project.pUrl} rel="noopener noreferrer" target="_blank" className="ap">
-
-              //         <span>{project.pName}</span>
-              //       </a>
-              //     </div>
-              //   </div>
-              //   <div className="tooltips"><p className="tool-text">{project.pDisc}</p></div>
-              // </div>
-            )
-          })
+          // mapping project cards
+          projectsData.map(project => (
+             <Card key={project.id} project={project}/>
+             ))
         }
-        
 
       </div>
 
