@@ -10,8 +10,6 @@ function Bg1(props) {
                 <span className={props.c3}>{props.text}</span>
             </div>
         </div>
-        
-        
     )
 }
 

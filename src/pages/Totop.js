@@ -2,13 +2,8 @@ import React, { useEffect } from 'react'
 import "../components/stylesheets/totop.css"
 
 
-
-
 function Totop (){
      
-
-
-
 const scrollFunction = () => {
     var myButton = document.querySelector("#goup")
 

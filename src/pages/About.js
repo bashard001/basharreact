@@ -7,9 +7,6 @@ import "../components/stylesheets/about.css"
 function About() {
   return (
     <div className="maincontainer" id="top">
-
-
-
       <div className="mainbox card">
         <h2 className="pagetitleA">About Me</h2>
 
@@ -17,7 +14,7 @@ function About() {
           <div className="aitem">
             <div className="imgab"></div>
             <h3 style={{ fontfFamily: 'Charmonman', fontSize: "18px", color: "red" }}>Full Stack Web Developer
-          </h3><br />
+            </h3><br />
             <strong>Bashar Daseh</strong>
             <br />
             <br />
@@ -61,8 +58,6 @@ function About() {
             </ul>
           </div>
 
-
-
           <div class="aitem4">
             <h3>About: </h3>
 
@@ -70,19 +65,18 @@ function About() {
               I am a self-motivated and goal-oriented Full Stack Web Developer with experience working on multiple
               web-based applications, backend development and data engineering that meet the highest standards for user
               experience, web design, usability, and speed. proven experience developing consumer-focused web applications
-            for desktop and mobile using MERN, HTML, CSS, JQuery, SQL, JavaScript and node.js.</p>
+              for desktop and mobile using MERN, HTML, CSS, JQuery, SQL, JavaScript and node.js.</p>
             <p class="text">
               Proven experience developing scalable consumer-focused web applications from startup to enterprise; utilizing cloud services like AWS and Firebase
               to build databases, deploy and manage websites and Apps on a secure reliable network. Building a strong website/Apps
-               infrastructure applications for desktop, and mobile devices that runs more efficient and secure.</p>
-
+              infrastructure applications for desktop, and mobile devices that runs more efficient and secure.</p>
 
             <p class="text">Solution-driven professional excelling in highly collaborative work environment, finding
-            solutions to challenges and focused on customer satisfaction. Solution-driven professional excelling in
-            highly collaborative work environment, finding solutions to challenges and focused on customer satisfaction.
-            development (including creating servers, processing data,
-            source control, issue tracking, functional feedback, etc...). I have advanced skills in Javascript and Java
-            for programing various applications (mobile apps, desktop apps, games, and more) </p>
+              solutions to challenges and focused on customer satisfaction. Solution-driven professional excelling in
+              highly collaborative work environment, finding solutions to challenges and focused on customer satisfaction.
+              development (including creating servers, processing data,
+              source control, issue tracking, functional feedback, etc...). I have advanced skills in Javascript and Java
+              for programing various applications (mobile apps, desktop apps, games, and more) </p>
           </div>
           <div className="aitem5"><h4 >Business & Finance: </h4>
             <p >
@@ -92,9 +86,7 @@ function About() {
               attention and continual analysis of economic trends to determine appropriate asset allocation according to
               strict standards.
 
-          </p></div>
-
-
+            </p></div>
 
         </div>
       </div>

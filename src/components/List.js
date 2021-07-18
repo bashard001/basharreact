@@ -13,7 +13,6 @@ function List (){
           <li>Implement complex logical conditions to meet an objective</li>
           <li>Implement APIs into my apps using Fetch, cloud functions and AJAX communication </li>
           <li> Create and consume RESTful APIs utilizing JSON as a data format and REST APIs </li>
-    
         </ul>
       </div>
     )
