@@ -1,5 +1,5 @@
 .maincontainers {
-position: relative;
+  position: relative;
     width: 100%;
     background-image: url("../../assets/monument-valley-1593318.jpg");
     background-position: center;
@@ -36,10 +36,9 @@ position: relative;
   
   .a {
     position: relative;
-  
     background-position: center;
     background-size: cover;
-border-radius: 20px;
+    border-radius: 20px;
   }
   
 
@@ -71,8 +70,8 @@ transition-timing-function: ease-in;
   }
 
   .ap:hover {
-animation: spanT 1s ;
-animation-fill-mode: forwards;
+  animation: spanT 1s ;
+  animation-fill-mode: forwards;
   }
 
 @keyframes spanT {

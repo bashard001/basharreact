@@ -3,9 +3,6 @@ import "../components/stylesheets/contact.css"
 
 
 
-
-
-
 function Contact(props) {
 
     let [contact, setContact] = useState({
@@ -14,9 +11,6 @@ function Contact(props) {
         email: "",
         message: ""
     })
-
-
-
     // const handleSubmit = async (event) => {
     //     event.preventDefault();
     //     const form = await fetch("https://us-central1-bashard.cloudfunctions.net/emailSender", {
@@ -46,11 +40,8 @@ function Contact(props) {
         e.preventDefault();
         // console.log(contact)
         // const callFun = firebase.functions().httpsCallable('testingF');
-        
         // callFun().then((res) => {
-
         //     console.log(res.data)
-          
         // }
         // ) 
 
@@ -58,10 +49,6 @@ function Contact(props) {
             console.log(res.json())
         })
     }
-
-
-            
-   
 
     const onNameChange = event => {
         setContact({ ...contact, name: event.target.value })
@@ -79,7 +66,6 @@ function Contact(props) {
     const onMessageChange = (event) => {
         setContact({ ...contact, message: event.target.value })
     }
-
 
 
     return (

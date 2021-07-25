@@ -12,8 +12,6 @@ import Totop from "./pages/Totop"
 
 
 function App() {
- 
-  
   return (
     <Router>
       <Nav />

@@ -4,13 +4,10 @@ import { Images } from "../assets/img";
 
 
 
-
-class Card extends React.Component {
-
-  render() {
+function Card (props){
 
     var image
-    const { project } = this.props
+    const { project } = props
     console.log(project)
     switch (project.pImage) {
       case "clothing": image = Images.clothing
@@ -42,7 +39,7 @@ class Card extends React.Component {
         <div className="tooltips"><p className="tool-text">{project.pDisc}</p></div>
       </div>
     )
-  }
+  
 }
 
 export default Card
