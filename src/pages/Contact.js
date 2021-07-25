@@ -3,7 +3,7 @@ import "../components/stylesheets/contact.css"
 
 
 
-function Contact(props) {
+function Contact() {
 
     let [contact, setContact] = useState({
         name: "",
@@ -38,13 +38,7 @@ function Contact(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // console.log(contact)
-        // const callFun = firebase.functions().httpsCallable('testingF');
-        // callFun().then((res) => {
-        //     console.log(res.data)
-        // }
-        // ) 
-
+      
         await fetch("https://us-central1-bashard.cloudfunctions.net/helloWorld").then((res)=>{
             console.log(res.json())
         })

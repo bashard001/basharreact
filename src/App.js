@@ -8,7 +8,7 @@ import Contact from "./pages/Contact"
 import Nav from "./components/Nav"
 import About from "./pages/About"
 import Projects from "./pages/projectsPage/Projects"
-import Totop from "./pages/Totop"
+import Totop from "./components/Totop"
 
 
 function App() {
