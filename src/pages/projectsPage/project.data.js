@@ -7,7 +7,7 @@ const projectsData = [ {
   },
   {
     id: 2,
-    pUrl: "https://bashard001.github.io/AstronomyQuiz",
+    pUrl: "https://astronomy-qui.web.app",
     pImage: "quiz",
     pName: "Sample Quiz",
     pDisc: "This application is built using 95% JavaScript <br /> highest score is save to localstorage"
