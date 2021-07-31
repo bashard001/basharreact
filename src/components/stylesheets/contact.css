@@ -16,7 +16,8 @@ input, textarea {
     display: flex;
    flex-wrap: wrap;
    justify-content: center;
-  margin: 40px 45px 0px ;  
+  margin: auto;  
+  width: 70vw;
 }
 
 .column {

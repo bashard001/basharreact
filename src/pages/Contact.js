@@ -70,8 +70,6 @@ function Contact() {
                     <p>Get in contact with me, leave me a message and I will get back to you.</p>
                 </div>
                 <div className="row">
-                    <div className="column pic">
-                    </div>
                     <div className="column">
                         <form id="contact-form"  >
                             <label htmlFor="fname" >First Name</label>
