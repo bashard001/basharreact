@@ -8,7 +8,7 @@ function Card (props){
 
     var image
     const { project } = props
-    console.log(project)
+   
     switch (project.pImage) {
       case "clothing": image = Images.clothing
         break;

@@ -6,7 +6,7 @@ import "./stylesheets/nav.css"
 
 function Nav() {
 
-    function toFunction() {
+    function scrollToTop() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
@@ -19,11 +19,11 @@ function Nav() {
                     </Link>
                 </section>
                 <section id="right">
-                    <Link to={'/projects'} onClick={toFunction}> <i className="fab fa-connectdevelop"> </i><p>My
+                    <Link to={'/projects'} onClick={scrollToTop}> <i className="fab fa-connectdevelop"> </i><p>My
                         projects</p></Link>
-                    <Link to={'/about'} onClick={toFunction}><i className="far fa-user-circle"></i><p>About</p></Link>
+                    <Link to={'/about'} onClick={scrollToTop}><i className="far fa-user-circle"></i><p>About</p></Link>
 
-                    <Link to={'/contact'} onClick={toFunction}> <i className="fas fa-id-card-alt"> </i> <p> Contact</p>
+                    <Link to={'/contact'} onClick={scrollToTop}> <i className="fas fa-id-card-alt"> </i> <p> Contact</p>
                     </Link>
 
                 </section>
