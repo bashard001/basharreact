@@ -32,18 +32,8 @@ input, textarea {
   -webkit-transition: .9s;
   transition: .9s;
 }
-.column.pic{
-  width: 50%;
-padding: 20px;
-align-items: center; 
-justify-content: center;
-background-image: url("../../assets/smileoffice_2_70.jpg");
-background-position: center;
-background-size: cover;
-border-radius: 15px;
 
-}
-.column input{
+.column input, textarea{
   border-radius: 10px;
 }
 h2{
@@ -90,6 +80,7 @@ input[type=submit]:hover{
    width: 45%;
 
   }
+
   @media screen and (max-width:600px){
     .row{
       margin: 18px 18px 0px;
