@@ -3,13 +3,13 @@
     display: flex;
     top: 0px;
    justify-content: center;
-  
     width: 100%;
     min-height: 6vh;
     color: #fff;
     background: #30948D;
     font-family: sans-serif;
     z-index: 100;
+    padding: 15px 0px;
     
 }
 
@@ -139,9 +139,9 @@ overflow: hidden;
       font-size: 2rem;
       opacity: 1;
      
-      
     }
     }
+    
  @keyframes aniBashar {
 
   from{
