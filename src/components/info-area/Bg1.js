@@ -1,5 +1,5 @@
 import React from "react"
-import "./stylesheets/bg.css"
+import "./bg.css"
 
 
 

@@ -1,14 +1,14 @@
 import React from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
-import Footer from "./components/Footer"
+import Footer from "./components/footer/Footer"
 
 import Main from "./pages/Main"
-import Contact from "./pages/Contact"
-import Nav from "./components/Nav"
-import About from "./pages/About"
+import Contact from "./pages/contact/Contact"
+import Nav from "./components/navbar/Nav"
+import About from "./pages/about/About"
 import Projects from "./pages/projectsPage/Projects"
-import Totop from "./components/Totop"
+import Totop from "./components/totop-button/Totop"
 
 
 function App() {

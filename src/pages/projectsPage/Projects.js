@@ -1,7 +1,7 @@
 import React from "react"
 import "./project.css"
 import projectsData from "./project.data"
-import Card from "../../components/cards";
+import Card from "../../components/cards/cards";
 
 
 function Project() {

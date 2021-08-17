@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import "./stylesheets/nav.css"
+import "./nav.css"
 
 
 function Nav() {
@@ -19,8 +19,8 @@ function Nav() {
                     </Link>
                 </section>
                 <section id="right">
-                    <Link to={'/projects'} onClick={scrollToTop}> <i className="fab fa-connectdevelop"> </i><p>My
-                        projects</p></Link>
+                    <Link to={'/projects'} onClick={scrollToTop}> <i className="fab fa-connectdevelop"> </i><p>
+                        Projects</p></Link>
                     <Link to={'/about'} onClick={scrollToTop}><i className="far fa-user-circle"></i><p>About</p></Link>
 
                     <Link to={'/contact'} onClick={scrollToTop}> <i className="fas fa-id-card-alt"> </i> <p> Contact</p>

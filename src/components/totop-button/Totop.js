@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import "../components/stylesheets/totop.css"
+import "./totop.css"
 
 
 function Totop() {
