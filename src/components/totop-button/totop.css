@@ -3,7 +3,6 @@
    display: inline;
      position: fixed;
     place-items: center;
-  
     top: 90%;
     left: 95%;
     background-color: red;  
@@ -21,14 +20,13 @@
 
   #goup:hover {
    transform: rotate(360deg);
-
   }
 
   .totop{
 color:white;
-
   }
 
+  
   @media (max-width: 700px) {
 
     #goup {

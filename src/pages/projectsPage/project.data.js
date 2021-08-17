@@ -2,7 +2,7 @@ const projectsData = [ {
   id: 1,
     pUrl: "https://clothing-ecommerce-843a2.web.app/",
     pImage: "clothing",
-    pName: "Shop For Clothes", 
+    pName: "Clothes E-Commerce", 
     pDisc: "React E-commerce site, utilizes google Auth and Strip for a payment system"
   },
   {
