@@ -1,8 +1,7 @@
 import React from "react"
-import '../App.css';
-import Bg1 from "../components/info-area/Bg1"
-import List from "../components/list/List"
-import Area from "../components/info-area/Area"
+import Bg1 from "../../components/info-area/Bg1"
+import List from "../../components/list/List"
+import Area from "../../components/info-area/Area"
 import { Link } from "react-router-dom"
 
 
