@@ -8,20 +8,13 @@ input, textarea {
   margin-top: 5px;
   margin-bottom: 12px;
   resize: vertical;
-
 }
-.row {
-  position: relative;
+
+.column {position: relative;
     display: flex;
   margin: auto;  
   width: 60vw;
-}
-
-.column {
- min-height: 200px;
   padding: 20px 30px;
-  flex: 1 1 300px; /*  Stretching: */
-    margin: 15px;
     border-radius: 15px;
   -webkit-box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
   box-shadow: 0 13px 27px 0 rgba(31, 4, 6, 0.25);
@@ -35,7 +28,7 @@ input, textarea {
 h2{
   margin-top: 0px;
 }
-.containerC {
+.contact-container {
   position: relative;
     min-height: 90vh;
   background-image: url("../../assets/gridlook.jpg");
@@ -47,6 +40,7 @@ h2{
 
     background-color: aqua;
   }
+  
 #contact-form {
   position: relative;
 }
