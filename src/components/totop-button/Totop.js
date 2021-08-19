@@ -29,7 +29,8 @@ function Totop() {
     <div id="goup" onClick={toTopFunction}>
       <span className="totop"  >
         <i className="far fa-arrow-alt-circle-up"></i>
-      </span></div>
+      </span>
+    </div>
   )
 }
 
