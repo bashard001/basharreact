@@ -1,161 +1,155 @@
 .maincontainers {
   position: relative;
-    width: 100%;
-    background-image: url("../../assets/monument-valley-1593318.jpg");
-    background-position: center;
-    background-size: cover;
-    min-height: 100%;
-    min-height: 90vh;
-    padding: 50px 0px;
-  }
-  
-  .containers {
-    position: relative;
-    display: grid;
-    width: 85%;
-    grid-template-columns: repeat(auto-fit, 250px);
-    grid-auto-rows: auto;
-    grid-gap: 1em;
-    grid-row-gap: 2em;
+  width: 100%;
+  background-image: url("../../assets/monument-valley-1593318.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  min-height: 90vh;
+  padding: 50px 0px;
+}
+
+.containers {
+  position: relative;
+  display: grid;
+  width: 85%;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  grid-row-gap: 2em;
   margin: 0 auto;
-    padding-top: 40px;
-    justify-content: center;
-  }
-  
-  .pagetitle {
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 85%;
-    margin: auto;
-    background-color: rgba(48,148,141,.5);
-    border-radius: 10px;
-    color: aliceblue;
-  }
-  
-  
-  .a {
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
-  }
-  
+  padding-top: 40px;
+  justify-content: center;
+}
 
-  .box {
-position: relative;
-margin: 0px;
-width: 200px;
-height: 200px;
-justify-content: center;
-margin: auto;
-z-index: 50;
-transition: height .7s, box-shadow .6s,  border-radius .8s;
-transition-timing-function: ease-in;
-  }
-  
-  
-  .ap {
-    position: relative;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    place-items: center;
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 10px;
-    text-align: center;
-  }
+.pagetitle {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 85%;
+  margin: auto;
+  background-color: rgba(48, 148, 141, .5);
+  border-radius: 10px;
+  color: aliceblue;
+}
 
-  .ap:hover {
-  animation: spanT 1s ;
+.a {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.box {
+  position: relative;
+  margin: 0px;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  margin: auto;
+  z-index: 50;
+  transition: height .7s, box-shadow .6s, border-radius .8s;
+  transition-timing-function: ease-in;
+}
+
+.ap {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  place-items: center;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.ap:hover {
+  animation: spanT 1s;
   animation-fill-mode: forwards;
-  }
+}
 
 @keyframes spanT {
-  to{
+  to {
     color: black;
     font-size: 24px;
   }
 }
-  .captions {
-    display: flex;
-    height: 200px;
+
+.captions {
+  display: flex;
+  height: 200px;
+}
+
+.captions:hover {
+  animation: tips 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tips {
+  from {
+    opacity: 1;
+    text-align: center;
+    border-radius: 10px;
   }
- 
-  .captions:hover {
-    animation: tips 1s;
-    animation-fill-mode: forwards;
-    
-  }
-  
-  @keyframes tips {
-    from {opacity: 1;
-      text-align: center;
-      border-radius: 10px;
-      }
-      to {padding-top: 15%;
-        border-radius: 20px;
-        opacity: .7;
+  to {
+    padding-top: 15%;
+    border-radius: 20px;
+    opacity: .7;
     background-color: #777;
     color: black;
-      }
-  } 
+  }
+}
 
-  .tooltips {
-    position: absolute;
-    overflow: hidden;
-    font-size: 16px;
+.tooltips {
+  position: absolute;
+  overflow: hidden;
+  font-size: 16px;
   height: 10px;
-    width: 100%;
-    top:40%;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-background-color: red;
-transition: height 1s, box-shadow .7s;
-z-index: -1;
+  width: 100%;
+  top: 40%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: red;
+  transition: height 1s, box-shadow .7s;
+  z-index: -1;
+}
+
+.tool-text {
+  position: relative;
+  color: white;
+  top: 35%;
+  text-align: center;
+  padding: 5px;
+}
+
+.box:hover .tooltips {
+  height: 200px;
+  box-shadow: 0px 0px 10px 3px #ffffff;
+}
+
+.box:hover {
+  height: 330px;
+  box-shadow: 0px 0px 8px 3px #ffffff;
+  border-radius: 25px;
+}
+
+@media (min-width: 1200px) {
+  .containers {
+    grid-template-columns: repeat(auto-fit, 300px);
+    width: 82%;
   }
-
-  .tool-text { 
-position: relative;
-    color: white;
-    top: 35%;
-    text-align: center;
-    padding: 5px;
+  .pagetitle {
+    width: 85%;
   }
- 
+}
 
-   .box:hover .tooltips  {
-    
-   height: 200px;
-   box-shadow:  0px 0px 10px 3px #ffffff;
-    
-  }
+#projectH2 {
+  margin: 0px;
+}
 
-
-  .box:hover {
-   height: 330px;
-   box-shadow:  0px 0px 8px 3px #ffffff;
-   border-radius: 25px;
-  }
-
- 
- @media (min-width: 1200px){
-   .containers {
-     grid-template-columns: repeat(auto-fit, 300px);
-     width: 82%;
-   }
-   .pagetitle {
-     width: 85%;
-   }
- }
- #projectH2 {
-   margin: 0px;
- }
- #projectP {
-   margin: 5px 0px 5px;
- }
-
-
+#projectP {
+  margin: 5px 0px 5px;
+}

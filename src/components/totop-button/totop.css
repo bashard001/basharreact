@@ -1,35 +1,31 @@
+#goup {
+  display: inline;
+  position: fixed;
+  place-items: center;
+  top: 90%;
+  left: 95%;
+  background-color: red;
+  padding: 5px 7px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  transition: opacity .8s, transform .5s;
+  opacity: 0;
+}
 
-  #goup{
-   display: inline;
-     position: fixed;
-    place-items: center;
-    top: 90%;
-    left: 95%;
-    background-color: red;  
-    padding: 5px 7px;
-    align-items: center; 
-    justify-content: center;
-    border-radius: 7px;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    transition: opacity .8s, transform .5s ;
-    opacity: 0;
+#goup:hover {
+  transform: rotate(360deg);
+}
 
+.totop {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  #goup {
+    left: 85%;
   }
-
-  #goup:hover {
-   transform: rotate(360deg);
-  }
-
-  .totop{
-color:white;
-  }
-
-  
-  @media (max-width: 700px) {
-
-    #goup {
-      left: 85%;
-    }
-  }
+}

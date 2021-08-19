@@ -1,115 +1,113 @@
 *::after::before {
-    box-sizing: border-box;
-  }
-  
-  .maincontainer {
-    position: relative;
-    width: 100%;
-    background-image: url("../../assets/gridlook.jpg");
-    background-size: cover;
+  box-sizing: border-box;
+}
+
+.maincontainer {
+  position: relative;
+  width: 100%;
+  background-image: url("../../assets/gridlook.jpg");
+  background-size: cover;
   padding: auto;
   min-height: 90vh;
-  
   padding-bottom: 5vh;
-  }
-  
-  #top {
-    padding-top: 3.5vh;
-  }
+}
 
-  .pagetitleA {
-    width: 90%;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: rgba(48, 148, 141, .5);
-    border-radius: 10px;
-    margin: 25px auto;
-    transition: width .7s;
-  }
-  .mainbox:hover .pagetitleA {
-    width: 65%;
-  }
-  
-  .skillList {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 1.2em;
-    
-  }
-  .aboutlist {
-    font-size: 15px;
-    text-shadow: none;
-    transition: font-size .5s, text-shadow .5s;
-  }
-  
-   .aboutlist:hover{
-    cursor: default;
-    font-size: 17px;
-    text-shadow: 2px 2px 2px #464444;
-  }
+#top {
+  padding-top: 3.5vh;
+}
 
+.pagetitleA {
+  width: 90%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(48, 148, 141, .5);
+  border-radius: 10px;
+  margin: 25px auto;
+  transition: width .7s;
+}
 
-  p.text {
-    text-indent: 4%;
-    padding: 0px 15px 0px 40px;
-  }
-  
-  .card {
-    background-color: rgba(119, 119, 119, .8)
-  }
-  
-  .contactLink {
-    display: inline;
-    text-decoration: none;
-    margin: 0px 5px;
-    color: blanchedalmond;
-    transition: font-size .5s, color .5s;
-  }
-  
-  .contactLink:hover {
-    font-size: 18px;
-    color:#30948D;
-  }
+.mainbox:hover .pagetitleA {
+  width: 65%;
+}
 
-  .imgab {
-    display: flex;
-    background-image: url("../../assets/graduation.jpg");
-    background-position: center;
-    background-size: cover;
-    margin-left: 1vw;
-   min-width: 250px;
-   max-width: 400px;
-   min-height: 250px;
-   border-radius: 15px;
-   transition: margin-left .4s;
-  }
-  
-  .mainbox {
-    position: relative;
+.skillList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 1.2em;
+}
 
-    width: 85%;
-    padding: 35px;
-    border-radius: 15px;
-    color: white;
-   margin: auto ;
-   transition: border-radius .4s;
-  }
+.aboutlist {
+  font-size: 15px;
+  text-shadow: none;
+  transition: font-size .5s, text-shadow .5s;
+}
 
-  .mainbox:hover {
-    border-radius: 20px;
-  }
- 
-  .mainbox:hover .imgab {
-    margin-left: 2vw;
-  }
+.aboutlist:hover {
+  cursor: default;
+  font-size: 17px;
+  text-shadow: 2px 2px 2px #464444;
+}
 
-  .aitem {
-   position: relative;
-    order: 1;
-    justify-content: center;
-  }
+p.text {
+  text-indent: 4%;
+  padding: 0px 15px 0px 40px;
+}
+
+.card {
+  background-color: rgba(119, 119, 119, .8)
+}
+
+.contactLink {
+  display: inline;
+  text-decoration: none;
+  margin: 0px 5px;
+  color: blanchedalmond;
+  transition: font-size .5s, color .5s;
+}
+
+.contactLink:hover {
+  font-size: 18px;
+  color: #30948D;
+}
+
+.imgab {
+  display: flex;
+  background-image: url("../../assets/graduation.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-left: 1vw;
+  min-width: 250px;
+  max-width: 400px;
+  min-height: 250px;
+  border-radius: 15px;
+  transition: margin-left .4s;
+}
+
+.mainbox {
+  position: relative;
+  width: 85%;
+  padding: 35px;
+  border-radius: 15px;
+  color: white;
+  margin: auto;
+  transition: border-radius .4s;
+}
+
+.mainbox:hover {
+  border-radius: 20px;
+}
+
+.mainbox:hover .imgab {
+  margin-left: 2vw;
+}
+
+.aitem {
+  position: relative;
+  order: 1;
+  justify-content: center;
+}
 
 .aitem3 {
   order: 4;
@@ -118,51 +116,44 @@
 .aitem4 {
   order: 3;
   grid-column: span 2;
- 
 }
+
 .aitem2 {
-  
   order: 2;
-   align-content: center;
+  align-content: center;
   justify-content: center;
-  margin:  auto;
- 
+  margin: auto;
 }
 
 .aitem5 {
-
   order: 5;
   padding-right: 12px;
 }
-  
-  button :hover {
-    background-color: aqua;
-  }
 
+button :hover {
+  background-color: aqua;
+}
+
+.cardcontent {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+@media (max-width:650px) {
   .cardcontent {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
+    display: inline;
   }
-  
-  @media (max-width:650px){
-    .cardcontent {
-     display: inline;
-   
-
-    }
-    .mainbox {
-      padding: 20px;
-    }
-    .aitem {
-      order: 1;
-    }
-  
+  .mainbox {
+    padding: 20px;
+  }
+  .aitem {
+    order: 1;
+  }
   .aitem3 {
     order: 4;
   }
-  
   .aitem4 {
     order: 3;
     grid-column: span 2;
@@ -170,12 +161,8 @@
   .aitem2 {
     order: 2;
   }
-  
   .aitem5 {
-  
     order: 5;
     padding-left: 5px;
   }
-    
-  }
- 
+}

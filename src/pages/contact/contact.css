@@ -1,6 +1,7 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
 input, textarea {
   width: 100%;
   padding: 10px;
@@ -10,51 +11,54 @@ input, textarea {
   resize: vertical;
 }
 
-.column {position: relative;
-    display: flex;
-  margin: auto;  
+.column {
+  position: relative;
+  display: flex;
+  margin: auto;
   width: 60vw;
   padding: 20px 30px;
-    border-radius: 15px;
+  border-radius: 15px;
   -webkit-box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
   box-shadow: 0 13px 27px 0 rgba(31, 4, 6, 0.25);
   -webkit-transition: .9s;
   transition: .9s;
 }
 
-.column input, textarea{
+.column input, textarea {
   border-radius: 10px;
 }
-h2{
+
+h2 {
   margin-top: 0px;
 }
+
 .contact-container {
   position: relative;
-    min-height: 90vh;
+  min-height: 90vh;
   background-image: url("../../assets/gridlook.jpg");
   background-size: cover;
 }
 
+button :hover {
+  background-color: aqua;
+}
 
-  button :hover{
-
-    background-color: aqua;
-  }
-  
 #contact-form {
   position: relative;
 }
 
-#formSub{
+#formSub {
   display: flex;
   justify-content: center;
   margin: auto;
   width: 100%;
   transition: width 1s;
 }
-input[type=submit]:hover{
+
+input[type=submit]:hover {
   cursor: pointer;
 }
+
 #contactSub {
   border-radius: 10px;
   color: aliceblue;
@@ -64,18 +68,17 @@ input[type=submit]:hover{
   box-shadow: 0 13px 27px 0 rgba(0, 0, 0, 0.5);
   transition: width 1s;
 }
-  #formSub:hover #contactSub{
- cursor: pointer;
-   width: 45%;
 
-  }
+#formSub:hover #contactSub {
+  cursor: pointer;
+  width: 45%;
+}
 
-  @media screen and (max-width:600px){
-    .row{
-      margin: 18px 18px 0px;
-    }
-   
-    p {
-      margin: 15px;
-    }
+@media screen and (max-width:600px) {
+  .row {
+    margin: 18px 18px 0px;
   }
+  p {
+    margin: 15px;
+  }
+}
