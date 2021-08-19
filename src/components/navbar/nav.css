@@ -2,10 +2,8 @@
   position: sticky;
   display: flex;
   top: 0px;
-  justify-content: center;
   width: 100%;
   min-height: 6vh;
-  color: #fff;
   background: #30948D;
   font-family: sans-serif;
   z-index: 100;
@@ -17,14 +15,12 @@
   grid-template-columns: repeat(2, 1fr);
   min-width: 85vw;
   margin: auto;
-  min-height: 100%;
 }
 
 #left {
   display: flex;
   max-width: 250px;
   justify-content: center;
-  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -37,19 +33,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-left: auto;
-  align-self: center;
 }
 
 #right a {
   display: flex;
   margin: auto;
   justify-content: center;
-  min-height: 75%;
   color: #f2f2f2;
-  text-align: center;
   padding: 15px;
   text-decoration: none;
-  min-width: 75px;
   font-size: 16px;
   border-radius: 10px;
   -webkit-box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
@@ -71,14 +63,12 @@
 
 #right a:hover {
   background-color: rgb(70, 158, 62);
-  color: white;
   border-radius: 20px;
   -webkit-box-shadow: 0 13px 27px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 0px 27px 0 rgba(0, 0, 0, 0.25);
 }
 
 #alphaq {
-  max-width: 250px;
   margin-left: 5%;
   font-size: 22px;
 }

@@ -1,6 +1,6 @@
 import React from "react"
-import { Images } from "../../assets/img";
-
+import { Images } from "./img";
+import "./cards.styles.css"
 
 
 function Card(props) {

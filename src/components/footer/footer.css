@@ -4,7 +4,6 @@ footer {
     color: #ddd;
     background-color: #282E34;
     min-height: 10vh;
-    align-items: center;
     justify-content: center;
     padding: 25px 20px 20px;
 }
@@ -14,14 +13,7 @@ footer {
     font-size: 12px;
 }
 
-.footerC {
-    display: grid;
-    padding: auto;
-    align-items: center;
-}
-
 .footerC p, .footerC div {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
