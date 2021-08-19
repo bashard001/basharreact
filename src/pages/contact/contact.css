@@ -2,7 +2,6 @@
     box-sizing: border-box;
   }
 input, textarea {
-
   width: 100%;
   padding: 10px;
   border: 1px solid black;
@@ -14,16 +13,13 @@ input, textarea {
 .row {
   position: relative;
     display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
   margin: auto;  
-  width: 70vw;
+  width: 60vw;
 }
 
 .column {
  min-height: 200px;
-  width: 50%;
-  padding: 20px;
+  padding: 20px 30px;
   flex: 1 1 300px; /*  Stretching: */
     margin: 15px;
     border-radius: 15px;
@@ -42,7 +38,6 @@ h2{
 .containerC {
   position: relative;
     min-height: 90vh;
-  padding-top: 10px;
   background-image: url("../../assets/gridlook.jpg");
   background-size: cover;
 }

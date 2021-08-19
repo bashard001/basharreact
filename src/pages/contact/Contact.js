@@ -63,7 +63,7 @@ function Contact() {
 
 
     return (
-        <div className="back">
+       
             <div className="containerC" id="top">
                 <div style={{ textAlign: 'center' }}>
                     <h2><b>Contact Me</b></h2>
@@ -87,8 +87,6 @@ function Contact() {
                     </div>
                 </div>
             </div>
-        </div>
-      
     )
 }
 

@@ -21,7 +21,6 @@ function Project() {
         }
 
       </div>
-
     </div>
   )
 }
