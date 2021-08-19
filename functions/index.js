@@ -10,9 +10,15 @@ exports.helloWorld = functions.https.onRequest((req, res)=>{
 
   res.header('Access-Control-Allow-Origin', '*')
   
-    res.send('Hello World from function!');
+ 
   
 })
+
+
+
+
+
+
 
 // exports.testingF = functions.https.onCall((data, context) =>{
 

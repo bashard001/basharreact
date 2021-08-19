@@ -53,7 +53,6 @@ function About() {
 
           <div class="aitem4">
             <h3>About: </h3>
-
             <p class="text">
               I am a self-motivated and goal-oriented Full Stack Web Engineer with experience working on multiple
               web applications, backend development and data engineering that meet the highest standards for user
@@ -79,7 +78,6 @@ function About() {
               files, worked on developing chart indicators, creating databases and managing multiple portfolios with close
               attention and continual analysis of economic trends to determine appropriate asset allocation according to
               strict standards.
-
             </p>
           </div>
         </div>
