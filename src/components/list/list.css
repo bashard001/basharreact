@@ -1,4 +1,11 @@
+.wave{
+    position: relative;
+    display: block;
+}
+
+
 #list {
+    
     color: #777;
     background-color:white;
     text-align:center;

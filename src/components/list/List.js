@@ -3,6 +3,8 @@ import "./list.css"
 
 function List() {
   return (
+ 
+  
     <div id="list">
       <h3>Web Applications</h3>
 
@@ -15,6 +17,7 @@ function List() {
         <li> Create and consume RESTful APIs utilizing JSON as a data format and REST APIs </li>
       </ul>
     </div>
+  
   )
 }
 

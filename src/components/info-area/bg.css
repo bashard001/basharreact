@@ -9,7 +9,7 @@
 
 .bg1 {
   background-image: url("../../assets/bashar4.jpg");
-  min-height: 90vh;
+  min-height: 88vh;
 }
 
 .bg2 {
@@ -112,4 +112,26 @@ img {
     display: inline;
     letter-spacing: 5px;
   }
+}
+.wave-line {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+}
+
+.wave-line svg {
+   position: relative;
+   display: block;
+   width: calc(144% + 1.3px);
+   height: 50px;
+   
+}
+
+.wave-line .shape-fill {
+   fill: #ffffff;
 }
