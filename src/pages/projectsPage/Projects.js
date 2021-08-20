@@ -5,7 +5,6 @@ import Card from "../../components/cards/cards";
 
 
 function Project() {
-
   return (
     <div className="maincontainers">
       <div className="pagetitle">

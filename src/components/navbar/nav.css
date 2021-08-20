@@ -122,12 +122,6 @@
   }
 }
 
-@media (min-width: 1250px) {
-  .header {
-    min-height: 11vh;
-  }
-}
-
 @media (max-width:800px) {
   #left {
     top: 25px;
@@ -137,7 +131,6 @@
   #right a {
     position: relative;
     padding: 10px 10px;
-    margin: 0px 5px;
   }
   .headerContainer {
     grid-template-columns: 3fr 7fr;

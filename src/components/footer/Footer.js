@@ -5,7 +5,6 @@ function Footer() {
     return (
         <footer className="dynamicfooter">
             <div className="footerC">
-
                 <div>
                     <a href="https://www.linkedin.com/in/bashar-daseh-hamed/" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-linkedin" style={{ color: "white", fontSize: "19px", margin: "0px 5px" }}></i>
