@@ -12,7 +12,6 @@ function About() {
     <div className="maincontainer" id="top">
       <div className="mainbox card">
         <h2 className="pagetitleA">About Me</h2>
-
         <div className="cardcontent">
           <div className="aitem">
             <div className="imgab"></div>
