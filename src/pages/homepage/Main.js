@@ -9,7 +9,7 @@ function Main() {
     return (
         <div>
 
-            <Bg1 c1="bg1 wave" c2="firstcaption" c3="firstbox" c4="top" text="Full Stack Web Engineer" />
+            <Bg1 c1="bg1 wave" c2="caption firstcaption" c3="firstbox" c4="top" text="Full Stack Web Engineer" />
            
             <List />
             <Bg1 c1="bg2" c2="caption" c3="box" text="Apply Animations" />

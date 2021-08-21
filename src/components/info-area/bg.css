@@ -34,6 +34,9 @@
   text-align: center;
   color: #000;
 }
+.firstcaption {
+  top: 75%;
+}
 
 .caption span.box {
   background-color: transparent;
@@ -46,13 +49,14 @@
 }
 
 .caption span.box.lastBox {
-  background-color: black;
+  background-image: linear-gradient(to right,#269c65, gray);
+  opacity: .8;
   color: #f7f7f7;
   font-size: 18px;
   padding: 18px;
-  border-radius: 5px;
+  border-radius: 7px;
   letter-spacing: 10px;
-  box-shadow: 0 13px 27px 0 rgba(12, 7, 7, .2);
+  box-shadow: 0 13px 27px 0 rgba(12, 7, 7, .5);
   transition: 1s;
 }
 
@@ -60,18 +64,14 @@
   border-radius: 20px;
   -webkit-box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
   box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
+  opacity: .9;
 }
 
 .projects {
   color: #fff;
 }
 
-.firstcaption {
-  position: absolute;
-  top: 75%;
-  width: 100%;
-  text-align: center;
-}
+
 
 span.firstbox {
   padding: 10px 25px;
