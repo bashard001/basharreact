@@ -6,7 +6,7 @@ import React from "react"
 function Area(props) {
   return (
     <div>
-      <div style={{ color: 'white', backgroundColor: 'gray', textAlign: 'center', padding: "50px 80px" }}>
+      <div className="area-style" >
         <p>{props.text}</p>
       </div>
     </div>

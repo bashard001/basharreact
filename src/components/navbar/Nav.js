@@ -14,7 +14,7 @@ function Nav() {
         <nav className="header">
             <div className="headerContainer">
                 <section id="left">
-                    <Link to={'/'}>
+                    <Link to={'/'} onClick={scrollToTop}>
                         <h1 id="alphaq"><span id="a">Bashar Daseh</span><span id="b">B D</span></h1>
                     </Link>
                 </section>
