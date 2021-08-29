@@ -74,11 +74,21 @@ input[type=submit]:hover {
   width: 45%;
 }
 
-@media screen and (max-width:600px) {
+@media (max-width:600px) {
   .row {
     margin: 18px 18px 0px;
   }
   p {
     margin: 15px;
+  }
+  .column{
+    width: 97vw;
+    padding: 10px;
+  }
+}
+@media (max-width: 1100px) and (min-width: 600px) {
+  .column{
+    width: 75vw;
+    padding: 20px;
   }
 }

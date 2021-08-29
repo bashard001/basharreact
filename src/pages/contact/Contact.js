@@ -1,8 +1,6 @@
 import React, { useState } from "react"
 import "./contact.css"
 
-
-
 function Contact() {
 
     let [contact, setContact] = useState({
@@ -61,9 +59,7 @@ function Contact() {
         setContact({ ...contact, message: event.target.value })
     }
 
-
     return (
-
         <div className="contact-container" id="top">
             <div style={{ textAlign: 'center' }}>
                 <h2><b>Contact Me</b></h2>

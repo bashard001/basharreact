@@ -26,10 +26,6 @@
   transition: width .7s;
 }
 
-.mainbox:hover .pagetitleA {
-  width: 65%;
-}
-
 .skillList {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -41,12 +37,6 @@
   font-size: 15px;
   text-shadow: none;
   transition: font-size .5s, text-shadow .5s;
-}
-
-.aboutlist:hover {
-  cursor: default;
-  font-size: 17px;
-  text-shadow: 2px 2px 2px #464444;
 }
 
 p.text {
@@ -64,11 +54,6 @@ p.text {
   margin: 0px 5px;
   color: blanchedalmond;
   transition: font-size .5s, color .5s;
-}
-
-.contactLink:hover {
-  font-size: 18px;
-  color: #30948D;
 }
 
 .imgab {
@@ -92,14 +77,6 @@ p.text {
   color: white;
   margin: auto;
   transition: border-radius .4s;
-}
-
-.mainbox:hover {
-  border-radius: 20px;
-}
-
-.mainbox:hover .imgab {
-  margin-left: 2vw;
 }
 
 .aitem {
@@ -129,23 +106,28 @@ p.text {
   padding-right: 12px;
 }
 
-button :hover {
-  background-color: aqua;
-}
-
 .cardcontent {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
 }
+  
+.mainbox:hover .pagetitleA {
+  width: 65%;
+} 
 
 @media (max-width:650px) {
   .cardcontent {
     display: inline;
   }
+  .imgab{
+    margin: auto;
+  }
   .mainbox {
     padding: 20px;
+    width: 100vw;
+    border-radius: 0px;
   }
   .aitem {
     order: 1;
@@ -164,4 +146,28 @@ button :hover {
     order: 5;
     padding-left: 5px;
   }
+}
+
+@media (min-width: 651px) {
+  button :hover {
+    background-color: aqua;
+  }
+  .mainbox:hover {
+    border-radius: 20px;
+  }
+  
+  .mainbox:hover .imgab {
+    margin-left: 2vw;
+  }
+  .contactLink:hover {
+    font-size: 18px;
+    color: #30948D;
+  }
+  
+  .aboutlist:hover {
+    cursor: default;
+    font-size: 17px;
+    text-shadow: 2px 2px 2px #464444;
+  }
+
 }
