@@ -80,15 +80,17 @@
   animation-fill-mode: forwards;
 }
 
-#left:hover span#a {
-  display: none;
-}
+
 
 #alphaq span#b {
   display: none;
   white-space: nowrap;
 }
 
+@media (min-width:650px) {
+  #left:hover span#a {
+    display: none;
+  }
 #left:hover span#b {
   display: block;
   overflow: hidden;
@@ -96,7 +98,7 @@
   animation-fill-mode: forwards;
   cursor: pointer;
 }
-
+}
 @keyframes aniBD {
   from {
     width: 0px;
@@ -177,13 +179,5 @@
   #alphaq {
     font-size: 19px;
   }
-  #left:hover span#b {
-    display: block;
-    overflow: hidden;
-    animation: aniBD .9s;
-    animation-fill-mode: forwards;
-  }
-  #left:hover span#a {
-    display: none;
-  }
+  
 }
