@@ -21,7 +21,7 @@ function Totop() {
   }
 
   useEffect(() => {
-
+    scrollFunction()
     window.addEventListener("scroll", scrollFunction)
   }, [])
 
