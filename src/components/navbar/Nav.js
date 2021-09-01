@@ -15,7 +15,7 @@ function Nav() {
           
                 <section id="left">
                     <Link to={'/'} onClick={scrollToTop}>
-                        <h1 id="alphaq"><span id="a">Bashar Daseh</span><span id="b">B D</span></h1>
+                        <span id="a">Bashar Daseh</span><span id="b">B D</span>
                     </Link>
                 </section>
                 <section id="right">

@@ -3,7 +3,7 @@
   display: flex;
   top: 0px;
   width: 100%;
-  min-height: 6vh;
+  min-height: 7vh;
   background: #30948D;
   font-family: sans-serif;
   z-index: 100;
@@ -14,15 +14,20 @@
 
 #left {
   display: flex;
-  max-width: 250px;
+ min-width: 250px;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
   margin-left: 5vw;
+  
 }
 
 #left a {
   color: white;
   text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 5%;
 }
 
 #right {
@@ -35,6 +40,7 @@
   display: flex;
   margin: auto;
   justify-content: center;
+  align-items: center;
   color: #f2f2f2;
   padding: 15px;
   text-decoration: none;
@@ -47,13 +53,10 @@
 }
 
 #right p {
-  display: flex;
   padding-left: 5px;
   margin: auto;
   justify-content: center;
   color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
   font-size: 16px;
 }
 
@@ -64,24 +67,19 @@
   box-shadow: 0 0px 27px 0 rgba(0, 0, 0, 0.25);
 }
 
-#alphaq {
-  margin-left: 5%;
-  font-size: 22px;
-}
-
-#alphaq span#a {
+#left span#a {
   display: block;
   white-space: nowrap;
   animation: aniBashar 2s;
   animation-fill-mode: forwards;
 }
 
-#alphaq span#b {
+#left span#b {
   display: none;
   white-space: nowrap;
 }
 
-@media (min-width:650px) {
+@media (min-width:670px) {
   #left:hover span#a {
     display: none;
   }
@@ -119,57 +117,23 @@
   }
 }
 
-@media (max-width:800px) {
-  #left {
-    top: 25px;
-    max-width: 150px;
-    font-size: 8px;
-  }
-  #right a {
-    position: relative;
-    padding: 10px 10px;
-  }
-  #right p {
-    font-size: 15px;
-  }
-  #alphaq {
-    display: flex;
-    font-size: 20px;
-    margin-left: 15%;
-    justify-content: center;
-  }
-}
-@media (max-width:610px) {
+
+@media (max-width:670px) {
   #left{
     flex: 100%;
+    margin: auto;
+    padding: 0px 20px 20px 20px;
   }
-  #right{
-    flex: 100%;
-  }
-  
-}
-
-@media (max-width: 580px) {
-  #right a {
-    position: relative;
-    padding: 10px 10px;
-    margin: 0px 10px;
-  }
-  #left {
+  #left span#a{
     display: flex;
-    max-width: 100%;
     justify-content: center;
   }
-  #right {
-    display: flex;
-    max-width: 100%;
+  #right{
     margin: auto;
-    margin-bottom: 10px;
+    width: 88%;
   }
-  #right p {
+  #right a {
+    padding: 10px;
     font-size: 14px;
-  }
-  #alphaq {
-    font-size: 19px;
   }
 }
