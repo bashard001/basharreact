@@ -42,10 +42,10 @@ function About() {
           <div className="aitem3"><h3>Education:</h3>
             <ul >
               <li className="aboutlist">University of San Diego California (UCSD). 2018-2020</li>
-              <p> Bachelor's degree in Computer Science</p>
+              <p> Bachelor's Degree in Computer Science</p>
               <li className="aboutlist"> San diego Mesa College. 2017-2018</li>
               <p>Computer Science Education</p>
-              <li className="aboutlist">San diego Mesa College. 2012-2016</li>
+              <li className="aboutlist">San Diego Mesa College. 2012-2016</li>
               <p> Associate of Science in Biology & Allied health</p>
             </ul>
           </div>

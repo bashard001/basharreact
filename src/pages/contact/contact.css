@@ -37,6 +37,7 @@ h2 {
   min-height: 90vh;
   background-image: url("../../assets/gridlook.jpg");
   background-size: cover;
+  padding: 30px 0px;
 }
 
 button :hover {
@@ -45,6 +46,7 @@ button :hover {
 
 #contact-form {
   position: relative;
+
 }
 
 #formSub {
