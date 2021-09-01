@@ -7,19 +7,18 @@
   background: #30948D;
   font-family: sans-serif;
   z-index: 100;
-  padding: 20px 0px;
+  padding: 22px 0px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 #left {
   display: flex;
- min-width: 250px;
+  min-width: 250px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   margin-left: 5vw;
-  
 }
 
 #left a {
@@ -117,18 +116,17 @@
   }
 }
 
-
 @media (max-width:670px) {
-  #left{
+  #left {
     flex: 100%;
     margin: auto;
     padding: 0px 20px 20px 20px;
   }
-  #left span#a{
+  #left span#a {
     display: flex;
     justify-content: center;
   }
-  #right{
+  #right {
     margin: auto;
     width: 88%;
   }
