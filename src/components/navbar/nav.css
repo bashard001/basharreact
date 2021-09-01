@@ -7,14 +7,8 @@
   background: #30948D;
   font-family: sans-serif;
   z-index: 100;
-  padding: 15px 0px;
-}
-
-.headerContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  min-width: 85vw;
-  margin: auto;
+  padding: 20px 0px;
+  justify-content: space-between;
 }
 
 #left {
@@ -22,6 +16,7 @@
   max-width: 250px;
   justify-content: center;
   cursor: pointer;
+  margin-left: 5vw;
 }
 
 #left a {
@@ -32,7 +27,7 @@
 #right {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-left: auto;
+  margin-right: 5vw;
 }
 
 #right a {
@@ -80,8 +75,6 @@
   animation-fill-mode: forwards;
 }
 
-
-
 #alphaq span#b {
   display: none;
   white-space: nowrap;
@@ -91,14 +84,15 @@
   #left:hover span#a {
     display: none;
   }
-#left:hover span#b {
-  display: block;
-  overflow: hidden;
-  animation: aniBD .9s;
-  animation-fill-mode: forwards;
-  cursor: pointer;
+  #left:hover span#b {
+    display: block;
+    overflow: hidden;
+    animation: aniBD .9s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  }
 }
-}
+
 @keyframes aniBD {
   from {
     width: 0px;
@@ -134,11 +128,6 @@
     position: relative;
     padding: 10px 10px;
   }
-  .headerContainer {
-    grid-template-columns: 3fr 7fr;
-    min-width: 95vw;
-    margin: auto;
-  }
   #right p {
     font-size: 15px;
   }
@@ -155,12 +144,6 @@
     position: relative;
     padding: 10px 10px;
     margin: 0px 10px;
-  }
-  .headerContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 99%;
-    margin: auto;
   }
   #left {
     display: flex;
@@ -179,5 +162,4 @@
   #alphaq {
     font-size: 19px;
   }
-  
 }
