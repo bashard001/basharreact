@@ -9,6 +9,7 @@
   z-index: 100;
   padding: 20px 0px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #left {
@@ -137,6 +138,15 @@
     margin-left: 15%;
     justify-content: center;
   }
+}
+@media (max-width:610px) {
+  #left{
+    flex: 100%;
+  }
+  #right{
+    flex: 100%;
+  }
+  
 }
 
 @media (max-width: 580px) {
