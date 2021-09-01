@@ -23,6 +23,7 @@
     text-decoration: none;
     place-items: center;
     color: white;
+    text-shadow: 0px 0px 1.2px black;
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 10px;
