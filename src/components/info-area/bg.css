@@ -36,6 +36,7 @@
 }
 .firstcaption {
   top: 75%;
+
 }
 .area-style{ 
   color: white;
@@ -79,9 +80,11 @@ span.firstbox {
   padding: 10px 25px;
   background-color: rgba(48, 148, 141, .65);
   font-size: 25px;
+  border-radius: 5px;
+  box-shadow: 0 13px 27px 0 rgba(12, 7, 7);
   color: #111;
   transition: 1s;
-  box-shadow: 0 13px 27px 0 rgba(12, 7, 7, .5);
+  box-shadow: 0 10px 30px 0 rgba(12, 7, 7, .5);
 }
 
 span.firstbox:hover {
