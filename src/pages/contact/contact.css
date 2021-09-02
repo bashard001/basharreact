@@ -16,7 +16,7 @@ input, textarea {
   display: flex;
   margin: auto;
   width: 60vw;
-  padding: 20px 30px;
+  padding: 25px 30px;
   border-radius: 15px;
   -webkit-box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
   box-shadow: 0 13px 27px 0 rgba(31, 4, 6, 0.25);
