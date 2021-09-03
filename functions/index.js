@@ -11,7 +11,7 @@ exports.helloWorld = functions.https.onRequest((req, res)=>{
 
   res.header('Access-Control-Allow-Origin', '*')
   const number = Math.round(Math.random()* 100)
-  console.log(req.body)
+  console.log(JSON.stringify(req.body))
  res.send(number.toString())
   
 })
@@ -22,10 +22,10 @@ exports.helloWorld = functions.https.onRequest((req, res)=>{
 
 
 
-// exports.testingF = functions.https.onCall((data, context) =>{
+exports.testingF = functions.https.onCall((data, context) =>{
 
 
-//   console.log(data)
-// console.log("inside the fun")
-//   return "hello world"
-// })
+
+console.log("inside the fun")
+  return "hello world"
+})

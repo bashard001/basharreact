@@ -35,11 +35,14 @@ function Contact() {
     // }
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
+        // e.preventDefault();
 
-        await fetch("https://us-central1-bashard.cloudfunctions.net/helloWorld",{body: contact}).then((res) => {
-            console.log(res.json())
-        })
+        // await fetch("https://us-central1-bashard.cloudfunctions.net/helloWorld",{method: "POST",
+        //     body: contact}).then((res) => {
+        //     console.log(res.json())
+        // })
+        const testingF = firebase.functions().httpsCallabel("testingF")
+        testingF()
     }
 
     const onNameChange = event => {
