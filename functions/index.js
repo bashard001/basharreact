@@ -1,5 +1,6 @@
 const functions = require("firebase-functions");
 const admin = require('firebase-admin');
+const { response } = require("express");
 admin.initializeApp();
 
 
@@ -9,8 +10,9 @@ admin.initializeApp();
 exports.helloWorld = functions.https.onRequest((req, res)=>{
 
   res.header('Access-Control-Allow-Origin', '*')
-  
- 
+  const number = Math.round(Math.random()* 100)
+  console.log(req.body)
+ res.send(number.toString())
   
 })
 
