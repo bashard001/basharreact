@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { testingF } from "../../firebase/firebase"
 import "./contact.css"
 
 function Contact() {
@@ -18,10 +19,8 @@ function Contact() {
     //             'Accept': 'application/json',
     //             'Content-Type': 'application/json'
     //         }
-
     //     })
     //         .then((res) => {
-
     //             console.log(res.status)
     //             if (res.status == 200) {
     //                 alert("Message Sent.");
@@ -35,14 +34,15 @@ function Contact() {
     // }
 
     const handleSubmit = async (e) => {
-        // e.preventDefault();
-
+        e.preventDefault();
         // await fetch("https://us-central1-bashard.cloudfunctions.net/helloWorld",{method: "POST",
         //     body: contact}).then((res) => {
         //     console.log(res.json())
         // })
-        const testingF = firebase.functions().httpsCallabel("testingF")
-        testingF()
+     testingF().then(res => {
+         console.log(res.data)
+     })
+      
     }
 
     const onNameChange = event => {

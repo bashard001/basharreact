@@ -1,9 +1,9 @@
-import firebase from "firebase/app"
-import 'firebase/functions'
+import { initializeApp } from "firebase/app"
+import { getFunctions, httpsCallable } from 'firebase/functions';
 import 'firebase/auth'
 
 
-const config = {
+const app = {
     apiKey: "AIzaSyDMVVftOC2hbRgHXecWMk2ga4SETYM9eLk",
     authDomain: "bashar-bc4e1.firebaseapp.com",
     projectId: "bashar-bc4e1",
@@ -12,7 +12,11 @@ const config = {
     appId: "1:727189038198:web:53672c9443982c4a202b57",
     measurementId: "G-EWH48Q0RZG"
   };
-  firebase.initializeApp(config)
+
+  initializeApp(app)
+ 
+ const functions = getFunctions(initializeApp(app))
+ export const testingF = httpsCallable(functions, "testingF")
 
 
-  export default firebase
+
