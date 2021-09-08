@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { testingF } from "../../firebase/firebase"
 import "./contact.css"
-import * as corsModule from "cors"
+// import * as corsModule from "cors"
 
 
 

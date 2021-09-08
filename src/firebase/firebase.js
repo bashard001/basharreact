@@ -1,9 +1,9 @@
 import { initializeApp } from "firebase/app"
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import 'firebase/auth'
-import * as moduleCor from "cors"
+// import * as moduleCor from "cors"
 
-const cors = moduleCor({origin: true})
+// const cors = moduleCor({origin: true})
 
 const app = {
     apiKey: "AIzaSyDMVVftOC2hbRgHXecWMk2ga4SETYM9eLk",
@@ -15,12 +15,11 @@ const app = {
     measurementId: "G-EWH48Q0RZG"
   };
 
-  initializeApp(app)
+initializeApp(app)
  
  const functions = getFunctions(initializeApp(app))
- export const testingF =  httpsCallable(functions, "testingF").then(res =>{
-   
- })
+
+ export const testingF =  httpsCallable(functions, "testingF")
 
 
 
