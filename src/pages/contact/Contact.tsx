@@ -1,9 +1,13 @@
 import React, { useState } from "react"
 import { testingF } from "../../firebase/firebase"
 import "./contact.css"
+import * as corsModule from "cors"
+
+
 
 function Contact() {
 
+    
     let [contact, setContact] = useState({
         name: "",
         lName: "",
@@ -37,9 +41,10 @@ function Contact() {
         e.preventDefault();
         // await fetch("https://us-central1-bashard.cloudfunctions.net/helloWorld",{method: "POST",
         //     body: contact}).then((res) => {
-        //     console.log(res.json())
+        //     console.log(res)
         // })
      testingF().then(res => {
+        
          console.log(res.data)
      })
       

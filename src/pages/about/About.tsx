@@ -15,7 +15,7 @@ function About() {
         <div className="cardcontent">
           <div className="aitem">
             <div className="imgab"></div>
-            <h3 style={{ fontfFamily: 'Charmonman', fontSize: "18px", color: "red" }}>Full Stack Web Engineer
+            <h3 style={{ fontFamily: 'Charmonman', fontSize: "18px", color: "red" }}>Full Stack Web Engineer
             </h3><br />
             <strong>Bashar Daseh</strong>
             <br />
@@ -27,12 +27,12 @@ function About() {
             <a className="contactLink"
               href="mailto:bdaseh@gmail">bdaseh@gmail.com</a><br />
             <i style={{ display: "inline", textDecoration: "none" }} className="fa fa-github"> &#32; </i><a
-              class="contactLink" href="https://github.com/bashard001" rel="noopener noreferrer" target="_blank">
+              className="contactLink" href="https://github.com/bashard001" rel="noopener noreferrer" target="_blank">
               github.com/bashard001</a>
           </div>
 
           <div className="aitem2"> <h3>Development Tools, Languages and Frameworks:</h3>
-            <ul class="skillList 1">
+            <ul className="skillList 1">
               {
                 skills.map(skill => <li className="aboutlist">{skill}</li>)
               }
@@ -50,19 +50,19 @@ function About() {
             </ul>
           </div>
 
-          <div class="aitem4">
+          <div className="aitem4">
             <h3>About: </h3>
-            <p class="text">
+            <p className="text">
               I am a self-motivated and goal-oriented Full Stack Web Engineer with experience working on multiple
               web applications, backend development and data engineering that meet the highest standards for user
               experience, web design, usability, and speed. proven experience developing consumer-focused web applications
               for desktop and mobile using MERN, HTML, CSS, JQuery, SQL, JavaScript and node.js.</p>
-            <p class="text">
+            <p className="text">
               Proven experience developing scalable consumer-focused web applications from startup to enterprise; utilizing cloud services like AWS and Firebase
               , build databases, deploy and manage websites and Apps on a secure reliable network. Building a strong website/Apps
               infrastructure applications for desktop, and mobile devices that runs more efficient and secure.</p>
 
-            <p class="text">Solution-driven professional excelling in highly collaborative work environment, finding
+            <p className="text">Solution-driven professional excelling in highly collaborative work environment, finding
               solutions to challenges and focused on customer satisfaction. Solution-driven professional excelling in
               highly collaborative work environment, finding solutions to challenges and focused on customer satisfaction.
               development (including creating servers, processing data,
