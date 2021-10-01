@@ -14,8 +14,8 @@ function Project() {
       <div className="containers">
         {
           // mapping project cards
-          projectsData.map(project => (
-             <Card key={project.id} project={project}/>
+          projectsData.map((project, index) => (
+             <Card key={index} project={project}/>
              ))
         }
 

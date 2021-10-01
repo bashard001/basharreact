@@ -34,7 +34,7 @@ function About() {
           <div className="aitem2"> <h3>Development Tools, Languages and Frameworks:</h3>
             <ul className="skillList 1">
               {
-                skills.map(skill => <li className="aboutlist">{skill}</li>)
+                skills.map((skill, index) => <li key={index} className="aboutlist">{skill}</li>)
               }
             </ul>
           </div>
