@@ -9,12 +9,12 @@
   position: absolute;
   overflow: hidden;
   font-size: 16px;
-  height: 10px;
+  height: 200px;
   width: 100%;
-  top: 40%;
+  top: 0;
   border-radius: 20px;
   background-color: red;
-  transition: height 0.8s, box-shadow 1s;
+  transition: height 0.8s, box-shadow 1s, padding-top .7s;
   transition-timing-function: ease-in-out;
   z-index: -1;
 }
@@ -31,7 +31,8 @@
   &:hover {
     height: 330px;
     .tooltips {
-      height: 200px;
+      height: 340px;
+      padding-top: 140px;
       box-shadow: 0px 0px 8px 3px #ffffff;
     }
   }
