@@ -1,6 +1,6 @@
 import React from "react"
 import { Images } from "./img";
-import "./cards.styles.css"
+import "./cards.styles.scss"
 
 
 function Card(props) {
@@ -31,7 +31,7 @@ function Card(props) {
         <div className="captions ">
           <a href={project.pUrl} rel="noopener noreferrer" target="_blank" className="ap">
 
-            <span>{project.pName}</span>
+            {project.pName}
           </a>
         </div>
       </div>

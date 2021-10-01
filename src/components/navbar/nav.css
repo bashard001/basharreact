@@ -69,7 +69,8 @@
 #left span#a {
   display: block;
   white-space: nowrap;
-  animation: aniBashar 2s;
+  overflow: hidden;
+  animation: aniBashar 1.5s;
   animation-fill-mode: forwards;
 }
 
@@ -86,7 +87,7 @@
     display: block;
     overflow: hidden;
     animation: aniBD .9s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards ;
     cursor: pointer;
   }
 }
