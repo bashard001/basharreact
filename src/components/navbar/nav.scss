@@ -1,0 +1,136 @@
+.header {
+  position: sticky;
+  display: flex;
+  top: 0px;
+  width: 100%;
+  min-height: 7vh;
+  background: #30948d;
+  font-family: sans-serif;
+  z-index: 100;
+  padding: 22px 0px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#left {
+  display: flex;
+  min-width: 250px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 5vw;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 5%;
+  
+  }
+}
+
+#right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-right: 5vw;
+  a {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
+    box-shadow: 0 0px 27px 0 rgba(255, 255, 255, 0.25);
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
+    &:hover {
+      background-color: rgb(70, 158, 62);
+      border-radius: 20px;
+      -webkit-box-shadow: 0 13px 27px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0 0px 27px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+  p {
+    padding-left: 5px;
+    margin: auto;
+    justify-content: center;
+    color: #f2f2f2;
+    font-size: 16px;
+  }
+}
+
+#left {
+  span#a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: aniBashar 1.5s;
+    animation-fill-mode: forwards;
+  }
+  span#b {
+    display: none;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 670px) {
+  #left:hover span#a {
+    display: none;
+  }
+  #left:hover span#b {
+    display: block;
+    overflow: hidden;
+    animation: aniBD 0.9s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  }
+}
+
+@keyframes aniBD {
+  from {
+    width: 0px;
+    opacity: 1;
+  }
+  75% {
+    padding: 30px 0px;
+    font-size: 50px;
+  }
+  to {
+    width: 200px;
+    font-size: 2rem;
+    opacity: 1;
+  }
+}
+
+@keyframes aniBashar {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 200px;
+  }
+}
+
+@media (max-width: 670px) {
+  #left {
+    flex: 100%;
+    margin: auto;
+    padding: 0px 20px 20px 20px;
+  }
+  #left span#a {
+    display: flex;
+    justify-content: center;
+  }
+  #right {
+    margin: auto;
+    width: 88%;
+  }
+  #right a {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
