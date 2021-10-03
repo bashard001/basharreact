@@ -6,10 +6,9 @@
   position: relative;
   width: 100%;
   background-image: url("../../assets/gridlook.jpg");
-  background-size: cover;
-  padding: auto;
+  background-size: cover; 
   min-height: 90vh;
-  padding-bottom: 5vh;
+  padding-bottom: 5%;
 }
 
 #top {
