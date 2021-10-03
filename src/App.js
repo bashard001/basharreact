@@ -7,6 +7,7 @@ import Nav from "./components/navbar/Nav"
 import About from "./pages/about/About"
 import Projects from "./pages/projectsPage/Projects"
 import Totop from "./components/totop-button/Totop"
+import "./App.css"
 
 
 function App() {

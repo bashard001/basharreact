@@ -1,35 +1,38 @@
-* {
-  box-sizing: border-box;
-}
 
-input, textarea {
+
+input,
+textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid black;
+  border: none;
   margin-top: 5px;
   margin-bottom: 12px;
   resize: vertical;
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .column {
   position: relative;
   display: flex;
-  margin: auto;
-  width: 60vw;
+  margin: 3% auto;
+  width: 45vw;
   padding: 25px 30px;
   border-radius: 15px;
   -webkit-box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
   box-shadow: 0 13px 27px 0 rgba(31, 4, 6, 0.25);
-  -webkit-transition: .9s;
-  transition: .9s;
-}
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  input,
+  textarea {
+    border-radius: 10px;
+  }
 
-.column input, textarea {
-  border-radius: 10px;
-}
-
-h2 {
-  margin-top: 0px;
+  input[type="submit"]:hover {
+    cursor: pointer;
+  }
+  label {
+    margin-left: 10px;
+  }
 }
 
 .contact-container {
@@ -38,15 +41,9 @@ h2 {
   background-image: url("../../assets/gridlook.jpg");
   background-size: cover;
   padding: 30px 0px;
-}
-
-button :hover {
-  background-color: aqua;
-}
-
-#contact-form {
-  position: relative;
-
+  h2 {
+    margin-top: 0px;
+  }
 }
 
 #formSub {
@@ -57,15 +54,12 @@ button :hover {
   transition: width 1s;
 }
 
-input[type=submit]:hover {
-  cursor: pointer;
-}
-
 #contactSub {
+  border: none;
   border-radius: 10px;
   color: aliceblue;
   padding: 5px 10px;
-  background: #30948D;
+  background: #30948d;
   -webkit-box-shadow: 0 13px 27px 0 rgba(7, 7, 7, 0.5);
   box-shadow: 0 13px 27px 0 rgba(0, 0, 0, 0.5);
   transition: width 1s;
@@ -76,20 +70,17 @@ input[type=submit]:hover {
   width: 45%;
 }
 
-@media (max-width:600px) {
-  .row {
-    margin: 18px 18px 0px;
-  }
+@media (max-width: 600px) {
   p {
     margin: 15px;
   }
-  .column{
+  .column {
     width: 97vw;
     padding: 10px;
   }
 }
 @media (max-width: 1100px) and (min-width: 600px) {
-  .column{
+  .column {
     width: 75vw;
     padding: 20px;
   }

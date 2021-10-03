@@ -1,14 +1,15 @@
 #goup {
-  display: inline;
+  display: flex;
   position: fixed;
   place-items: center;
   top: 90%;
   left: 95%;
+  height: 30px;
+  width: 30px;
   background-color: red;
-  padding: 5px 7px;
+  align-items: center;
   justify-content: center;
   border-radius: 7px;
-  border: black solid 1.5px;
   transition: opacity .8s, transform .5s;
 }
 
