@@ -1,7 +1,8 @@
 .maincontainers {
   position: relative;
   width: 100%;
-  background: linear-gradient(to bottom, rgb(49, 98, 8) 10%,rgb(240, 240, 240), rgb(177, 105, 105));
+  background-image: url("../../assets/gridlook.jpg");
+  background-size: cover;
   min-height: 90vh;
   padding: 50px 0px;
 }
@@ -14,16 +15,15 @@
   grid-auto-rows: auto;
   grid-gap: 1em;
   grid-row-gap: 2em;
-  margin: 0 auto;
+  margin: auto;
   padding-top: 40px;
   justify-content: center;
-  
 }
 
 .pagetitle {
   text-align: center;
  padding: 10px;
-  width: 85%;
+  width: 70%;
   margin: auto;
   background-color: rgba(48, 148, 141, .5);
   border-radius: 10px;
@@ -36,7 +36,7 @@
     width: 82%;
   }
   .pagetitle {
-    width: 85%;
+    width: 70%;
   }
 }
 

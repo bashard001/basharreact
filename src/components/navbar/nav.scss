@@ -25,7 +25,6 @@
     font-size: 22px;
     font-weight: bold;
     margin-left: 5%;
-  
   }
 }
 
@@ -120,17 +119,18 @@
     flex: 100%;
     margin: auto;
     padding: 0px 20px 20px 20px;
+    span#a {
+      display: flex;
+      justify-content: center;
+    }
   }
-  #left span#a {
-    display: flex;
-    justify-content: center;
-  }
+  
   #right {
     margin: auto;
     width: 88%;
-  }
-  #right a {
-    padding: 10px;
-    font-size: 14px;
+    a {
+      padding: 10px;
+      font-size: 14px;
+    }
   }
 }
