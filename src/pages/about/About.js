@@ -3,8 +3,8 @@ import "./about.css"
 
 
 function About() {
-  const skills = ["JAVA", "AWS and Firebase", "Javascript", "HTML, CSS and SCSS", "JSON, jQuery and AJAX.", "React, React Native and Redux", "GIT version control",
-    "springMVC", "MySQL and MongoDB", "Scrach", "MERN Stack (MongoDB, Express.js, React.js, Node.js).", "Bootstrap and Material-ui", "Babel, Webpack, NPM", "Stripe payment system"]
+  const skills = ["MERN Stack (MongoDB, Express.js, React.js, Node.js).","JavaScript", "Redux", "AWS and Firebase", "JAVA","HTML, CSS and SCSS", "JSON, jQuery and AJAX.", "React Native", "GIT version control",
+    "springMVC", "MySQL and MongoDB", "Scrach", "Bootstrap and Material-ui", "Babel, Webpack, NPM", "Stripe payment system"]
 
 
 
