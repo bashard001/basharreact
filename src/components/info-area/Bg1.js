@@ -1,7 +1,7 @@
 import React from "react"
 import {ReactComponent as Wave } from "../../assets/wavy.svg"
 import "./bg.css"
-
+import {ReactComponent as Waved} from "../../assets/wavedown.svg"
 
 
 function Bg1(props) {
@@ -15,8 +15,14 @@ function Bg1(props) {
                 props.c1.includes("wave") ?
                     <div className="wave-line">
                        <Wave />
+                       
                     </div> :
-                    ""}
+                    null}
+                    {
+                props.c1.includes("down") ?
+                   <Waved fill={"white"}/> :
+                    null}
+                    
         </div>
     )
 }
