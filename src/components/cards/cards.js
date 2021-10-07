@@ -27,7 +27,7 @@ function Card(props) {
 
   return (
     <div className="box ">
-      <div className="a" style={{ backgroundImage: `url(${image})`, backgroundColor:"white" }}>
+      <div className="a skeleton" style={{ backgroundImage: `url(${image})`, backgroundColor:"white" }}>
         <div className="captions ">
           <a href={project.pUrl} rel="noopener noreferrer" target="_blank" className="ap">
 
