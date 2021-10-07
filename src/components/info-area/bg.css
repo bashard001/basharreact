@@ -52,6 +52,7 @@
 }
 
 .caption span.box {
+  display: inline;
   background-color: transparent;
   color: #f7f7f7;
   font-size: 25px;
