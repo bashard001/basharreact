@@ -1,5 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .skeleton {
-  animation: skel-loading 1s linear infinite alternate;
+  -webkit-animation: skel-loading 1s linear infinite alternate;
+          animation: skel-loading 1s linear infinite alternate;
+}
+@-webkit-keyframes skel-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
 }
 @keyframes skel-loading {
   0% {
@@ -26,15 +42,24 @@
   width: 99%;
   top: 0;
   border-radius: 20px;
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: center;
   place-self: center;
   background-color: red;
+  -webkit-transition: height 0.8s, padding-top 0.7s, -webkit-box-shadow 1s;
+  transition: height 0.8s, padding-top 0.7s, -webkit-box-shadow 1s;
+  -o-transition: height 0.8s, box-shadow 1s, padding-top 0.7s;
   transition: height 0.8s, box-shadow 1s, padding-top 0.7s;
-  transition-timing-function: ease-in-out;
+  transition: height 0.8s, box-shadow 1s, padding-top 0.7s, -webkit-box-shadow 1s;
+  -webkit-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
   z-index: -1;
 }
 
 .box {
   position: relative;
+  display: -ms-grid;
   display: grid;
   width: 200px;
   height: 200px;
@@ -42,21 +67,30 @@
   margin: 0px auto;
 
   border-radius: 20px;
+  -webkit-transition: height 0.7s, -webkit-box-shadow 0.6s;
+  transition: height 0.7s, -webkit-box-shadow 0.6s;
+  -o-transition: height 0.7s, box-shadow 0.6s;
   transition: height 0.7s, box-shadow 0.6s;
-  transition-timing-function: ease-in-out;
+  transition: height 0.7s, box-shadow 0.6s, -webkit-box-shadow 0.6s;
+  -webkit-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 
   &:hover {
     height: 330px;
     .tooltips {
       height: 340px;
       padding-top: 140px;
-      box-shadow: 0px 0px 8px 3px #ffffff;
+      -webkit-box-shadow: 0px 0px 8px 3px #ffffff;
+              box-shadow: 0px 0px 8px 3px #ffffff;
     }
   }
 }
 
 .ap {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
   width: 100%;
@@ -68,8 +102,17 @@
   letter-spacing: 10px;
   text-align: center;
   &:hover {
-    animation: spanT 0.7s;
-    animation-fill-mode: forwards;
+    -webkit-animation: spanT 0.7s;
+            animation: spanT 0.7s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+
+@-webkit-keyframes spanT {
+  to {
+    color: black;
+    font-size: 24px;
   }
 }
 
@@ -81,18 +124,44 @@
 }
 
 .captions {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 200px;
 
   a {
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   &:hover {
-    animation: tips 1s;
-    animation-fill-mode: forwards;
+    -webkit-animation: tips 1s;
+            animation: tips 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+
+@-webkit-keyframes tips {
+  from {
+    opacity: 1;
+    border-radius: 10px;
+  }
+  to {
+    padding-top: 8%;
+    border-radius: 20px;
+    opacity: 0.7;
+    background-color: rgba(221, 216, 216, 0.4);
+    color: black;
   }
 }
 

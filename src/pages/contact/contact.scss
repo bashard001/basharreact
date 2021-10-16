@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 input,
 textarea {
   width: 100%;
@@ -11,6 +18,8 @@ textarea {
 
 .column {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 3% auto;
   width: 45vw;
@@ -19,6 +28,7 @@ textarea {
   -webkit-box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
   box-shadow: 0 13px 27px 0 rgba(31, 4, 6, 0.25);
   -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
   transition: 0.9s;
   input,
   textarea {
@@ -45,10 +55,16 @@ textarea {
 }
 
 #formSub {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
   width: 100%;
+  -webkit-transition: width 1s;
+  -o-transition: width 1s;
   transition: width 1s;
 }
 
@@ -60,6 +76,8 @@ textarea {
   background: #30948d;
   -webkit-box-shadow: 0 13px 27px 0 rgba(7, 7, 7, 0.5);
   box-shadow: 0 13px 27px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: width 1s;
+  -o-transition: width 1s;
   transition: width 1s;
 }
 
