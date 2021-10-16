@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import { testingF } from "../../firebase/firebase"
+import sgMail from "@sendgrid/mail"
+
 import "./contact.scss"
 // import * as corsModule from "cors"
 
@@ -43,10 +45,25 @@ function Contact() {
         //     body: contact}).then((res) => {
         //     console.log(res)
         // })
-        testingF().then(res => {
+        sgMail.setApiKey("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");
+const msg = {
+  to: 'bdaseh@gmail.com',
+  from: 'bdaseh@gmail.com', // Use the email address or domain you verified above
+  subject: 'Sending with Twilio SendGrid is Fun',
+  text: 'and easy to do anywhere, even with Node.js',
+  html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+};
+//ES6
+sgMail
+  .send(msg)
+  .then((res) => {console.log(res)}, error => {
+    console.error(error);
 
-            console.log(res.data)
-        })
+    if (error.response) {
+      console.error(error.response.body)
+    }
+  });
+  
 
     }
 

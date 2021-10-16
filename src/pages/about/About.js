@@ -14,7 +14,7 @@ function About() {
         <h2 className="pagetitleA">About Me</h2>
         <div className="cardcontent">
           <div className="aitem">
-            <div className="imgab"></div>
+            <div className="imgab skeleton"></div>
             <h3 style={{ fontFamily: 'Charmonman', fontSize: "18px", color: "red" }}>Full Stack Web Engineer
             </h3><br />
             <strong>Bashar Daseh</strong>
