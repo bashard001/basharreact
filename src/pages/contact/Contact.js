@@ -45,7 +45,7 @@ function Contact() {
         //     body: contact}).then((res) => {
         //     console.log(res)
         // })
-        sgMail.setApiKey("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");
+        sgMail.setApiKey(process.env.REACT_APP_SENDGRID_API);
 const msg = {
   to: 'bdaseh@gmail.com',
   from: 'bdaseh@gmail.com', // Use the email address or domain you verified above
