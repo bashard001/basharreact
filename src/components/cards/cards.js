@@ -1,6 +1,5 @@
 import React from "react"
 import { Images } from "./img";
-import Image from "next/image"
 import "./cards.styles.scss"
 
 
