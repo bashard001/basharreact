@@ -10,7 +10,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 0px;
+  will-change: scroll;
+  top: 0;
   width: 100%;
   min-height: 7vh;
   background: #30948d;
@@ -22,6 +23,16 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      transition: .3s;
+}
+
+.header.sticky{
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  a, p {
+    color: #30948d !important;
+  }
+  
 }
 
 #left {

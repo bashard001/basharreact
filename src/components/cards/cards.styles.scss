@@ -45,7 +45,7 @@
   -ms-grid-row-align: center;
   -ms-grid-column-align: center;
   place-self: center;
-  background-color: red;
+  background-color: white;
   -webkit-transition: height 0.8s, padding-top 0.7s, -webkit-box-shadow 1s;
   transition: height 0.8s, padding-top 0.7s, -webkit-box-shadow 1s;
   -o-transition: height 0.8s, box-shadow 1s, padding-top 0.7s;
@@ -55,6 +55,7 @@
        -o-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   z-index: -1;
+
 }
 
 .box {
@@ -181,7 +182,7 @@
 
 .tool-text {
   position: relative;
-  color: white;
+  color: black;
   top: 35%;
   text-align: center;
   padding: 5px;
