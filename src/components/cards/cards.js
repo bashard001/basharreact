@@ -28,8 +28,8 @@ function Card(props) {
 
   return (
     <div className="box ">
-      <Image src={"/quizAPP.jpg"} alt="pic" width={200} height={200}/>
-      {/* <div className="a skeleton" style={{ backgroundImage: `url(${image})`, backgroundColor:"white" }}>
+      
+      <div className="a skeleton" style={{ backgroundImage: `url(${image})`, backgroundColor:"white" }}>
         <div className="captions ">
           <a href={project.pUrl} rel="noopener noreferrer" target="_blank" className="ap">
 
@@ -37,7 +37,7 @@ function Card(props) {
           </a>
         </div>
       </div>
-      <div className="tooltips"><p className="tool-text">{project.pDisc}</p></div> */}
+      <div className="tooltips"><p className="tool-text">{project.pDisc}</p></div>
     </div>
   )
 
