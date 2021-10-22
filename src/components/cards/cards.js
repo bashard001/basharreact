@@ -1,5 +1,6 @@
 import React from "react"
 import { Images } from "./img";
+import Image from "next/image"
 import "./cards.styles.scss"
 
 
@@ -27,6 +28,7 @@ function Card(props) {
 
   return (
     <div className="box ">
+      
       <div className="a skeleton" style={{ backgroundImage: `url(${image})`, backgroundColor:"white" }}>
         <div className="captions ">
           <a href={project.pUrl} rel="noopener noreferrer" target="_blank" className="ap">

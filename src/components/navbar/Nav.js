@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { Link } from "react-router-dom"
 
 import "./nav.scss"
@@ -10,6 +10,18 @@ function Nav() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
+function scroll (){
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector(".header")
+        console.log(window.scrollY)
+        header.classList.toggle("sticky", window.scrollY >= 70)
+    })
+}
+
+
+useEffect(()=>{
+    scroll()
+})
     return (
         <nav className="header">
           

@@ -1,4 +1,6 @@
 #goup {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
   place-items: center;
@@ -7,14 +9,24 @@
   height: 30px;
   width: 30px;
   background-color: red;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 7px;
+  -webkit-transition: opacity .8s, -webkit-transform .5s;
+  transition: opacity .8s, -webkit-transform .5s;
+  -o-transition: opacity .8s, transform .5s;
   transition: opacity .8s, transform .5s;
+  transition: opacity .8s, transform .5s, -webkit-transform .5s;
 }
 
 #goup:hover {
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .totop {
