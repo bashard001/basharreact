@@ -5,7 +5,7 @@ import "./totop.css"
 function Totop() {
 
   const scrollFunction = () => {
-    var myButton = document.querySelector("#goup")
+    var myButton = document.querySelector("#up")
 
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       myButton.style.opacity = 1;
@@ -26,7 +26,7 @@ function Totop() {
   }, [])
 
   return (
-    <div id="goup" onClick={toTopFunction}>
+    <div id="up" onClick={toTopFunction}>
       <span className="totop"  >
         <i className="far fa-arrow-alt-circle-up"></i>
       </span>

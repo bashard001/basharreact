@@ -1,15 +1,27 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./about.css"
 
-
 function About() {
+  function scroll (){
+ if (window.location.pathname == "/about"){
+console.log(window.location.pathname)
+var header = document.querySelector(".header")
+header.classList.toggle("about", window.location.pathname == "/about")
+header.classList.remove("sticky")
+ }
+}
+
+useEffect(()=>{
+  scroll()
+},[])
+  
   const skills = ["MERN Stack (MongoDB, Express.js, React.js, Node.js).","JavaScript", "Redux", "AWS and Firebase", "JAVA","HTML, CSS and SCSS", "JSON, jQuery and AJAX.", "React Native", "GIT version control",
     "springMVC", "MySQL and MongoDB", "Scrach", "Bootstrap and Material-ui", "Babel, Webpack, NPM", "Stripe payment system"]
 
 
 
   return (
-    <div className="maincontainer" id="top">
+    <div className="maincontainer">
       <div className="mainbox card">
         <h2 className="pagetitleA">About Me</h2>
         <div className="cardcontent">

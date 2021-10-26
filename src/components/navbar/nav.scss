@@ -17,7 +17,7 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      transition: .3s;
+      transition: .35s;
 }
 
 .header.sticky{
@@ -28,6 +28,7 @@
   }
   #right{
     a{
+      background-color: rgba(255, 255, 255, 0.25);
       &:hover{
         background-color: #f2f2f2;
       }
@@ -82,9 +83,9 @@
     border-radius: 10px;
     -webkit-box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
     box-shadow: 0 0px 27px 0 rgba(255, 255, 255, 0.25);
-    -webkit-transition: 0.9s;
-    -o-transition: 0.9s;
-    transition: 0.9s;
+    -webkit-transition: 0.75s;
+    -o-transition: 0.75s;
+    transition: 0.75s;
     &:hover {
       background-color: rgb(70, 158, 62);
       border-radius: 20px;

@@ -1,4 +1,4 @@
-#goup {
+#up {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,16 +6,16 @@
   place-items: center;
   top: 90%;
   left: 95%;
-  height: 30px;
-  width: 30px;
-  background-color: red;
+  height: 33px;
+  width: 33px;
+  background-color: #30948d;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 7px;
+  border-radius: 6px;
   -webkit-transition: opacity .8s, -webkit-transform .5s;
   transition: opacity .8s, -webkit-transform .5s;
   -o-transition: opacity .8s, transform .5s;
@@ -23,7 +23,7 @@
   transition: opacity .8s, transform .5s, -webkit-transform .5s;
 }
 
-#goup:hover {
+#up:hover {
   -webkit-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
           transform: rotate(360deg);
@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 700px) {
-  #goup {
+  #up {
     left: 85%;
   }
 }
