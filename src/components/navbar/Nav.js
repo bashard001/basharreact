@@ -31,8 +31,9 @@ useEffect(()=>{
                     </Link>
                 </section>
                 <section id="right">
-                    <Link to={'/projects'} onClick={scrollToTop}> <i className="fab fa-connectdevelop"> </i><p>
-                        Projects</p></Link>
+                    <Link to={'/projects'} onClick={scrollToTop}> <div className="navlink"><i className="fab fa-connectdevelop"> </i><p>
+                        Projects</p></div> 
+                        </Link>
                     <Link to={'/about'} onClick={scrollToTop}><i className="far fa-user-circle"></i><p>About</p></Link>
 
                     <Link to={'/contact'} onClick={scrollToTop}> <i className="fas fa-id-card-alt"> </i> <p> Contact</p>

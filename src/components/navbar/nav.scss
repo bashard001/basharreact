@@ -33,6 +33,12 @@
         background-color: #f2f2f2;
       }
     }
+    .navlink{
+      background-color: rgba(255, 255, 255, 0.25);
+      &:hover{
+        background-color: #f2f2f2;
+      }
+    }
   }
   
 }
