@@ -1,8 +1,5 @@
-
 .header {
   position: sticky;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   will-change: scroll;
   top: 0;
@@ -12,48 +9,34 @@
   font-family: sans-serif;
   z-index: 100;
   padding: 22px 0px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      transition: .35s;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: 0.35s;
 }
 
-.header.sticky{
+.header.sticky {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0);
-  a, p {
+  a,
+  p {
     color: #30948d !important;
   }
-  #right{
-    a{
+  #right {
+    a {
       background-color: rgba(255, 255, 255, 0.25);
-      &:hover{
+      &:hover {
         background-color: #f2f2f2;
       }
     }
-    .navlink{
-      background-color: rgba(255, 255, 255, 0.25);
-      &:hover{
-        background-color: #f2f2f2;
-      }
-    }
+
   }
-  
 }
 
 #left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-width: 250px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   margin-left: 5vw;
   a {
@@ -65,46 +48,57 @@
   }
 }
 
+.navlink {
+  display: flex;
+  transform: translateY(3px);
+  overflow: hidden;
+  &:hover .underline{
+    transform: translateX(0);
+  }
+}
+.navlink_contain{
+  overflow: hidden;
+}
+
+.underline{
+  height: 3px;
+  width: 95%;
+  background-color: blue;
+  margin-left: 5px;
+  margin-top: 3px;
+  transform: translateX(-110%);
+  transition: 1s;
+ 
+}
+
+
 #right {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   margin-right: 5vw;
   a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: #f2f2f2;
-    padding: 15px;
+    padding: 10px 15px;
     text-decoration: none;
     font-size: 16px;
     border-radius: 10px;
-    -webkit-box-shadow: 0 13px 27px 0 rgba(163, 48, 53, 0.25);
     box-shadow: 0 0px 27px 0 rgba(255, 255, 255, 0.25);
-    -webkit-transition: 0.75s;
-    -o-transition: 0.75s;
     transition: 0.75s;
     &:hover {
       background-color: rgb(70, 158, 62);
       border-radius: 20px;
-      -webkit-box-shadow: 0 13px 27px 0 rgba(0, 0, 0, 0.25);
       box-shadow: 0 0px 27px 0 rgba(0, 0, 0, 0.25);
     }
   }
   p {
     padding-left: 5px;
     margin: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     color: #f2f2f2;
     font-size: 16px;
   }
@@ -115,10 +109,8 @@
     display: block;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-animation: aniBashar 1.5s;
-            animation: aniBashar 1.5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation: aniBashar 1.5s;
+    animation-fill-mode: forwards;
   }
   span#b {
     display: none;
@@ -133,10 +125,8 @@
   #left:hover span#b {
     display: block;
     overflow: hidden;
-    -webkit-animation: aniBD 0.9s;
-            animation: aniBD 0.9s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation: aniBD 0.9s;
+    animation-fill-mode: forwards;
     cursor: pointer;
   }
 }
@@ -193,21 +183,17 @@
 
 @media (max-width: 670px) {
   #left {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
+    flex: 100%;
     margin: auto;
     padding: 0px 20px 20px 20px;
     span#a {
-      display: -webkit-box;
-      display: -ms-flexbox;
+
       display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+
+      justify-content: center;
     }
   }
-  
+
   #right {
     margin: auto;
     width: 88%;
