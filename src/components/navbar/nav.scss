@@ -52,23 +52,25 @@
   display: flex;
   transform: translateY(3px);
   overflow: hidden;
-  &:hover .underline{
-    transform: translateX(0);
-  }
+  // &:hover .underline{
+  //   transform: translateX(0);
+  // }
 }
 .navlink_contain{
   overflow: hidden;
+  margin-left: 5px;
+
 }
 
 .underline{
   height: 3px;
-  width: 95%;
-  background-color: blue;
-  margin-left: 5px;
+  width: 100%;
+  background-color: white;
+  border: none;
+ border-radius: 5px;
   margin-top: 3px;
-  transform: translateX(-110%);
-  transition: 1s;
- 
+  transform: translateX(-101%);
+  transition: transform .6s;
 }
 
 
@@ -96,7 +98,6 @@
     }
   }
   p {
-    padding-left: 5px;
     margin: auto;
     justify-content: center;
     color: #f2f2f2;
@@ -131,22 +132,6 @@
   }
 }
 
-@-webkit-keyframes aniBD {
-  from {
-    width: 0px;
-    opacity: 1;
-  }
-  75% {
-    padding: 30px 0px;
-    font-size: 50px;
-  }
-  to {
-    width: 200px;
-    font-size: 2rem;
-    opacity: 1;
-  }
-}
-
 @keyframes aniBD {
   from {
     width: 0px;
@@ -163,14 +148,6 @@
   }
 }
 
-@-webkit-keyframes aniBashar {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 200px;
-  }
-}
 
 @keyframes aniBashar {
   from {
