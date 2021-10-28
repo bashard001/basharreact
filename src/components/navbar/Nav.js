@@ -28,6 +28,7 @@ function Nav() {
         let el = e.target.querySelector(".underline")
         
         if (el) {
+            el.style.transform = "translateX(-101%)"
             el.style.opacity = "1"
             el.style.transform = "translateX(0)"
         }
