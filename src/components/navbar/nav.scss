@@ -57,6 +57,7 @@
   // }
 }
 .navlink_contain{
+  position: relative;
   overflow: hidden;
   margin-left: 5px;
 
@@ -71,6 +72,19 @@
   margin-top: 2px;
   transform: translateX(-101%);
   transition: transform .6s;
+}
+.newline{
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  background-color: white;
+  border: none;
+ border-radius: 5px;
+  margin-top: 2px;
+ 
+  transition: width .6s;
+  left: 0;
+  
 }
 
 
