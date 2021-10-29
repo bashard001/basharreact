@@ -13,7 +13,6 @@ function Nav() {
     function scroll() {
         window.addEventListener("scroll", function () {
             var header = document.querySelector(".header")
-            console.log(window.scrollY)
             header.classList.toggle("sticky", window.scrollY > 0)
         })
     }
@@ -22,7 +21,6 @@ function Nav() {
         e.stopPropagation()
 
         let el = e.target.querySelector(".underline")
-        console.log(e.target)
         el.style.width = "100%"
         el.classList.remove("right")
     }
