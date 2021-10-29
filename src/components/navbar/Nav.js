@@ -25,35 +25,22 @@ function Nav() {
         e.stopPropagation()
         clearTimeout(timeOut.current)
         
-        let el2 = e.target.querySelector(".newline")
         let el = e.target.querySelector(".underline")
         console.log(e.target)
-        el2.style.width = "100%"
-        el2.style.right = "0"
-        //    el.style.transition= "transform .6s"
-        // el.style.opacity = "1"
-        // el.style.transform = "translateX(0)" 
-       
+        el.style.width = "100%"
+        el.classList.remove("right")
     }
 
     
 
     const hoverOut = (e) => {
         e.stopPropagation()
+        
         let el = e.target.querySelector(".underline")
-        let el2 = e.target.querySelector(".newline")
-        el2.style.right = "0"
-        el2.style.left = ""
-        el2.style.width = "0%"
-        // console.log(el)
-        // el.style.transform = "translateX(101%)"
-        // timeOut.current = setTimeout(() => {
-        //     el.style.transition= "transform 0s"
-        //     el.style.opacity = "0"
-        //     el.style.transform = "translateX(-101%)"
-        // }, 380)
-
+        el.classList.add("right")
+        el.style.width = "0%"
     }
+
     useEffect(()=>{
         document.querySelectorAll(".linkNav").forEach(el => el.addEventListener("mouseenter", handleHover))
         document.querySelectorAll(".linkNav").forEach(el => el.addEventListener("mouseleave", hoverOut))
@@ -77,7 +64,8 @@ function Nav() {
                     <div className="navlink"  ><i className="fab fa-connectdevelop"> </i>
                         <div className="navlink_contain">
                             <p>Projects</p>
-                            <div style={{ transform: "translateX(-101%)" }} className="underline"></div>
+                            <div className="underline"></div>
+                          
                         </div>
                     </div>
                 </Link>
@@ -88,6 +76,7 @@ function Nav() {
                         <div className="navlink_contain">
                             <p>About</p>
                             <div className="underline"></div>
+                          
                         </div>
                     </div>
                 </Link>
@@ -97,8 +86,8 @@ function Nav() {
                         <i className="fas fa-id-card-alt"> </i>
                         <div className="navlink_contain">
                             <p>Contact</p>
-                            <div className="newline"></div>
                             <div className="underline"></div>
+                            
                             
                         </div>
                     </div>

@@ -50,41 +50,31 @@
 
 .navlink {
   display: flex;
-  transform: translateY(3px);
-  overflow: hidden;
-  // &:hover .underline{
-  //   transform: translateX(0);
-  // }
+  transform: translateY(1.5px);
 }
+
 .navlink_contain{
   position: relative;
-  overflow: hidden;
   margin-left: 5px;
-
 }
+
 
 .underline{
-  height: 2px;
-  width: 100%;
-  background-color: white;
-  border: none;
- border-radius: 5px;
-  margin-top: 2px;
-  transform: translateX(-101%);
-  transition: transform .6s;
-}
-.newline{
   position: absolute;
   height: 2px;
-  width: 50%;
+  width: 0%;
   background-color: white;
   border: none;
  border-radius: 5px;
   margin-top: 2px;
- 
   transition: width .6s;
   left: 0;
   
+}
+
+.underline.right{
+  right: 0;
+  left: auto;
 }
 
 
