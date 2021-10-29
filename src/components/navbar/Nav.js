@@ -1,12 +1,9 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect } from "react"
 import { Link } from "react-router-dom"
-
 import "./nav.scss"
 
 
 function Nav() {
-
-    let timeOut = useRef("")
 
     function scrollToTop() {
         document.body.scrollTop = 0;
@@ -23,28 +20,25 @@ function Nav() {
 
     const handleHover = (e) => {
         e.stopPropagation()
-        clearTimeout(timeOut.current)
-        
+
         let el = e.target.querySelector(".underline")
         console.log(e.target)
         el.style.width = "100%"
         el.classList.remove("right")
     }
 
-    
-
     const hoverOut = (e) => {
         e.stopPropagation()
-        
+
         let el = e.target.querySelector(".underline")
         el.classList.add("right")
         el.style.width = "0%"
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         document.querySelectorAll(".linkNav").forEach(el => el.addEventListener("mouseenter", handleHover))
         document.querySelectorAll(".linkNav").forEach(el => el.addEventListener("mouseleave", hoverOut))
-    },[])
+    }, [])
 
     useEffect(() => {
         scroll()
@@ -65,7 +59,6 @@ function Nav() {
                         <div className="navlink_contain">
                             <p>Projects</p>
                             <div className="underline"></div>
-                          
                         </div>
                     </div>
                 </Link>
@@ -76,7 +69,6 @@ function Nav() {
                         <div className="navlink_contain">
                             <p>About</p>
                             <div className="underline"></div>
-                          
                         </div>
                     </div>
                 </Link>
@@ -87,8 +79,6 @@ function Nav() {
                         <div className="navlink_contain">
                             <p>Contact</p>
                             <div className="underline"></div>
-                            
-                            
                         </div>
                     </div>
                 </Link>
