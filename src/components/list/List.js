@@ -3,7 +3,6 @@ import "./list.css"
 
 function List() {
   return (
- 
   
     <div id="list">
       <h3>Web Applications</h3>
