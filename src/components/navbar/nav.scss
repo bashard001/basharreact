@@ -50,41 +50,38 @@
 .navlink {
   display: flex;
 
-  i, p{
+  i,
+  p {
     transform: translateY(1px);
   }
-
+  .navlink_contain {
+    position: relative;
+    margin-left: 5px;
+  }
 }
 
-.navlink_contain{
-  position: relative;
-  margin-left: 5px;
-}
-
-
-.underline{
+.underline {
   position: absolute;
   height: 2px;
   width: 0%;
   background-color: white;
   border: none;
- border-radius: 5px;
+  border-radius: 5px;
   margin-top: 2px;
-  transition: width .6s;
+  transition: width 0.6s;
   left: 0;
 }
 
-.underline.right{
+.underline.right {
   right: 0;
   left: auto;
-  transition: width .6s;
+  transition: width 0.6s;
 }
-
 
 #right {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-right: 5vw;
+  margin-right: 6vw;
   a {
     display: flex;
     margin: auto;
@@ -155,7 +152,6 @@
   }
 }
 
-
 @keyframes aniBashar {
   from {
     width: 0px;
@@ -171,7 +167,6 @@
     margin: auto;
     padding: 0px 20px 20px 20px;
     span#a {
-
       display: flex;
 
       justify-content: center;
