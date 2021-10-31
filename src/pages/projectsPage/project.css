@@ -1,52 +1,49 @@
 .maincontainers {
-  position: relative;
-  width: 100%;
-  background-image: url("../../assets/gridlook.jpg");
-  background-size: cover;
-  min-height: 90vh;
-  padding: 50px 0px;
+    position: relative;
+    width: 100%;
+    background-image: url("../../assets/gridlook.jpg");
+    background-size: cover;
+    min-height: 90vh;
+    padding: 50px 0px;
 }
 
 .containers {
-  position: relative;
-  display: -ms-grid;
-  display: grid;
-  width: 85%;
-  grid-template-columns: repeat(auto-fit, 250px);
-  grid-auto-rows: auto;
-  grid-gap: 1em;
-  grid-row-gap: 2em;
-  margin: auto;
-  padding-top: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    position: relative;
+    display: grid;
+    width: 85%;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    grid-row-gap: 2em;
+    margin: auto;
+    padding-top: 40px;
+    justify-content: center;
 }
 
 .pagetitle {
-  text-align: center;
- padding: 10px;
-  width: 70%;
-  margin: auto;
-  background-color: rgba(48, 148, 141, .5);
-  border-radius: 10px;
-  color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    background-color: rgba(48, 148, 141, .5);
+    border-radius: 10px;
+    color: aliceblue;
 }
 
 @media (min-width: 1200px) {
-  .containers {
-    grid-template-columns: repeat(auto-fit, 300px);
-    width: 82%;
-  }
-  .pagetitle {
-    width: 70%;
-  }
+    .containers {
+        grid-template-columns: repeat(auto-fit, 300px);
+        width: 82%;
+    }
+    .pagetitle {
+        width: 70%;
+    }
 }
 
 #projectH2 {
-  margin: 0px;
+    margin: 0px;
 }
 
 #projectP {
-  margin: 5px 0px 5px;
+    margin: 5px 0px 5px;
 }
