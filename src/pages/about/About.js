@@ -27,7 +27,7 @@ useEffect(()=>{
         <div className="cardcontent">
           <div className="aitem">
             <div className="imgab skeleton"></div>
-            <h3 style={{ fontFamily: 'Charmonman', fontSize: "18px", color: "red" }}>Full Stack Web Engineer
+            <h3 style={{ fontFamily: 'Charmonman', fontSize: "18px", color: "white" }}>Full Stack Software Engineer
             </h3><br />
             <strong>Bashar Daseh</strong>
             <br />
@@ -80,16 +80,6 @@ useEffect(()=>{
               development (including creating servers, processing data,
               source control, issue tracking, functional feedback, etc...). I have advanced skills in Javascript and Java
               for programing various applications (mobile apps, desktop apps, games, and more) </p>
-          </div>
-          <div className="aitem5">
-            <h4 >Business & Finance: </h4>
-            <p >
-              Working in the financial markets as a technical analyst and web Developer for about four years, generating
-              HTML, PDF files using node js and MySQL to Analyze, draft create edit and prepare financial plans and data
-              files, worked on developing chart indicators, creating databases and managing multiple portfolios with close
-              attention and continual analysis of economic trends to determine appropriate asset allocation according to
-              strict standards.
-            </p>
           </div>
         </div>
       </div>
