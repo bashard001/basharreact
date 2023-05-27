@@ -2,7 +2,7 @@ import React from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Footer from "./components/footer/Footer"
 import Main from "./pages/homepage/Main"
-import Contact from "./pages/contact/Contact"
+import ContactNew from "./pages/contact/ContactNew"
 import Nav from "./components/navbar/Nav"
 import About from "./pages/about/About"
 import Projects from "./pages/projectsPage/Projects"
@@ -18,7 +18,7 @@ function App() {
 
         <Route path="/" exact component={Main} />
 
-        <Route path="/contact" component={Contact} />
+        <Route path="/contact" component={ContactNew} />
 
         <Route path="/about" component={About} />
 

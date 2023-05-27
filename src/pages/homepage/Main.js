@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React from "react"
 import Bg1 from "../../components/info-area/Bg1"
 import List from "../../components/list/List"
 import Area from "../../components/info-area/Area"
@@ -11,9 +11,6 @@ function Main() {
         document.documentElement.scrollTop = 0;
     }
 
-    useEffect(()=>{
-        console.log(navigator)
-    })
     return (
         <div>
             <Bg1 c1="bg1 wave" c2="caption firstcaption" c3="firstbox" c4="top" text="Full Stack Software Engineer" />

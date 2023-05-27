@@ -12,7 +12,7 @@ function List() {
         <li>Build full-stack web apps from scratch and deploy both static and dynamic web apps to the cloud.</li>
         <li>Implement complex logical conditions to meet any objective</li>
         <li>Integrate APIs into my apps using fetch, cloud functions, and AJAX communication.</li>
-        <li> Create and consume RESTful APIs utilizing JSON as a data format </li>
+        <li> Create and consume RESTful APIs utilizing JSON as a data format.</li>
       </ul>
     </div>
   

@@ -27,7 +27,6 @@ function Contact() {
     }
 
     const onMessageChange = (event) => {
-        console.log(this)
         setContact({ ...contact, message: event.target.value })
     }
 
