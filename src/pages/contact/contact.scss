@@ -9,19 +9,12 @@
 
 }
 
-.icon-hover {
-    transition: font-size 0.2s ease;
-    font-size: 300px;
-}
-
-.icon-hover:hover {
-    font-size: 350px;
-}
 
 .contact-options {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-auto-rows: auto;
+    gap: 10px;
     justify-content: center;
-    align-items: center;
-    padding: auto auto;
-
+    width: 85vw;
 }

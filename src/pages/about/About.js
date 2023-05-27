@@ -1,22 +1,21 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import "./about.css"
 
 function About() {
-  function scroll (){
- if (window.location.pathname == "/about"){
-console.log(window.location.pathname)
-var header = document.querySelector(".header")
-header.classList.toggle("about", window.location.pathname == "/about")
-header.classList.remove("sticky")
- }
-}
+  function scroll() {
+    if (window.location.pathname === "/about") {
+      var header = document.querySelector(".header")
+      header.classList.toggle("about", window.location.pathname === "/about")
+      header.classList.remove("sticky")
+    }
+  }
 
-useEffect(()=>{
-  scroll()
-},[])
-  
-  const skills = ["MERN Stack (MongoDB, Express.js, React.js, Node.js).","JavaScript", "Redux", "AWS and Firebase", "JAVA","HTML, CSS and SCSS", "JSON, jQuery and AJAX.", "React Native", "GIT version control",
-    "springMVC", "MySQL and MongoDB", "Scrach", "Bootstrap and Material-ui", "Babel, Webpack, NPM", "Stripe payment system"]
+  useEffect(() => {
+    scroll()
+  }, [])
+
+  const skills = ["MERN Stack (MongoDB, Express.js, React.js, Node.js)", "JavaScript/TypeScript", "Redux", "AWS and Firebase", "JAVA", "HTML, CSS and SCSS/Sass", "AJAX, JSON", "GIT version control",
+    "springMVC", "MySQL, MongoDB and GraphQL", "Python", "Bootstrap and Material-ui", "Babel, Webpack, NPM", "Stripe payment system"]
 
 
 
@@ -65,21 +64,11 @@ useEffect(()=>{
           <div className="aitem4">
             <h3>About: </h3>
             <p className="text">
-              I am a self-motivated and goal-oriented Full Stack Web Engineer with experience working on multiple
-              web applications, backend development and data engineering that meet the highest standards for user
-              experience, web design, usability, and speed. proven experience developing consumer-focused web applications
-              for desktop and mobile using MERN, HTML, CSS, JQuery, SQL, JavaScript and node.js.</p>
+              I am a self-motivated and goal-oriented Full Stack Web Engineer with experience working on multiple web applications, backend development, and data engineering, meeting the highest standards for user experience, web design, usability, and speed. I have proven experience in developing consumer-focused web applications for desktop and mobile using MERN, HTML, CSS, JQuery, SQL, JavaScript, and Node.js.</p>
             <p className="text">
-              Proven experience developing scalable consumer-focused web applications from startup to enterprise; utilizing cloud services like AWS and Firebase
-              , build databases, deploy and manage websites and Apps on a secure reliable network. Building a strong website/Apps
-              infrastructure applications for desktop, and mobile devices that runs more efficient and secure.</p>
+            I have proven experience in developing scalable, consumer-focused web applications, ranging from startups to enterprises. I utilize cloud services such as AWS and Firebase to build databases, deploy, and manage websites and apps on secure, reliable networks. I specialize in building robust website and app infrastructures for desktop and mobile devices, aiming to increase efficiency and security.</p>
 
-            <p className="text">Solution-driven professional excelling in highly collaborative work environment, finding
-              solutions to challenges and focused on customer satisfaction. Solution-driven professional excelling in
-              highly collaborative work environment, finding solutions to challenges and focused on customer satisfaction.
-              development (including creating servers, processing data,
-              source control, issue tracking, functional feedback, etc...). I have advanced skills in Javascript and Java
-              for programing various applications (mobile apps, desktop apps, games, and more) </p>
+            <p className="text">As a solution-driven professional, I excel in highly collaborative work environments, finding solutions to challenges, and focusing on customer satisfaction. My expertise spans various areas of development, including server creation, data processing, source control, issue tracking, and functional feedback. I possess advanced skills in JavaScript and Java for programming various applications, including mobile apps, desktop apps, games, and more.</p>
           </div>
         </div>
       </div>
