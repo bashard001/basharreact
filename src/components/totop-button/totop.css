@@ -1,7 +1,6 @@
 #up {
     display: flex;
     position: fixed;
-    place-items: center;
     top: 90%;
     left: 95%;
     height: 33px;
@@ -17,9 +16,6 @@
     transform: rotate(360deg);
 }
 
-.totop {
-    color: white;
-}
 
 @media (max-width: 700px) {
     #up {

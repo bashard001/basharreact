@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import "./totop.css"
+import { BiUpArrowCircle } from "react-icons/bi"
+import IconLink from "../icon-templates/IconLink"
 
 
 function Totop() {
@@ -27,9 +29,7 @@ function Totop() {
 
   return (
     <div id="up" onClick={toTopFunction}>
-      <span className="totop"  >
-        <i className="far fa-arrow-alt-circle-up"></i>
-      </span>
+      <IconLink Icon={BiUpArrowCircle} fontSize={20} color='white' />
     </div>
   )
 }
