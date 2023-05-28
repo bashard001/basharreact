@@ -1,33 +1,8 @@
-import { useState } from "react";
 import "./contact.scss";
 import {BsInstagram, BsLinkedin} from "react-icons/bs";
 import {FaGithub} from "react-icons/fa";
+import IconLink from "../../components/icon-templates/IconLink";
 
-const IconLink = ({ Icon, href, color = "black" }) => {
-    const [isHover, setIsHover] = useState(false);
-
-    const iconStyles = {
-        display: "inline-flex",  
-        justifyContent: "center",  
-        alignItems: "center",  
-        fontSize: isHover ? "300px" : "250px",   
-        padding: "10px",   
-        transition: "font-size 0.2s ease", 
-        color: color,
-    };
-
-    return (
-        <a href={href} target="_blank" rel="noopener noreferrer" style={{display: "grid", padding: "25px"}}>
-            <div 
-                onMouseEnter={() => setIsHover(true)} 
-                onMouseLeave={() => setIsHover(false)} 
-                style={iconStyles}
-            >
-                <Icon />
-            </div>
-        </a>
-    );
-}
 
 const ContactNew = () => {
     return (
