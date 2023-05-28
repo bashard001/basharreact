@@ -8,9 +8,9 @@ const ContactNew = () => {
     return (
         <div className="contact-container" id="top">
             <div className="contact-options">
-                <IconLink Icon={BsLinkedin} href="https://www.linkedin.com/in/bashar-daseh-hamed/" color= "#0a66c2"/>
-                <IconLink Icon={FaGithub} href="https://github.com/bashard001" color="black" />
-                <IconLink Icon={BsInstagram} href="https://www.instagram.com/beau_daseh/" color="purple"/>
+                <IconLink Icon={BsLinkedin} href="https://www.linkedin.com/in/bashar-daseh-hamed/" color= "#0a66c2" shouldHover={true}/>
+                <IconLink Icon={FaGithub} href="https://github.com/bashard001" color="black" shouldHover={true}/>
+                <IconLink Icon={BsInstagram} href="https://www.instagram.com/beau_daseh/" color="purple" shouldHover={true}/>
             </div>
         </div>
     )
