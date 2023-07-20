@@ -4,11 +4,11 @@
   will-change: scroll;
   top: 0;
   width: 100%;
-  min-height: 7vh;
+  min-height: 9vh;
   background: #30948d;
   font-family: sans-serif;
   z-index: 100;
-  padding: 22px 0px;
+  padding: 10px 0px;
   justify-content: space-between;
   flex-wrap: wrap;
   transition: 0.35s;
@@ -28,22 +28,6 @@
         background-color: #f2f2f2;
       }
     }
-  }
-}
-
-#left {
-  display: flex;
-  min-width: 250px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  margin-left: 5vw;
-  a {
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
-    margin-left: 5%;
   }
 }
 
@@ -109,70 +93,8 @@
   }
 }
 
-#left {
-  span#a {
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: aniBashar 1.5s;
-    animation-fill-mode: forwards;
-  }
-  span#b {
-    display: none;
-    white-space: nowrap;
-  }
-}
-
-@media (min-width: 670px) {
-  #left:hover span#a {
-    display: none;
-  }
-  #left:hover span#b {
-    display: block;
-    overflow: hidden;
-    animation: aniBD 0.9s;
-    animation-fill-mode: forwards;
-    cursor: pointer;
-  }
-}
-
-@keyframes aniBD {
-  from {
-    width: 0px;
-    opacity: 1;
-  }
-  75% {
-    padding: 30px 0px;
-    font-size: 50px;
-  }
-  to {
-    width: 200px;
-    font-size: 2rem;
-    opacity: 1;
-  }
-}
-
-@keyframes aniBashar {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 200px;
-  }
-}
 
 @media (max-width: 670px) {
-  #left {
-    flex: 100%;
-    margin: auto;
-    padding: 0px 20px 20px 20px;
-    span#a {
-      display: flex;
-
-      justify-content: center;
-    }
-  }
-
   #right {
     margin: auto;
     width: 88%;
