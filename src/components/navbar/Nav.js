@@ -1,13 +1,11 @@
 /** @jsxImportSource @emotion/react */
-import React, { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./nav.scss";
-import { css } from "@emotion/react";
+import Logo from "./Logo";
 
 function Nav() {
   let history = useHistory();
-  const [headerName, setHeaderName] = useState("Bashar Daseh");
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   function goToPage(route) {
     document.body.scrollTop = 0;
@@ -37,49 +35,6 @@ function Nav() {
     el.classList.add("right");
     el.style.width = "0%";
   };
-  function handleMouseEnter() {
-    windowWidth > 670 &&  setHeaderName("B D");
-  }
-  function handleMouseLeave() {
-    headerName !== 'Bashar Daseh' && setHeaderName("Bashar Daseh");
-  }
-
-  const aniBD = css`
-    display: flex;
-    align-items: center;
-    margin-left: 2vw;
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-    white-space: nowrap;
-    height: 100%;
-    overflow: hidden;
-    animation: aniBashar 0.9s;
-    animation-fill-mode: forwards;
-
-    @keyframes aniBD {
-      from {
-        width: 5px;
-      }
-      75% {
-        padding: 30px 0px;
-        font-size: 50px;
-      }
-      to {
-        width: 200px;
-        font-size: 2rem;
-      }
-    }
-
-    @keyframes aniBashar {
-      from {
-        width: 0px;
-      }
-      to {
-        width: 200px;
-      }
-    }
-  `;
 
   useEffect(() => {
     document
@@ -94,48 +49,11 @@ function Nav() {
     scroll();
   });
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
 
-    window.addEventListener('resize', handleResize);
-
-    // cleanup this component
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
     <nav className="header">
-      <section
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        onClick={() => goToPage("/")}
-        css={css`
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-width: 250px;
-          cursor: pointer;
-         margin-left: 5vw;
-          @media (min-width: 670px) {
-          &:hover > div {
-            cursor: pointer;
-            overflow: hidden;
-            animation: aniBD 0.9s;
-            animation-fill-mode: forwards;
-          }
-        }
-
-        @media (max-width: 670px) {
-          margin: auto;
-        }
-        `}
-      >
-        <div css={aniBD}>{headerName}</div>
-      </section>
+     <Logo />
 
       <section id="right">
         <Link
