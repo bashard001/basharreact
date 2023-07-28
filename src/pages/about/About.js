@@ -22,10 +22,10 @@ function About() {
   return (
     <div className="maincontainer">
       <div className="mainbox card">
-        <h2 className="pagetitleA">About Me</h2>
+        <h2 className="pagetitleA" >About Me</h2>
         <div className="cardcontent">
           <div className="aitem">
-            <div className="imgab skeleton"></div>
+            <div className="imgab skeleton" style={{ pointerEvents: "none", userSelect: "none", cursor: "not-allowed" }}></div>
             <h3 style={{ fontFamily: 'Charmonman', fontSize: "18px", color: "white" }}>Full Stack Software Engineer
             </h3><br />
             <strong>Bashar Daseh</strong>
@@ -52,11 +52,11 @@ function About() {
 
           <div className="aitem3"><h3>Education:</h3>
             <ul >
-              <li className="aboutlist">University of San Diego California (UCSD). 2018-2020</li>
+              <li className="aboutlist">University of San Diego California (UCSD). 2016-2018</li>
               <p> Bachelor's Degree in Computer Science</p>
-              <li className="aboutlist"> San diego Mesa College. 2017-2018</li>
+              <li className="aboutlist"> San diego Mesa College. 2015-2016</li>
               <p>Computer Science Education</p>
-              <li className="aboutlist">San Diego Mesa College. 2012-2016</li>
+              <li className="aboutlist">San Diego Mesa College. 2012-2014</li>
               <p> Associate of Science in Biology & Allied health</p>
             </ul>
           </div>
