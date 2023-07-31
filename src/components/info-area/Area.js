@@ -1,16 +1,11 @@
-import React from "react"
-
-
-
+import React from "react";
 
 function Area(props) {
   return (
-    <div>
-      <div className="area-style" >
-        <p>{props.text}</p>
-      </div>
+    <div className="area-style">
+      <p>{props.text}</p>
     </div>
-  )
+  );
 }
 
-export default Area
+export default Area;

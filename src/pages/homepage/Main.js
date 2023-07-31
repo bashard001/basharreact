@@ -12,8 +12,8 @@ function Main() {
     }
 
     return (
-        <div>
-            <Bg1 c1="bg1 wave" c2="caption firstcaption" c3="firstbox" c4="top" text="Software Engineer" />
+        <>
+            <Bg1 c1="bg1 wave" c2="caption firstcaption" c3="firstbox" c4="top" text="Software Engineer" animate/>
            
             <List />
             <Bg1 c1="bg2 down" c2="caption" c3="box" text="Apply Animations" />
@@ -21,7 +21,7 @@ function Main() {
             <Bg1 c1="bg3" c2="caption" c3="box" text="SCROLL" />
             <Area text="Scroll up and down to really get the feeling of how Parallax Scrolling works." />
             <Bg1 c1="bg1" c2="caption" c3="box lastBox" text={<Link to={'/projects'} onClick={scrolltoTop} className="projects"><span className="largeC">Checkout my projects</span><span className="smallC">My projects</span></Link>} />
-        </div>
+        </>
     )
 }
 
