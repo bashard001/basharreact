@@ -1,12 +1,10 @@
 .contact-container {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 90vh;
     background-image: url("../../assets/gridlook.jpg");
     background-size: cover;
-
 }
 
 
@@ -17,4 +15,6 @@
     gap: 10px;
     justify-content: center;
     width: 85vw;
+     align-items: center;
+     padding: auto;
 }
