@@ -29,6 +29,7 @@ const IconLink = ({
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 4px 4px 0px 4px;
       `}
     >
       <div
