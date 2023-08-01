@@ -59,7 +59,7 @@ function Nav() {
         <Link
           to={"/projects"}
           className="linkNav"
-          onClick={() => goToPage("/projects")}
+         // onClick={() => goToPage("/projects")}
         >
           <div className="navlink">
             <i className="fab fa-connectdevelop"> </i>
@@ -73,7 +73,7 @@ function Nav() {
         <Link
           to={"/about"}
           className="linkNav"
-          onClick={() => goToPage("/about")}
+        //  onClick={() => goToPage("/about")}
         >
           <div className="navlink">
             <i className="far fa-user-circle"></i>
@@ -87,7 +87,7 @@ function Nav() {
         <Link
           to={"/contact"}
           className="linkNav"
-          onClick={() => goToPage("/contact")}
+       //   onClick={() => goToPage("/contact")}
         >
           <div className="navlink">
             <i className="fas fa-id-card-alt"> </i>

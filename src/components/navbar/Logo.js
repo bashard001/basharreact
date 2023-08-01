@@ -53,8 +53,8 @@ function Logo() {
           width: 5px;
         }
         75% {
-          padding: 30px 0px;
-          font-size: 50px;
+          padding: 25px 0px;
+          font-size: 45px;
         }
         to {
           width: 200px;
@@ -70,6 +70,11 @@ function Logo() {
           width: 200px;
         }
       }
+
+      @media (max-width: 670px) {
+          margin: auto;
+          justify-content:center;
+        }
     `;
 
     return (

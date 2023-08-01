@@ -6,7 +6,7 @@ const IconLink = ({
   Icon,
   href,
   color = "black",
-  fontSize = 260,
+  fontSize = 250,
   shouldHover = false,
 }) => {
   const [isHover, setIsHover] = useState(false);
@@ -29,7 +29,7 @@ const IconLink = ({
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 4px 4px 0px 4px;
+        margin: 4px 4px 4px 4px;
       `}
     >
       <div
