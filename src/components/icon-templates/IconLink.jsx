@@ -18,6 +18,9 @@ const IconLink = ({
     font-size: ${isHover ? fontSize * 1.2 + "px" : fontSize + "px"};
     transition: font-size 0.2s ease;
     color: ${color};
+    @media (max-width: 670px) {
+      font-size: ${fontSize !== 250 ? fontSize + "px" :  155 + "px"};
+    }
   `;
 
   return (

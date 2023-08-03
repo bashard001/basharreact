@@ -95,8 +95,11 @@
 
 
 @media (max-width: 670px) {
+  .header {
+    padding: 18px 0px 0px 0px;
+  }
   #right {
-    margin: auto;
+    margin: 10px auto;
     width: 88%;
     a {
       padding: 10px;

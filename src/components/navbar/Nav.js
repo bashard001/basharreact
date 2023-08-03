@@ -1,17 +1,18 @@
 /** @jsxImportSource @emotion/react */
 import { useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
+//import {useHistory} from 'react-router-dom';
 import "./nav.scss";
 import Logo from "./Logo";
 
 function Nav() {
-  let history = useHistory();
+ // let history = useHistory();
 
-  function goToPage(route) {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    history.push(route);
-  }
+  // function goToPage(route) {
+  //   document.body.scrollTop = 0;
+  //   document.documentElement.scrollTop = 0;
+  //   history.push(route);
+  // }
 
   function scroll() {
     window.addEventListener("scroll", function () {
@@ -52,10 +53,10 @@ function Nav() {
 
 
   return (
-    <nav className="header">
+    <header className="header">
      <Logo />
 
-      <section id="right">
+      <nav id="right">
         <Link
           to={"/projects"}
           className="linkNav"
@@ -97,8 +98,8 @@ function Nav() {
             </div>
           </div>
         </Link>
-      </section>
-    </nav>
+      </nav>
+    </header>
   );
 }
 

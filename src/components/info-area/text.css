@@ -8,7 +8,7 @@ svg text {
 	animation: stroke 5s infinite alternate;
 	stroke-width: 2;
 	stroke: #365FA0;
-	font-size: 5vw;
+	font-size: 7vw;
 }
 
 @media (min-width: 768px) {
