@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-//import {useHistory} from 'react-router-dom';
+
 import "./nav.scss";
 import Logo from "./Logo";
 

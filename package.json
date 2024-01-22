@@ -4,7 +4,7 @@
   "author": "bashar daseh",
   "main": "server.js",
   "dependencies": {
-    "@emotion/react": "^11.11.1",
+    "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@sendgrid/mail": "^7.4.7",
     "@testing-library/jest-dom": "^4.2.4",
