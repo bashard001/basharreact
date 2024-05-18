@@ -22,10 +22,10 @@ function About() {
   return (
     <div className="maincontainer">
       <div className="mainbox card">
-        <h2 className="pagetitleA" >About Me</h2>
+        <h2 className="pagetitleA" >About</h2>
         <div className="cardcontent">
           <div className="aitem">
-            <div className="imgab skeleton" style={{ pointerEvents: "none", userSelect: "none", cursor: "not-allowed" }}></div>
+            <div className="skeleton" style={{ pointerEvents: "none", userSelect: "none", cursor: "not-allowed" }}></div>
             <h3 style={{ fontFamily: 'Charmonman', fontSize: "18px", color: "white" }}>Full Stack Software Engineer
             </h3><br />
             <strong>Bashar Daseh</strong>
@@ -42,7 +42,7 @@ function About() {
               github.com/bashard001</a>
           </div>
 
-          <div className="aitem2"> <h3>Development Tools, Languages and Frameworks:</h3>
+          <div className="aitem2"> <h3 style={{ fontFamily: 'Charmonman', fontSize: "18px", color: "white" }}>Development Tools, Languages and Frameworks:</h3>
             <ul className="skillList 1">
               {
                 skills.map((skill, index) => <li key={index} className="aboutlist">{skill}</li>)
@@ -50,7 +50,7 @@ function About() {
             </ul>
           </div>
 
-          <div className="aitem3"><h3>Education:</h3>
+          <div className="aitem3"><h3 style={{ fontFamily: 'Charmonman', fontSize: "18px", color: "white" }}>Education:</h3>
             <ul >
               <li className="aboutlist">University of San Diego California (UCSD). 2016-2018</li>
               <p> Bachelor's Degree in Computer Science</p>
@@ -62,7 +62,7 @@ function About() {
           </div>
 
           <div className="aitem4">
-            <h3>About: </h3>
+            <h3 style={{ fontFamily: 'Charmonman', fontSize: "18px", color: "white" }}>About: </h3>
             <p className="text">
               I am a self-motivated and goal-oriented Full Stack Web Engineer with experience working on multiple web applications, backend development, and data engineering, meeting the highest standards for user experience, web design, usability, and speed. I have proven experience in developing consumer-focused web applications for desktop and mobile using MERN, HTML, CSS, JQuery, SQL, JavaScript, and Node.js.</p>
             <p className="text">
